@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1628838606598">
+  <ports id="2" name="stream_elt_dma_buffer_V" type="PortType" coreName="RAM" coreId="2180320040" bitwidth="8" iftype="IfTypeRegister" arraysize="2048">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="4" name="axi_elt_dma_buffer_V" type="PortType" coreName="RAM" coreId="2179949193" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="40" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="41" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="42" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="45" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="49" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="53" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="54" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="63" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="72" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="80" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="88" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@ports.1"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="103" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="126" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="6" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_12</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="br_ln47" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="S2M_FormatLocalBuffer" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+      <controlInputObjs>block_12</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name="S2M_FormatLocalBuffer.exit" type="BlockType">
+    <controlInputObjs>block_12</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln47" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="2180300736" contextFuncName="S2M_FormatLocalBuffer" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" id="150" pipe_depth="3" RegionName="VITIS_LOOP_47_1">
+    <basic_blocks id="12" name="block_12" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>block_37</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>S2M_FormatLocalBuffer.exit</controlOutputObjs>
+      <controlOutputObjs>block_37</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="indvars_iv5_i" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="S2M_FormatLocalBuffer" bitwidth="10" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <controlInputObjs>block_37</controlInputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="add_ln47" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="add_ln47_fu_103_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="S2M_FormatLocalBuffer" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="icmp_ln47" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="icmp_ln47_fu_109_p2" opType="icmp" coreId="1667853424" contextFuncName="S2M_FormatLocalBuffer" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.77" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln47" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="S2M_FormatLocalBuffer" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_37</controlInputObjs>
+        <controlInputObjs>S2M_FormatLocalBuffer.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+        <validLinenumbers>47</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="37" name="block_37" type="BlockType">
+      <controlInputObjs>block_12</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_12</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="empty_62" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="empty_62_fu_115_p1" coreId="106" contextFuncName="S2M_FormatLocalBuffer" bitwidth="9" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="indvars_iv5_cast_cast6_i" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="indvars_iv5_cast_cast6_i_fu_163_p1" coreId="0" contextFuncName="S2M_FormatLocalBuffer" bitwidth="32" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="shl_ln" lineNumber="52" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="shl_ln_fu_119_p3" coreId="0" contextFuncName="S2M_FormatLocalBuffer" bitwidth="11" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="52" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="zext_ln324" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="zext_ln324_fu_127_p1" coreId="0" contextFuncName="operator_assign" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="stream_elt_dma_buffer_V_addr" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="2751463552" contextFuncName="operator_assign" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>stream_elt_dma_buffer_V</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="stream_elt_dma_buffer_V_load" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_assign" bitwidth="8" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="or_ln324" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="or_ln324_fu_132_p2" coreId="2180175088" contextFuncName="operator_assign" bitwidth="11" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="zext_ln324_1" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="zext_ln324_1_fu_138_p1" coreId="2180175568" contextFuncName="operator_assign" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="stream_elt_dma_buffer_V_addr_1" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="2180055616" contextFuncName="operator_assign" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>stream_elt_dma_buffer_V</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="stream_elt_dma_buffer_V_load_1" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_assign" bitwidth="8" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="or_ln324_1" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="or_ln324_1_fu_143_p2" coreId="25" contextFuncName="operator_assign" bitwidth="11" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="zext_ln324_2" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="zext_ln324_2_fu_148_p1" coreId="2180183465" contextFuncName="operator_assign" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="stream_elt_dma_buffer_V_addr_2" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="2180181592" contextFuncName="operator_assign" bitwidth="11" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>stream_elt_dma_buffer_V</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="stream_elt_dma_buffer_V_load_2" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_assign" bitwidth="8" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="or_ln324_2" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="or_ln324_2_fu_153_p2" coreId="8" contextFuncName="operator_assign" bitwidth="11" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln324_3" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="zext_ln324_3_fu_158_p1" coreId="132" contextFuncName="operator_assign" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="stream_elt_dma_buffer_V_addr_3" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="49" contextFuncName="operator_assign" bitwidth="11" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>stream_elt_dma_buffer_V</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="stream_elt_dma_buffer_V_load_3" lineNumber="324" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_assign" bitwidth="8" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="324" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="p_Result_3_i" lineNumber="414" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="axi_elt_dma_buffer_V_d0" coreId="2180490160" contextFuncName="operator_assign_8_false" bitwidth="32" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator=&amp;lt;8, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="axi_elt_dma_buffer_V_addr" lineNumber="329" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="0" contextFuncName="operator_assign" bitwidth="9" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="329" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>axi_elt_dma_buffer_V</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="axi_elt_dma_buffer_V_addr_write_ln329" lineNumber="329" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_assign" opcode="store" nodeLabel="3.0" m_display="0" m_delay="3.25" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="329" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="operator="/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln47" lineNumber="47" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="2180345760" contextFuncName="S2M_FormatLocalBuffer" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="47" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="S2M_FormatLocalBuffer"/>
+        <controlInputObjs>block_12</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>52</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h">
+        <validLinenumbers>324</validLinenumbers>
+        <validLinenumbers>329</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+        <validLinenumbers>414</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="stream_elt_dma_buffer_V_addr_reg_198">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln47_reg_178">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_62_reg_187">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="stream_elt_dma_buffer_V_addr_1_reg_203">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="stream_elt_dma_buffer_V_load_reg_208">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="indvars_iv5_i_reg_92">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln47_reg_183">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="shl_ln_reg_192">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="stream_elt_dma_buffer_V_addr_2_reg_218">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="stream_elt_dma_buffer_V_addr_3_reg_223">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="stream_elt_dma_buffer_V_load_1_reg_213">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <expressionNodes realName="shl_ln_fu_119">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="stream_elt_dma_buffer_V_addr_3_gep_fu_71">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="axi_elt_dma_buffer_V_addr_gep_fu_79">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvars_iv5_i_phi_fu_96">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_3_i_fu_167">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_62_fu_115">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln47_fu_109">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln324_fu_127">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln47_fu_103">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln324_3_fu_158">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln324_2_fu_148">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln324_1_fu_143">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln324_2_fu_153">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln324_1_fu_138">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="stream_elt_dma_buffer_V_addr_1_gep_fu_55">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvars_iv5_cast_cast6_i_fu_163">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln324_fu_132">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="stream_elt_dma_buffer_V_addr_2_gep_fu_63">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="stream_elt_dma_buffer_V_addr_gep_fu_38">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <memoryPorts dataString="axi_elt_dma_buffer_V">
+    <nodeIds>35</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="stream_elt_dma_buffer_V">
+    <nodeIds>24</nodeIds>
+    <nodeIds>32</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="stream_elt_dma_buffer_V" portID="1">
+    <nodeIds>20</nodeIds>
+    <nodeIds>28</nodeIds>
+  </memoryPorts>
+  <ioPorts name="axi_elt_dma_buffer_V(p0)">
+    <contents name="store">
+      <nodeIds>35</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_elt_dma_buffer_V(p0)">
+    <contents name="load">
+      <nodeIds>24</nodeIds>
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_elt_dma_buffer_V(p1)">
+    <contents name="load">
+      <nodeIds>20</nodeIds>
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="2" latency="2"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="20" stage="1" latency="2"/>
+      <operations id="24" stage="1" latency="2"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="2" latency="2"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="2"/>
+      <operations id="32" stage="1" latency="2"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="S2M_FormatLocalBuffer" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1026" mMaxLatency="1026">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>6</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_47_1" mII="2" mDepth="3" mMinTripCount="512" mMaxTripCount="512" mMinLatency="1024" mMaxLatency="1024" mType="1">
+      <basicBlocks>12</basicBlocks>
+      <basicBlocks>37</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

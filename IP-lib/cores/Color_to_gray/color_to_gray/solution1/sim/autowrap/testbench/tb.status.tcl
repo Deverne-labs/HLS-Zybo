@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/./sim/autowrap/testbench/color_to_gray.cpp_pre.cpp.tb.cpp

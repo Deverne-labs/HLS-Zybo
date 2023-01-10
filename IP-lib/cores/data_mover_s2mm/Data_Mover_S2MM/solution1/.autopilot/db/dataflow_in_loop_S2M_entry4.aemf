@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1628838606458">
+  <ports id="1" name="image_w" type="PortType" coreId="11" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="invert_X" type="PortType" coreId="2751463552" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="ddr_buffer_out" type="PortType" coreId="2751463552" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0" type="PortType" coreId="0" bitwidth="31">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="image_h" type="PortType" coreId="0" bitwidth="21">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="invert_Y" type="PortType" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="image_w_out" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="invert_X_out" type="PortType" coreName="FIFO_SRL" coreId="49" bitwidth="1" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="9" name="ddr_buffer_out_out" type="PortType" coreName="FIFO_SRL" coreId="132" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="10" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out" type="PortType" coreName="FIFO_SRL" coreId="132" bitwidth="31" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="11" name="image_h_out" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="21" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="12" name="invert_Y_out" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="1" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="35" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="38" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="41" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="44" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="46" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="48" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@ports.6"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="55" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.7"/>
+  <edges id="56" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.8"/>
+  <edges id="59" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@ports.9"/>
+  <edges id="63" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@ports.10"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@ports.11"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.11"/>
+  <blocks id="32" name="dataflow_in_loop_S2M.entry4" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="invert_Y_read" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="1170080203" contextFuncName="DataMover_s2mm_32bits" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>invert_Y</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="image_h_read" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="1180731912" contextFuncName="DataMover_s2mm_32bits" bitwidth="21" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>image_h</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_read" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="1172862891" contextFuncName="DataMover_s2mm_32bits" bitwidth="31" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="ddr_buffer_out_read" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="4" contextFuncName="DataMover_s2mm_32bits" bitwidth="32" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>ddr_buffer_out</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="invert_X_read" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="2177483984" contextFuncName="DataMover_s2mm_32bits" bitwidth="1" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>invert_X</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="image_w_read" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="DataMover_s2mm_32bits" bitwidth="32" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>image_w</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="image_w_out_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>image_w_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="invert_X_out_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>invert_X_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="ddr_buffer_out_out_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>ddr_buffer_out_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="image_h_out_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>image_h_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="invert_Y_out_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>invert_Y_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="DataMover_s2mm_32bits" opcode="ret" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ioNodes realName="write_ln21_write_fu_130">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_w_read_read_fu_84">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_h_read_read_fu_60">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="invert_X_read_read_fu_78">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln21_write_fu_122">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln21_write_fu_90">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln21_write_fu_106">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ddr_buffer_out_read_read_fu_72">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln21_write_fu_98">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="invert_Y_read_read_fu_54">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_read_read_fu_66">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln21_write_fu_114">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioPorts name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out">
+    <contents name="write">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ddr_buffer_out">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ddr_buffer_out_out">
+    <contents name="write">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_h">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_h_out">
+    <contents name="write">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w_out">
+    <contents name="write">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="invert_X">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="invert_X_out">
+    <contents name="write">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="invert_Y">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="invert_Y_out">
+    <contents name="write">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dataflow_in_loop_S2M_entry4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>32</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

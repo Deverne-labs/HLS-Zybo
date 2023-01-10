@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 13 09:08:45 2021
+# Process ID: 6945
+# Current directory: /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/sim/vhdl
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/sim/vhdl/vivado.log
+# Journal file: /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/sim/vhdl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+# open_wave_database DataMoverUnit_s2mm_32bits.wdb
+open_wave_config /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/sim/vhdl/DataMoverUnit_s2mm_32bits.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 13 09:45:10 2021...

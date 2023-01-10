@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/generics_n_options.h"/>
+    <originFiles name="color_to_gray_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/color_to_gray_utils.h"/>
+    <originFiles name="color_to_gray.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/color_to_gray.h"/>
+    <originFiles name="color_to_gray.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/color_to_gray.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/tb.cpp"/>
+    <originFiles name="Pattern_in_red.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/Pattern_in_red.txt"/>
+    <originFiles name="Pattern_in_green.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/Pattern_in_green.txt"/>
+    <originFiles name="Pattern_in_blue.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/src/Pattern_in_blue.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

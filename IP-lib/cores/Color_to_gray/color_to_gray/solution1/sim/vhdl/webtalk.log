@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Aug 12 16:59:30 2021
+# Process ID: 32766
+# Current directory: /home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl
+# Command line: wbtcv -mode batch -source /home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/xsim.dir/ColorToGrayUnit/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/webtalk.log
+# Journal file: /home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/webtalk.jou
+#-----------------------------------------------------------
+source /home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/xsim.dir/ColorToGrayUnit/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug 12 16:59:31 2021...

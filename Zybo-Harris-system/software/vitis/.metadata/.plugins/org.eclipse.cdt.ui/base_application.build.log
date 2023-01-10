@@ -1,0 +1,7 @@
+12:20:51 **** Clean-only build of configuration Debug for project base_application ****
+make clean 
+rm -rf  ./src/video_capture/video_capture.o  ./src/timer_ps/timer_ps.o  ./src/intc/intc.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/isp_demo.o ./src/video_demo.o  ./src/video_capture/video_capture.d  ./src/timer_ps/timer_ps.d  ./src/intc/intc.d  ./src/dynclk/dynclk.d  ./src/display_ctrl/display_ctrl.d  ./src/isp_demo.d ./src/video_demo.d  base_application.elf.size  base_application.elf
+ 
+
+12:20:51 Build Finished (took 90ms)
+

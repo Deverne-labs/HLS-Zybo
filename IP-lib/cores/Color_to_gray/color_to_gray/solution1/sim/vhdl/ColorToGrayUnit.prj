@@ -1,0 +1,10 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv work "glbl.v"
+vhdl xil_defaultlib "ColorToGrayUnit.autotb.vhd"
+vhdl xil_defaultlib "ColorToGrayUnit_regslice_both.vhd"
+vhdl xil_defaultlib "ColorToGrayUnit.vhd"
+vhdl xil_defaultlib "ColorToGrayUnit_mul_32ns_32ns_64_2_1.vhd"
+vhdl xil_defaultlib "ColorToGrayUnit_am_addmul_9ns_8ns_12ns_21_4_1.vhd"
+vhdl xil_defaultlib "AESL_axi_s_stream_in.vhd"
+vhdl xil_defaultlib "AESL_axi_s_stream_out.vhd"
+

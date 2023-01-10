@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/src/generics_n_options.h"/>
+    <originFiles name="gradient_generator.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/src/gradient_generator.cpp"/>
+    <originFiles name="gradient_generator.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/src/gradient_generator.h"/>
+    <originFiles name="gradient_generator_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/src/gradient_generator_utils.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/src/tb.cpp"/>
+    <originFiles name="Test_pattern.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/src/Test_pattern.txt"/>
+    <originFiles name="Pattern_out.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/csim/build/Pattern_out.txt"/>
+    <originFiles name="Pattern_in.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/src/Pattern_in.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

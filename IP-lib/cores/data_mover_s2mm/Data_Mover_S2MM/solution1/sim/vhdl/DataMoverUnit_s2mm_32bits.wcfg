@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DataMoverUnit_s2mm_32bits.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_DataMoverUnit_s2mm_32bits_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group2">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group3">
+            <obj_property name="label">s2mm_line_buffer_size(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/s2mm_line_buffer_size">
+               <obj_property name="ElementShortName">s2mm_line_buffer_size[15:0]</obj_property>
+               <obj_property name="ObjectShortName">s2mm_line_buffer_size[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group5">
+            <obj_property name="label">MM_video_out(axi_master)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="group6">
+               <obj_property name="label">Read Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_RRESP">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_RRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_RRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_RUSER">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_RUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_RUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_RID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_RID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_RID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_RDATA">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_RDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARUSER">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARREGION">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARQOS">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARPROT">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARCACHE">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARLOCK">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARBURST">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARSIZE">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARLEN">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARADDR">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARADDR[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARADDR[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="group7">
+               <obj_property name="label">Write Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_BUSER">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_BUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_BUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_BID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_BID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_BID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_BRESP">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_BRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_BRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_WUSER">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_WUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_WUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_WID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_WID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_WID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_WSTRB">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_WSTRB[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_WDATA">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_WDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWUSER">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWREGION">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWQOS">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWPROT">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWCACHE">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWLOCK">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWBURST">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWSIZE">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWLEN">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWADDR">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWADDR[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWADDR[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="group8">
+               <obj_property name="label">Handshakes</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_BREADY">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_BREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_BREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_BVALID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_BVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_BVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_RLAST">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_RLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_RLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_RREADY">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_RREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_RREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_RVALID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_RVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_RVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARREADY">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_ARVALID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_ARVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_ARVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_WLAST">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_WLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_WLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_WREADY">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_WREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_WREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_WVALID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_WVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_WVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWREADY">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/m_axi_MM_video_out_AWVALID">
+                  <obj_property name="ElementShortName">m_axi_MM_video_out_AWVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_MM_video_out_AWVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group54">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group55">
+            <obj_property name="label">invert_Y(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/invert_Y">
+               <obj_property name="ElementShortName">invert_Y[0:0]</obj_property>
+               <obj_property name="ObjectShortName">invert_Y[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group57">
+            <obj_property name="label">invert_X(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/invert_X">
+               <obj_property name="ElementShortName">invert_X[0:0]</obj_property>
+               <obj_property name="ObjectShortName">invert_X[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group59">
+            <obj_property name="label">image_h(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/image_h">
+               <obj_property name="ElementShortName">image_h[31:0]</obj_property>
+               <obj_property name="ObjectShortName">image_h[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group61">
+            <obj_property name="label">image_w(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/image_w">
+               <obj_property name="ElementShortName">image_w[31:0]</obj_property>
+               <obj_property name="ObjectShortName">image_w[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group63">
+            <obj_property name="label">return(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/MM_video_out_offset">
+               <obj_property name="ElementShortName">MM_video_out_offset[31:0]</obj_property>
+               <obj_property name="ObjectShortName">MM_video_out_offset[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group65">
+            <obj_property name="label">STR_video_in(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/STR_video_in_TLAST">
+               <obj_property name="ElementShortName">STR_video_in_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">STR_video_in_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/STR_video_in_TUSER">
+               <obj_property name="ElementShortName">STR_video_in_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">STR_video_in_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/STR_video_in_TSTRB">
+               <obj_property name="ElementShortName">STR_video_in_TSTRB[0:0]</obj_property>
+               <obj_property name="ObjectShortName">STR_video_in_TSTRB[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/STR_video_in_TKEEP">
+               <obj_property name="ElementShortName">STR_video_in_TKEEP[0:0]</obj_property>
+               <obj_property name="ObjectShortName">STR_video_in_TKEEP[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/STR_video_in_TREADY">
+               <obj_property name="ElementShortName">STR_video_in_TREADY</obj_property>
+               <obj_property name="ObjectShortName">STR_video_in_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/STR_video_in_TVALID">
+               <obj_property name="ElementShortName">STR_video_in_TVALID</obj_property>
+               <obj_property name="ObjectShortName">STR_video_in_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/STR_video_in_TDATA">
+               <obj_property name="ElementShortName">STR_video_in_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">STR_video_in_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group73">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/ap_idle">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group78">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/ap_rst_n">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group80">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_s2mm_32bits_top/AESL_inst_DataMoverUnit_s2mm_32bits/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

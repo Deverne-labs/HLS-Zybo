@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="video_mixer_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/video_mixer_utils.h"/>
+    <originFiles name="video_mixer.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/video_mixer.h"/>
+    <originFiles name="video_mixer.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/video_mixer.cpp"/>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/generics_n_options.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Overlay.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/Overlay.txt"/>
+    <originFiles name="Pattern_in_blue.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/Pattern_in_blue.txt"/>
+    <originFiles name="Pattern_in_green.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/Pattern_in_green.txt"/>
+    <originFiles name="Pattern_in_red.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/Pattern_in_red.txt"/>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer/src/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,26 @@
+
+
+================================================================
+== Synthesis Summary Report of 'CornerResponseUnit'
+================================================================
++ General Information: 
+    * Date:           Wed Aug 11 14:06:09 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        Corner_response
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------+------+-------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |               Modules               | Issue|       | Latency | Latency| Iteration|         | Trip |          |      |        |           |           |     |
+    |               & Loops               | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |    LUT    | URAM|
+    +-------------------------------------+------+-------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |+ CornerResponseUnit                 |     -|  -0.00|        -|       -|         -|        -|     -|        no|     -|  5 (2%)|  1763 (1%)|  2476 (4%)|    -|
+    | + grp_CornerResponse_fu_80          |     -|  -0.00|        -|       -|         -|        -|     -|        no|     -|  5 (2%)|  1758 (1%)|  2422 (4%)|    -|
+    |  o VITIS_LOOP_71_1_VITIS_LOOP_72_2  |     -|  -7.30|        -|       -|        79|        1|     -|       yes|     -|       -|          -|          -|    -|
+    +-------------------------------------+------+-------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+

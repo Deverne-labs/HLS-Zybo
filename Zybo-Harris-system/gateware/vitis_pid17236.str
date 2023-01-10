@@ -1,0 +1,156 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 17236
+License: Customer
+
+Current time: 	Fri Aug 13 09:28:27 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 5.4.0-77-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 3
+Available disk space: 162 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vivado/2020.2/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	lbo
+User home directory: /home/lbo
+User working directory: /home/lbo/Projects/esiee/hardware/BSD
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/lbo/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/lbo/Projects/esiee/software/vitis
+Vitis workspace log file location: /home/lbo/Projects/esiee/software/vitis/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("zybo_z1_7020", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("zybo_z1_7020", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Configuration for project zybo_z1_7020", "zybo_z1_7020", "WorkbenchWindow", "ToolItem.BUILD_CONFIGURATION");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("isp_demo.h", "base_application_system > base_application > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("video_demo.c", "base_application_system > base_application > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("xparameters.h", "zybo_z1_7020/export/zybo_z1_7020/sw/zybo_z1_7020/st", "CEditor", "CTabItem.XPARAMETERS_H");
+activateView("video_demo.c", "base_application/src/video_demo.c", "CEditor", "CTabItem.VIDEO_DEMO_C");
+activateView("isp_demo.c", "base_application/src/isp_demo.c", "CEditor", "CTabItem.ISP_DEMO_C");
+selectTreeTable("isp_demo.h", "base_application_system > base_application > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("isp_demo.c", "base_application_system > base_application > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("video_demo.c", "base_application/src/video_demo.c", "CEditor", "CTabItem.VIDEO_DEMO_C");
+selectTreeTable("Release", "base_application_system > base_application", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Release", "base_application_system > base_application", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "base_application_system > base_application", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Resume", "base_application", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("zybo_z1_7020", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("zybo_z1_7020", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Configuration for project zybo_z1_7020", "zybo_z1_7020", "WorkbenchWindow", "ToolItem.BUILD_CONFIGURATION");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectToolBarButton("Debug", "base_application_system", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application_system", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Resume", "base_application_system", "WorkbenchWindow", "ToolItem.RESUME");
+activateView("isp_demo.c", "base_application/src/isp_demo.c", "CEditor", "CTabItem.ISP_DEMO_C");
+activateView("video_demo.c", "base_application/src/video_demo.c", "CEditor", "CTabItem.VIDEO_DEMO_C");
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("isp_demo.c", "base_application/src/isp_demo.c", "CEditor", "CTabItem.ISP_DEMO_C");
+activateView("video_demo.c", "base_application/src/video_demo.c", "CEditor", "CTabItem.VIDEO_DEMO_C");
+selectProblemsView("Warnings", "ConsoleView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectToolBarButton("Resume", "base_application_system", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectToolBarButton("Resume", "base_application_system", "WorkbenchWindow", "ToolItem.RESUME");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Release", "base_application_system > base_application", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("Release", "base_application_system > base_application", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("Debug Configurations", "base_application_system", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectToolBarButton("Resume", "base_application", "WorkbenchWindow", "ToolItem.RESUME");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 8/13/21, 10:11:43 AM CEST
+// Elapsed time: 00:43:16
+

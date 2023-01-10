@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_S2M_entry4'
+================================================================
+* Date:           Fri Aug 13 09:10:06 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Data_Mover_S2MM
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.634 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     72|    -|
+|Register         |        -|    -|       3|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       3|     74|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                                               Name                                                              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out_blk_n  |   9|          2|    1|          2|
+    |ap_done                                                                                                                          |   9|          2|    1|          2|
+    |ddr_buffer_out_out_blk_n                                                                                                         |   9|          2|    1|          2|
+    |image_h_out_blk_n                                                                                                                |   9|          2|    1|          2|
+    |image_w_out_blk_n                                                                                                                |   9|          2|    1|          2|
+    |invert_X_out_blk_n                                                                                                               |   9|          2|    1|          2|
+    |invert_Y_out_blk_n                                                                                                               |   9|          2|    1|          2|
+    |real_start                                                                                                                       |   9|          2|    1|          2|
+    +---------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                                                                            |  72|         16|    8|         16|
+    +---------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------------------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------------------------------------------------+--------------+
+|                                                             RTL Ports                                                            | Dir | Bits|  Protocol  |                                                       Source Object                                                       |    C Type    |
++----------------------------------------------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                                                            |   in|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|ap_rst                                                                                                                            |   in|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|ap_start                                                                                                                          |   in|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|start_full_n                                                                                                                      |   in|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|ap_done                                                                                                                           |  out|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|ap_continue                                                                                                                       |   in|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|ap_idle                                                                                                                           |  out|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|ap_ready                                                                                                                          |  out|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|start_out                                                                                                                         |  out|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|start_write                                                                                                                       |  out|    1|  ap_ctrl_hs|                                                                                                dataflow_in_loop_S2M.entry4|  return value|
+|image_w                                                                                                                           |   in|   32|     ap_none|                                                                                                                    image_w|        scalar|
+|invert_X                                                                                                                          |   in|    1|     ap_none|                                                                                                                   invert_X|        scalar|
+|ddr_buffer_out                                                                                                                    |   in|   32|     ap_none|                                                                                                             ddr_buffer_out|        scalar|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0             |   in|   31|     ap_none|      DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0|        scalar|
+|image_h                                                                                                                           |   in|   21|     ap_none|                                                                                                                    image_h|        scalar|
+|invert_Y                                                                                                                          |   in|    1|     ap_none|                                                                                                                   invert_Y|        scalar|
+|image_w_out_din                                                                                                                   |  out|   32|     ap_fifo|                                                                                                                image_w_out|       pointer|
+|image_w_out_full_n                                                                                                                |   in|    1|     ap_fifo|                                                                                                                image_w_out|       pointer|
+|image_w_out_write                                                                                                                 |  out|    1|     ap_fifo|                                                                                                                image_w_out|       pointer|
+|invert_X_out_din                                                                                                                  |  out|    1|     ap_fifo|                                                                                                               invert_X_out|       pointer|
+|invert_X_out_full_n                                                                                                               |   in|    1|     ap_fifo|                                                                                                               invert_X_out|       pointer|
+|invert_X_out_write                                                                                                                |  out|    1|     ap_fifo|                                                                                                               invert_X_out|       pointer|
+|ddr_buffer_out_out_din                                                                                                            |  out|   32|     ap_fifo|                                                                                                         ddr_buffer_out_out|       pointer|
+|ddr_buffer_out_out_full_n                                                                                                         |   in|    1|     ap_fifo|                                                                                                         ddr_buffer_out_out|       pointer|
+|ddr_buffer_out_out_write                                                                                                          |  out|    1|     ap_fifo|                                                                                                         ddr_buffer_out_out|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out_din     |  out|   31|     ap_fifo|  DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out_full_n  |   in|    1|     ap_fifo|  DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out_write   |  out|    1|     ap_fifo|  DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_out|       pointer|
+|image_h_out_din                                                                                                                   |  out|   21|     ap_fifo|                                                                                                                image_h_out|       pointer|
+|image_h_out_full_n                                                                                                                |   in|    1|     ap_fifo|                                                                                                                image_h_out|       pointer|
+|image_h_out_write                                                                                                                 |  out|    1|     ap_fifo|                                                                                                                image_h_out|       pointer|
+|invert_Y_out_din                                                                                                                  |  out|    1|     ap_fifo|                                                                                                               invert_Y_out|       pointer|
+|invert_Y_out_full_n                                                                                                               |   in|    1|     ap_fifo|                                                                                                               invert_Y_out|       pointer|
+|invert_Y_out_write                                                                                                                |  out|    1|     ap_fifo|                                                                                                               invert_Y_out|       pointer|
++----------------------------------------------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------------------------------------------------+--------------+
+

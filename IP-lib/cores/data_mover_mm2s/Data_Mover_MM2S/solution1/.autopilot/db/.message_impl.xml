@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO DataMoverUnit_mm2s_32bits_dataflow_in_loop_M2S_axi_elt_dma_buffer_V_memcore using a single memory for all blocks" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO DataMoverUnit_mm2s_32bits_dataflow_in_loop_M2S_stream_elt_dma_buffer_V_memcore using a separate memory for each block" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO DataMoverUnit_mm2s_32bits_dataflow_in_loop_M2S_axi_elt_dma_buffer_V_memcore using a single memory for all blocks" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO DataMoverUnit_mm2s_32bits_dataflow_in_loop_M2S_stream_elt_dma_buffer_V_memcore using a separate memory for each block" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-802]" key="HLS 200-802" tag="" content="Generated output file Data_Mover_MM2S/solution1/impl/export.zip" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command export_design CPU user time: 12.04 seconds. CPU system time: 1.18 seconds. Elapsed time: 16.61 seconds; current allocated memory: 204.872 MB." resolution=""/>
+</Messages>

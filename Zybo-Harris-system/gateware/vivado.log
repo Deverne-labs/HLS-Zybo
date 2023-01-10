@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan 10 11:04:04 2023
+# Process ID: 4938
+# Current directory: /home/lbo/Projects/DVR-003-001/V1.0/HW/BSD
+# Command line: vivado Zybo-Z7-20-HDMI.xpr
+# Log file: /home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/vivado.log
+# Journal file: /home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Zybo-Z7-20-HDMI.xpr
+INFO: [Project 1-313] Project file moved from '/home/lbo/Projects/esiee/hardware/BSD' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/Zybo-Z7-20-HDMI.ipdefs/repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lbo/Projects/DVR-003-001/V1.0/HW/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 7280.293 ; gain = 105.125 ; free physical = 14053 ; free virtual = 22492
+open_bd_design {/home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_GP0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'M_AXI_GP0_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'M_AXI_GP0_aximm_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HP0_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HP0_aximm_rd_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_HP0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_133M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_video
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_GP1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- digilentinc.com:ip:dvi2rgb:2.0 - dvi2rgb_1
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_in
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_in
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_out
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding component instance block -- Deverene:DVR-002:GradientGenUnit:1.0 - GradientGenUnit_0
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_0
+Adding component instance block -- Deverne:DVR-002:GradConvolutionUnit:1.0 - GradConvGenerator_A
+Adding component instance block -- Deverne:DVR-002:GradConvolutionUnit:1.0 - GradConvGenerator_B
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_1
+Adding component instance block -- Deverne:DVR-002:GradConvolutionUnit:1.0 - GradConvGenerator_C
+Adding component instance block -- Deverne:DVR-002:GaussianUnit:1.0 - GaussianUnit_0
+Adding component instance block -- Deverne:DVR-002:GaussianUnit:1.0 - GaussianUnit_1
+Adding component instance block -- Deverne:DVR-002:GaussianUnit:1.0 - GaussianUnit_2
+Adding component instance block -- Deverne:DVR-002:CornerResponseUnit:1.0 - CornerResponseUnit_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_dim_register
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_param_register
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_control_register
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- Deverne:DVR-002:ColorToGrayUnit:1.0 - ColorToGrayUnit_0
+Adding component instance block -- Boutigny_L:PH920:DataMoverUnit_s2mm_32bits:1.0 - DataMoverUnit_s2mm_3_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_BAR_register
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - GND
+Adding component instance block -- Deverne:DVR-002:NonMaximalSuppresionUnit:1.0 - NonMaximalSuppresion_0
+Adding component instance block -- Deverne:DVR-002:DataMoverUnit_mm2s_32bits:1.0 - DataMoverUnit_mm2s_3_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_out
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_control_register
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_dim_register
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_BAR_register
+Adding component instance block -- Deverne:DVR-002:VideoMixerUnit:1.0 - VideoMixerUnit_0
+Successfully read diagram <design_1> from block design file </home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 7772.129 ; gain = 466.820 ; free physical = 13758 ; free virtual = 22300
+update_compile_order -fileset sources_1

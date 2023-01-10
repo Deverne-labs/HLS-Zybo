@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1632843174550">
+  <ports id="1" name="video_stream_in_V_data_V" type="PortType" originalName="video_stream_in" coreId="49" bitwidth="24">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="video_stream_in_V_keep_V" type="PortType" originalName="video_stream_in" coreId="49" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="video_stream_in_V_strb_V" type="PortType" originalName="video_stream_in" coreId="49" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="video_stream_in_V_user_V" type="PortType" originalName="video_stream_in" coreId="913" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="video_stream_in_V_last_V" type="PortType" originalName="video_stream_in" coreId="132" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="overlay_stream_in_V_data_V" type="PortType" originalName="overlay_stream_in" coreId="0" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="overlay_stream_in_V_keep_V" type="PortType" originalName="overlay_stream_in" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="overlay_stream_in_V_strb_V" type="PortType" originalName="overlay_stream_in" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="overlay_stream_in_V_user_V" type="PortType" originalName="overlay_stream_in" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="10" name="overlay_stream_in_V_last_V" type="PortType" originalName="overlay_stream_in" coreId="1463200680" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="video_stream_out_V_data_V" type="PortType" originalName="video_stream_out" coreId="1463125848" bitwidth="24" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="12" name="video_stream_out_V_keep_V" type="PortType" originalName="video_stream_out" coreId="1463124976" bitwidth="3" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="13" name="video_stream_out_V_strb_V" type="PortType" originalName="video_stream_out" coreId="3019899008" bitwidth="3" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="14" name="video_stream_out_V_user_V" type="PortType" originalName="video_stream_out" coreId="3019899008" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="15" name="video_stream_out_V_last_V" type="PortType" originalName="video_stream_out" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="16" name="image_h" type="PortType" originalName="__Val2__" coreId="1463123144" bitwidth="12">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="17" name="image_w" type="PortType" originalName="__Val2__" coreId="1463122272" bitwidth="12">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="86" source_obj="//@ports.16" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="88" source_obj="//@ports.15" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="100" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="103" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="105" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="108" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="110" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="116" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="117" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="119" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="122" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="123" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="124" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="139" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="140" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="141" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="142" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="143" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="149" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="150" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="151" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="152" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="153" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="156" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="157" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="167" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="168" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="174" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="184" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="185" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="186" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="188" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="195" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="199" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="206" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@ports.10"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@ports.11"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@ports.12"/>
+  <edges id="209" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@ports.13"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@ports.14"/>
+  <edges id="211" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="215" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="216" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="217" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="219" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="308" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="309" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6"/>
+  <edges id="310" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="311" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.5"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="316" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="317" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <blocks id="27" name=".lr.ph8" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_32</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="image_w_read" coreId="106" bitwidth="12" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>image_w</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="image_h_read" coreId="4294967295" bitwidth="12" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>image_h</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="p_Result_s" lineNumber="708" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_s_fu_165_p4" coreId="52" contextFuncName="to_uint64" bitwidth="11" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="708" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="to_uint64"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="zext_ln708" lineNumber="708" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="zext_ln708_fu_175_p1" coreId="106" contextFuncName="to_uint64" bitwidth="12" opcode="zext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="708" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="to_uint64"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="cmp_i3" rtlName="cmp_i3_fu_179_p2" opType="icmp" coreId="16843009" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.99" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln25" lineNumber="25" fileName="src/video_mixer.cpp" fileDirectory=".." coreId="1852994932" contextFuncName="VideoMixer" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="25" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+      <controlInputObjs>block_32</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+      <validLinenumbers>708</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="src/video_mixer.cpp">
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="32" name="block_32" type="BlockType">
+    <controlInputObjs>.lr.ph8</controlInputObjs>
+    <controlInputObjs>._crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge9.loopexit</controlOutputObjs>
+    <controlOutputObjs>.split5</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="i_V" originalName="i.V" coreId="106" bitwidth="12" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>.lr.ph8</controlInputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="i_V_1" lineNumber="691" originalName="i.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="i_V_1_fu_185_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_add_assign_1_false" bitwidth="12" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.54" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="691" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="icmp_ln25" lineNumber="25" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="icmp_ln25_fu_191_p2" opType="icmp" coreId="0" contextFuncName="VideoMixer" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.99" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="25" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln25" lineNumber="25" fileName="src/video_mixer.cpp" fileDirectory=".." coreId="0" contextFuncName="VideoMixer" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="25" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split5</controlInputObjs>
+      <controlInputObjs>._crit_edge9.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+      <validLinenumbers>691</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="src/video_mixer.cpp">
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="35" name=".split5" type="BlockType">
+    <controlInputObjs>block_32</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <controlOutputObjs>.lr.ph</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln26" lineNumber="26" fileName="src/video_mixer.cpp" fileDirectory=".." coreId="132" contextFuncName="VideoMixer" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="26" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.lr.ph</controlInputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/video_mixer.cpp">
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="41" name=".lr.ph" type="BlockType">
+    <controlInputObjs>.split5</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_46</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="cmp_i_i101" lineNumber="691" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="cmp_i_i101_fu_196_p2" opType="icmp" coreId="544108393" contextFuncName="operator_add_assign_1_false" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.99" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="691" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="p_Result_1" lineNumber="357" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_1_fu_201_p4" coreId="1819619360" contextFuncName="operator_ap_int_base" bitwidth="11" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="357" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator ap_int_base"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="zext_ln357" lineNumber="357" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="zext_ln357_fu_210_p1" coreId="4294967295" contextFuncName="operator_ap_int_base" bitwidth="12" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="357" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator ap_int_base"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="cmp_i_i65" lineNumber="691" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="cmp_i_i65_fu_214_p2" opType="icmp" coreId="1463087184" contextFuncName="operator_add_assign_1_false" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.99" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="691" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln26" lineNumber="26" fileName="src/video_mixer.cpp" fileDirectory=".." coreId="1463088840" contextFuncName="VideoMixer" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="26" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+      <controlInputObjs>block_46</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+      <validLinenumbers>691</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+      <validLinenumbers>357</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="src/video_mixer.cpp">
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="79" name="._crit_edge.loopexit" type="BlockType">
+    <controlInputObjs>block_46</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="br_ln0" coreId="1932009511" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="81" name="._crit_edge" type="BlockType">
+    <controlInputObjs>.split5</controlInputObjs>
+    <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_32</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="br_ln0" coreId="1397508187" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_32</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="83" name="._crit_edge9.loopexit" type="BlockType">
+    <controlInputObjs>block_32</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="_ln49" lineNumber="49" fileName="src/video_mixer.cpp" fileDirectory=".." coreId="0" contextFuncName="VideoMixer" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="49" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/video_mixer.cpp">
+      <validLinenumbers>49</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="294" pipe_depth="2" RegionName="VITIS_LOOP_26_2">
+    <basic_blocks id="46" name="block_46" type="BlockType">
+      <controlInputObjs>.lr.ph</controlInputObjs>
+      <controlInputObjs>.split_ifconv</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
+      <controlOutputObjs>.split_ifconv</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="j_V" originalName="j.V" coreId="3019899008" bitwidth="12" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.lr.ph</controlInputObjs>
+        <controlInputObjs>.split_ifconv</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="j_V_1" lineNumber="691" originalName="j.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="j_V_1_fu_219_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_add_assign_1_false" bitwidth="12" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.54" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="691" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="icmp_ln26" lineNumber="26" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="icmp_ln26_fu_225_p2" opType="icmp" coreId="1697" contextFuncName="VideoMixer" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.99" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="26" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="br_ln26" lineNumber="26" fileName="src/video_mixer.cpp" fileDirectory=".." coreId="1949247520" contextFuncName="VideoMixer" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="26" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split_ifconv</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>691</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="src/video_mixer.cpp">
+        <validLinenumbers>26</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="77" name=".split_ifconv" type="BlockType">
+      <controlInputObjs>block_46</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_46</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="empty" lineNumber="283" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="read"/>
+        <dataInputObjs>video_stream_in_V_data_V</dataInputObjs>
+        <dataInputObjs>video_stream_in_V_keep_V</dataInputObjs>
+        <dataInputObjs>video_stream_in_V_strb_V</dataInputObjs>
+        <dataInputObjs>video_stream_in_V_user_V</dataInputObjs>
+        <dataInputObjs>video_stream_in_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="input_video_element_data_V" lineNumber="283" originalName="input_video_element.data.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreId="1279810338" contextFuncName="read" bitwidth="24" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="tmp_i_i117_user" lineNumber="283" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreId="3019899008" contextFuncName="read" bitwidth="1" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="tmp_i_i117_last" lineNumber="283" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreId="1931491385" contextFuncName="read" bitwidth="1" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="empty_19" lineNumber="283" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="12" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="read"/>
+        <dataInputObjs>overlay_stream_in_V_data_V</dataInputObjs>
+        <dataInputObjs>overlay_stream_in_V_keep_V</dataInputObjs>
+        <dataInputObjs>overlay_stream_in_V_strb_V</dataInputObjs>
+        <dataInputObjs>overlay_stream_in_V_user_V</dataInputObjs>
+        <dataInputObjs>overlay_stream_in_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="input_overlay_element_data_V" lineNumber="283" originalName="input_overlay_element.data.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreId="1463104969" contextFuncName="read" bitwidth="8" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="icmp_ln886" lineNumber="886" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln886_fu_246_p2" opType="icmp" coreId="49" contextFuncName="operator_gt_12_false" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.99" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="886" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator&amp;gt;&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="and_ln31" lineNumber="31" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="and_ln31_fu_251_p2" opType="and" coreId="1463108184" contextFuncName="VideoMixer" bitwidth="1" opcode="and" nodeLabel="2.0" m_display="0" m_delay="0.97" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="31" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="icmp_ln870" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln870_fu_256_p2" opType="icmp" coreId="0" contextFuncName="operator_eq_32_true" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.55" m_topoIndex="29" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator==&amp;lt;32, true&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="output_video_element_data_V" lineNumber="33" originalName="output_video_element.data.V" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="output_video_element_data_V_fu_272_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="VideoMixer" bitwidth="24" opcode="select" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="33" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="icmp_ln870_1" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln870_1_fu_262_p2" opType="icmp" coreId="0" contextFuncName="operator_eq_12_false" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.99" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator==&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="and_ln39" lineNumber="39" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="and_ln39_fu_278_p2" opType="and" coreId="132" contextFuncName="VideoMixer" bitwidth="1" opcode="and" nodeLabel="3.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="39" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="select_ln31" lineNumber="31" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="select_ln31_fu_282_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="VideoMixer" bitwidth="24" opcode="select" nodeLabel="3.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="31" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="or_ln39" lineNumber="39" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="or_ln39_fu_289_p2" opType="or" coreId="1463111960" contextFuncName="VideoMixer" bitwidth="1" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="39" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="or_ln39_1" lineNumber="39" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="or_ln39_1_fu_294_p2" opType="or" coreId="1463114696" contextFuncName="VideoMixer" bitwidth="1" opcode="or" nodeLabel="3.0" m_display="0" m_delay="0.97" m_topoIndex="36" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="39" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="select_ln39" lineNumber="39" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="select_ln39_fu_299_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="VideoMixer" bitwidth="24" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.69" m_topoIndex="37" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="39" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="xor_ln37" lineNumber="37" fileName="src/video_mixer.cpp" fileDirectory=".." rtlName="xor_ln37_fu_306_p2" opType="xor" coreId="1047749991" contextFuncName="VideoMixer" bitwidth="1" opcode="xor" nodeLabel="3.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="src/video_mixer.cpp" linenumber="37" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="VideoMixer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="icmp_ln870_2" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln870_2_fu_267_p2" opType="icmp" coreId="1935632760" contextFuncName="operator_eq_12_false" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.99" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator==&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="and_ln870" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="and_ln870_fu_311_p2" opType="and" coreId="1701079414" contextFuncName="operator_eq_12_false" bitwidth="1" opcode="and" nodeLabel="3.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator==&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="and_ln870_1" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="and_ln870_1_fu_316_p2" opType="and" coreId="1601200443" contextFuncName="operator_eq_12_false" bitwidth="1" opcode="and" nodeLabel="3.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator==&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="and_ln870_2" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="and_ln870_2_fu_320_p2" opType="and" coreId="808591443" contextFuncName="operator_eq_12_false" bitwidth="1" opcode="and" nodeLabel="3.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator==&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="select_ln870" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="select_ln870_fu_326_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="operator_eq_12_false" bitwidth="24" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.97" m_topoIndex="42" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator==&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="or_ln886" lineNumber="886" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="or_ln886_fu_333_p2" opType="or" coreId="757935405" contextFuncName="operator_gt_12_false" bitwidth="1" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="886" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator&amp;gt;&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="xor_ln886" lineNumber="886" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="xor_ln886_fu_337_p2" opType="xor" coreId="980642920" contextFuncName="operator_gt_12_false" bitwidth="1" opcode="xor" nodeLabel="3.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="886" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator&amp;gt;&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="and_ln886" lineNumber="886" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="and_ln886_fu_343_p2" opType="and" coreId="796159852" contextFuncName="operator_gt_12_false" bitwidth="1" opcode="and" nodeLabel="3.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="886" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator&amp;gt;&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="output_video_element_data_V_1" lineNumber="886" originalName="output_video_element.data.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="video_stream_out_TDATA" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="operator_gt_12_false" bitwidth="24" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.97" m_topoIndex="46" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="886" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="operator&amp;gt;&amp;lt;12, false&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="video_stream_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/video_mixer" functionName="write"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>video_stream_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>video_stream_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>video_stream_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>video_stream_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>video_stream_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln0" coreId="1936617321" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_46</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h">
+        <validLinenumbers>283</validLinenumbers>
+        <validLinenumbers>304</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>886</validLinenumbers>
+        <validLinenumbers>870</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="src/video_mixer.cpp">
+        <validLinenumbers>31</validLinenumbers>
+        <validLinenumbers>33</validLinenumbers>
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>37</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="icmp_ln870_2_reg_457">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln357_reg_394">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln25_reg_382">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="i_V_1_reg_377">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="image_w_read_reg_356">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp_i3_reg_373">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp_i_i101_reg_386">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln886_reg_435">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="j_V_1_reg_408">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_i_i117_user_reg_425">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="and_ln31_reg_441">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln708_reg_367">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln870_1_reg_452">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln870_reg_447">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="j_V_reg_154">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="i_V_reg_143">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_i_i117_last_reg_430">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln26_reg_413">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp_i_i65_reg_401">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="image_h_read_reg_362">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="input_video_element_data_V_reg_417">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <expressionNodes realName="and_ln870_2_fu_320">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln26_fu_225">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_V_1_fu_219">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln39_fu_278">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln39_fu_289">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln886_fu_333">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_video_element_data_V_fu_272">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp_i_i101_fu_196">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_165">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln870_fu_326">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln708_fu_175">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln357_fu_210">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_V_phi_fu_158">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i117_last_fu_238">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln870_2_fu_267">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="input_overlay_element_data_V_fu_242">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln31_fu_251">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln31_fu_282">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln870_fu_256">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln870_fu_311">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln870_1_fu_262">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln39_1_fu_294">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_video_element_data_V_1_fu_348">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_1_fu_201">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln870_1_fu_316">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_V_1_fu_185">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln25_fu_191">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln37_fu_306">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln886_fu_246">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp_i_i65_fu_214">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln39_fu_299">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_V_phi_fu_147">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln886_fu_337">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="input_video_element_data_V_fu_230">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp_i3_fu_179">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i117_user_fu_234">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln886_fu_343">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="empty_19_read_fu_108">
+    <nodeIds>53</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_h_read_read_fu_88">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln304_write_fu_122">
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_94">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_w_read_read_fu_82">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioPorts name="image_h">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="overlay_stream_in_V_data_V">
+    <contents name="read">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="overlay_stream_in_V_keep_V">
+    <contents name="read">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="overlay_stream_in_V_last_V">
+    <contents name="read">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="overlay_stream_in_V_strb_V">
+    <contents name="read">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="overlay_stream_in_V_user_V">
+    <contents name="read">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_in_V_data_V">
+    <contents name="read">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_in_V_keep_V">
+    <contents name="read">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_in_V_last_V">
+    <contents name="read">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_in_V_strb_V">
+    <contents name="read">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_in_V_user_V">
+    <contents name="read">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_out_V_data_V">
+    <contents name="write">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_out_V_keep_V">
+    <contents name="write">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_out_V_last_V">
+    <contents name="write">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_out_V_strb_V">
+    <contents name="write">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_stream_out_V_user_V">
+    <contents name="write">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="82" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="VideoMixer" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>27</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_25_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>41</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_26_2" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>46</basicBlocks>
+      <basicBlocks>77</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>79</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>81</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>83</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

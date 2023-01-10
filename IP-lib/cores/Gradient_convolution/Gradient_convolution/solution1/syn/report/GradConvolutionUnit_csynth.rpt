@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vitis HLS Report for 'GradConvolutionUnit'
+================================================================
+* Date:           Wed Aug 11 13:56:39 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Gradient_convolution
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+-----------------+---------+---------+----------+----------+-----+-----+---------+
+        |                           |                 |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |          Instance         |      Module     |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------+-----------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_GradConvolution_fu_70  |GradConvolution  |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        +---------------------------+-----------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    0|     347|    566|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     43|    -|
+|Register         |        -|    -|       5|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     352|    611|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-----------------+---------+----+-----+-----+-----+
+    |          Instance         |      Module     | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------------------+-----------------+---------+----+-----+-----+-----+
+    |grp_GradConvolution_fu_70  |GradConvolution  |        0|   0|  347|  566|    0|
+    +---------------------------+-----------------+---------+----+-----+-----+-----+
+    |Total                      |                 |        0|   0|  347|  566|    0|
+    +---------------------------+-----------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |                Variable Name                | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_GradConvolution_fu_70_stream_out_TREADY  |       and|   0|  0|   2|           1|           1|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                        |          |   0|  0|   2|           1|           1|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                        |  25|          5|    1|          5|
+    |stream_in_1_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_2_TREADY_int_regslice  |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            |  43|          9|    3|          9|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+---+----+-----+-----------+
+    |                  Name                  | FF| LUT| Bits| Const Bits|
+    +----------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                               |  4|   0|    4|          0|
+    |grp_GradConvolution_fu_70_ap_start_reg  |  1|   0|    1|          0|
+    +----------------------------------------+---+----+-----+-----------+
+    |Total                                   |  5|   0|    5|          0|
+    +----------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+----------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++--------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|   GradConvolutionUnit|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_hs|   GradConvolutionUnit|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|   GradConvolutionUnit|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|   GradConvolutionUnit|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|   GradConvolutionUnit|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|   GradConvolutionUnit|  return value|
+|stream_in_1_TDATA   |   in|    8|        axis|  stream_in_1_V_data_V|       pointer|
+|stream_in_1_TVALID  |   in|    1|        axis|  stream_in_1_V_last_V|       pointer|
+|stream_in_1_TREADY  |  out|    1|        axis|  stream_in_1_V_last_V|       pointer|
+|stream_in_1_TLAST   |   in|    1|        axis|  stream_in_1_V_last_V|       pointer|
+|stream_in_1_TKEEP   |   in|    1|        axis|  stream_in_1_V_keep_V|       pointer|
+|stream_in_1_TSTRB   |   in|    1|        axis|  stream_in_1_V_strb_V|       pointer|
+|stream_in_1_TUSER   |   in|    1|        axis|  stream_in_1_V_user_V|       pointer|
+|stream_in_2_TDATA   |   in|    8|        axis|  stream_in_2_V_data_V|       pointer|
+|stream_in_2_TVALID  |   in|    1|        axis|  stream_in_2_V_last_V|       pointer|
+|stream_in_2_TREADY  |  out|    1|        axis|  stream_in_2_V_last_V|       pointer|
+|stream_in_2_TLAST   |   in|    1|        axis|  stream_in_2_V_last_V|       pointer|
+|stream_in_2_TKEEP   |   in|    1|        axis|  stream_in_2_V_keep_V|       pointer|
+|stream_in_2_TSTRB   |   in|    1|        axis|  stream_in_2_V_strb_V|       pointer|
+|stream_in_2_TUSER   |   in|    1|        axis|  stream_in_2_V_user_V|       pointer|
+|stream_out_TDATA    |  out|   16|        axis|   stream_out_V_data_V|       pointer|
+|stream_out_TVALID   |  out|    1|        axis|   stream_out_V_last_V|       pointer|
+|stream_out_TREADY   |   in|    1|        axis|   stream_out_V_last_V|       pointer|
+|stream_out_TLAST    |  out|    1|        axis|   stream_out_V_last_V|       pointer|
+|stream_out_TKEEP    |  out|    2|        axis|   stream_out_V_keep_V|       pointer|
+|stream_out_TSTRB    |  out|    2|        axis|   stream_out_V_strb_V|       pointer|
+|stream_out_TUSER    |  out|    1|        axis|   stream_out_V_user_V|       pointer|
+|image_w             |   in|   32|   ap_stable|               image_w|        scalar|
+|image_h             |   in|   32|   ap_stable|               image_h|        scalar|
++--------------------+-----+-----+------------+----------------------+--------------+
+

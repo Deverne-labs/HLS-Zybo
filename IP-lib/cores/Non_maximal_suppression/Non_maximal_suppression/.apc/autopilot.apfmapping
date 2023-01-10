@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="non_maximal_suppresion_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/src/non_maximal_suppresion_utils.h"/>
+    <originFiles name="non_maximal_suppresion.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/src/non_maximal_suppresion.h"/>
+    <originFiles name="non_maximal_suppresion.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/src/non_maximal_suppresion.cpp"/>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/src/generics_n_options.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/src/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

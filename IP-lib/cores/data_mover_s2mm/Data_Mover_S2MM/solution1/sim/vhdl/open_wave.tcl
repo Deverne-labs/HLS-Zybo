@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database DataMoverUnit_s2mm_32bits.wdb

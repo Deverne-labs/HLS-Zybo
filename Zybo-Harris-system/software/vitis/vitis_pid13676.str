@@ -1,0 +1,108 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 13676
+License: Customer
+
+Current time: 	Tue Jan 10 12:18:50 CET 2023
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 5.4.0-125-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x967
+Available screens: 1
+Available disk space: 46 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	lbo
+User home directory: /home/lbo
+User working directory: /home/lbo/Projects/DVR-003-001/HLS-Zybo/Zybo-Harris-system/software/vitis
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/lbo/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/lbo/Projects/DVR-003-001/HLS-Zybo/Zybo-Harris-system/software/vitis
+Vitis workspace log file location: /home/lbo/Projects/DVR-003-001/HLS-Zybo/Zybo-Harris-system/software/vitis/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("Release", "base_application_system > base_application", "video_demo.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "base_application_system > base_application", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectButton("Add platform to repository", "Platform Invalid", "MessageDialog", "Button.ADD_PLATFORM_TO");
+selectTreeTable("zybo_z1_7020", "Platform Repositories", "PlatformRepositoryDialog", "TreeViewer.SDXTreeTableContentProvider");
+selectButton("Cancel", "Platform Repositories", "PlatformRepositoryDialog", "Button.CANCEL");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system.sprj", "base_application_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("zybo_z1_7020", "base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("Browse", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.BROWSE");
+setFileDialog("/home/lbo/Projects/DVR-003-001/HLS-Zybo/Zybo-Harris-system/gateware/design_1_wrapper.xsa", "Locate Hardware Specification File", "SDXFileDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+selectTreeTable("zybo_z1_7020", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("README.txt", "base_application_system > base_application > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("base_application", "base_application/base_application.prj", "SDXSettingsEditor", "CTabItem.BASE_APPLICATION");
+activateView("base_application_system", "base_application_system/base_application_system.spr", "SystemSettingsEditor", "CTabItem.BASE_APPLICATION_SYSTEM");
+selectTreeTable("zybo_z1_7020", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+closeView("base_application_system", "base_application_system/base_application_system.sprj", "SystemSettingsEditor", "CTabItem.BASE_APPLICATION_SYSTEM");
+closeView("base_application", "base_application/base_application.prj", "SDXSettingsEditor", "CTabItem.BASE_APPLICATION");
+selectMenuItem("Close All", "video_demo.c", "WorkbenchWindow", "MenuItem.CLOSE_ALL");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+closeView("video_demo.c", "base_application/src/video_demo.c", "CEditor", "CTabItem.VIDEO_DEMO_C");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("zybo_z1_7020", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("zybo_z1_7020", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 1/10/23, 12:21:04 PM CET
+// Elapsed time: 00:02:15
+

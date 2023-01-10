@@ -1,0 +1,27 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'lbo' on host 'lbo-MS-7A70' (Linux_x86_64 version 5.4.0-56-generic) on Thu Dec 03 16:00:28 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s'
+INFO: [HLS 200-10] Opening project '/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S'.
+INFO: [HLS 200-10] Opening solution '/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu5ev-sfvc784-2-i'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  3 16:00:40 2020...

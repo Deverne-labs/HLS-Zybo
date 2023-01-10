@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 13 09:08:32 2021
+# Process ID: 6774
+# Current directory: /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/DataMoverUnit_s2mm_32bits/xsim_script.tcl}
+# Log file: /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/sim/vhdl/xsim.log
+# Journal file: /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/DataMoverUnit_s2mm_32bits/xsim_script.tcl
+source DataMoverUnit_s2mm_32bits.tcl

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DataMoverUnit_mm2s_32bits.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_DataMoverUnit_mm2s_32bits_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits//AESL_inst_DataMoverUnit_mm2s_32bits_activity">
+         <obj_property name="label">AESL_inst_DataMoverUnit_mm2s_32bits_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_DataMoverUnit_mm2s_32bits_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_DataMoverUnit_mm2s_32bits_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits//AESL_inst_DataMoverUnit_mm2s_32bits_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits//AESL_inst_DataMoverUnit_mm2s_32bits_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits//AESL_inst_DataMoverUnit_mm2s_32bits_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/grp_DataMover_mm2s_32bits_fu_96_activity">
+            <obj_property name="label">grp_DataMover_mm2s_32bits_fu_96_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_DataMover_mm2s_32bits_fu_96_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_DataMover_mm2s_32bits_fu_96_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/grp_DataMover_mm2s_32bits_fu_96_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/grp_DataMover_mm2s_32bits_fu_96_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/grp_DataMover_mm2s_32bits_fu_96_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_U0_activity">
+               <obj_property name="label">dataflow_in_loop_M2S_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">dataflow_in_loop_M2S_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">dataflow_in_loop_M2S_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_U0_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/dataflow_in_loop_M2S_entry3_U0_activity">
+                  <obj_property name="label">dataflow_in_loop_M2S_entry3_U0_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">dataflow_in_loop_M2S_entry3_U0_activity</obj_property>
+                  <obj_property name="ObjectShortName">dataflow_in_loop_M2S_entry3_U0_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/dataflow_in_loop_M2S_entry3_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/dataflow_in_loop_M2S_entry3_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/dataflow_in_loop_M2S_entry3_U0_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/DMAReadMM_U0_activity">
+                  <obj_property name="label">DMAReadMM_U0_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">DMAReadMM_U0_activity</obj_property>
+                  <obj_property name="ObjectShortName">DMAReadMM_U0_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/DMAReadMM_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/DMAReadMM_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/DMAReadMM_U0_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/M2S_FormatLocalBuffer_U0_activity">
+                  <obj_property name="label">M2S_FormatLocalBuffer_U0_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">M2S_FormatLocalBuffer_U0_activity</obj_property>
+                  <obj_property name="ObjectShortName">M2S_FormatLocalBuffer_U0_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/M2S_FormatLocalBuffer_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/M2S_FormatLocalBuffer_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/M2S_FormatLocalBuffer_U0_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/EmptyLocalBuffer_U0_activity">
+                  <obj_property name="label">EmptyLocalBuffer_U0_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">EmptyLocalBuffer_U0_activity</obj_property>
+                  <obj_property name="ObjectShortName">EmptyLocalBuffer_U0_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/EmptyLocalBuffer_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/EmptyLocalBuffer_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/EmptyLocalBuffer_U0_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits//AESL_inst_DataMoverUnit_mm2s_32bits_activity">
+      <obj_property name="ElementShortName">AESL_inst_DataMoverUnit_mm2s_32bits_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_DataMoverUnit_mm2s_32bits_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_DataMoverUnit_mm2s_32bits_group">
+      <obj_property name="label">AESL_inst_DataMoverUnit_mm2s_32bits</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/grp_DataMover_mm2s_32bits_fu_96_activity">
+         <obj_property name="ElementShortName">grp_DataMover_mm2s_32bits_fu_96_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_DataMover_mm2s_32bits_fu_96_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_DataMoverUnit_mm2s_32bits_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_DataMover_mm2s_32bits_fu_96_group">
+         <obj_property name="label">grp_DataMover_mm2s_32bits_fu_96</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/loop_dataflow_input_count">
+            <obj_property name="ElementShortName">loop_dataflow_input_count</obj_property>
+            <obj_property name="ObjectShortName">loop_dataflow_input_count</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/loop_dataflow_output_count">
+            <obj_property name="ElementShortName">loop_dataflow_output_count</obj_property>
+            <obj_property name="ObjectShortName">loop_dataflow_output_count</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_U0_activity">
+            <obj_property name="ElementShortName">dataflow_in_loop_M2S_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dataflow_in_loop_M2S_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_DataMover_mm2s_32bits_fu_96_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dataflow_in_loop_M2S_U0_group">
+            <obj_property name="label">dataflow_in_loop_M2S_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/dataflow_in_loop_M2S_entry3_U0_activity">
+               <obj_property name="ElementShortName">dataflow_in_loop_M2S_entry3_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">dataflow_in_loop_M2S_entry3_U0_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/DMAReadMM_U0_activity">
+               <obj_property name="ElementShortName">DMAReadMM_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">DMAReadMM_U0_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/M2S_FormatLocalBuffer_U0_activity">
+               <obj_property name="ElementShortName">M2S_FormatLocalBuffer_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">M2S_FormatLocalBuffer_U0_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/EmptyLocalBuffer_U0_activity">
+               <obj_property name="ElementShortName">EmptyLocalBuffer_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">EmptyLocalBuffer_U0_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="dataflow_in_loop_M2S_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="dataflow_in_loop_M2S_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dataflow_in_loop_M2S_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="dataflow_in_loop_M2S_entry3_U0_group">
+               <obj_property name="label">dataflow_in_loop_M2S_entry3_U0</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="dataflow_in_loop_M2S_entry3_U0_Input_group">
+                  <obj_property name="label">Input Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="dataflow_in_loop_M2S_entry3_U0_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dataflow_in_loop_M2S_entry3_U0_Output_group">
+                  <obj_property name="label">Output Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="MM_video_in_2_out_group">
+                     <obj_property name="label">MM_video_in_2_out(MM_video_in_2_c_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/MM_video_in_2_out_blk_n">
+                        <obj_property name="ElementShortName">MM_video_in_2_out_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">MM_video_in_2_out_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/MM_video_in_2_out_din">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/MM_video_in_2_out_full_n">
+                        <obj_property name="ElementShortName">MM_video_in_2_out_full_n</obj_property>
+                        <obj_property name="ObjectShortName">MM_video_in_2_out_full_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/MM_video_in_2_out_write">
+                        <obj_property name="ElementShortName">MM_video_in_2_out_write</obj_property>
+                        <obj_property name="ObjectShortName">MM_video_in_2_out_write</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="image_w_out_group">
+                     <obj_property name="label">image_w_out(image_w_c1_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/image_w_out_blk_n">
+                        <obj_property name="ElementShortName">image_w_out_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_out_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/image_w_out_din">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/image_w_out_full_n">
+                        <obj_property name="ElementShortName">image_w_out_full_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_out_full_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/image_w_out_write">
+                        <obj_property name="ElementShortName">image_w_out_write</obj_property>
+                        <obj_property name="ObjectShortName">image_w_out_write</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="i_out_group">
+                     <obj_property name="label">i_out(i_c2_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/i_out_blk_n">
+                        <obj_property name="ElementShortName">i_out_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">i_out_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/i_out_din">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/i_out_full_n">
+                        <obj_property name="ElementShortName">i_out_full_n</obj_property>
+                        <obj_property name="ObjectShortName">i_out_full_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/dataflow_in_loop_M2S_entry3_U0/i_out_write">
+                        <obj_property name="ElementShortName">i_out_write</obj_property>
+                        <obj_property name="ObjectShortName">i_out_write</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="DMAReadMM_U0_group">
+               <obj_property name="label">DMAReadMM_U0</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="DMAReadMM_U0_Input_group">
+                  <obj_property name="label">Input Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="MM_video_in_2_group">
+                     <obj_property name="label">MM_video_in_2(MM_video_in_2_c_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/MM_video_in_2_blk_n">
+                        <obj_property name="ElementShortName">MM_video_in_2_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">MM_video_in_2_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/MM_video_in_2_dout">
+                        <obj_property name="ElementShortName">MM_video_in_2_dout[31:0]</obj_property>
+                        <obj_property name="ObjectShortName">MM_video_in_2_dout[31:0]</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/MM_video_in_2_empty_n">
+                        <obj_property name="ElementShortName">MM_video_in_2_empty_n</obj_property>
+                        <obj_property name="ObjectShortName">MM_video_in_2_empty_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/MM_video_in_2_read">
+                        <obj_property name="ElementShortName">MM_video_in_2_read</obj_property>
+                        <obj_property name="ObjectShortName">MM_video_in_2_read</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="image_w_group">
+                     <obj_property name="label">image_w(image_w_c1_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_blk_n">
+                        <obj_property name="ElementShortName">image_w_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_dout">
+                        <obj_property name="ElementShortName">image_w_dout[31:0]</obj_property>
+                        <obj_property name="ObjectShortName">image_w_dout[31:0]</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_empty_n">
+                        <obj_property name="ElementShortName">image_w_empty_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_empty_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_read">
+                        <obj_property name="ElementShortName">image_w_read</obj_property>
+                        <obj_property name="ObjectShortName">image_w_read</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="i_group">
+                     <obj_property name="label">i(i_c2_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_blk_n">
+                        <obj_property name="ElementShortName">i_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">i_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_dout">
+                        <obj_property name="ElementShortName">i_dout[30:0]</obj_property>
+                        <obj_property name="ObjectShortName">i_dout[30:0]</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_empty_n">
+                        <obj_property name="ElementShortName">i_empty_n</obj_property>
+                        <obj_property name="ObjectShortName">i_empty_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_read">
+                        <obj_property name="ElementShortName">i_read</obj_property>
+                        <obj_property name="ObjectShortName">i_read</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DMAReadMM_U0_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DMAReadMM_U0_Output_group">
+                  <obj_property name="label">Output Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="axi_elt_dma_buffer_V_group">
+                     <obj_property name="label">axi_elt_dma_buffer_V(axi_elt_dma_buffer_V_U, PIPO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/axi_elt_dma_buffer_V_address0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/axi_elt_dma_buffer_V_d0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/axi_elt_dma_buffer_V_ce0">
+                        <obj_property name="ElementShortName">axi_elt_dma_buffer_V_ce0</obj_property>
+                        <obj_property name="ObjectShortName">axi_elt_dma_buffer_V_ce0</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/axi_elt_dma_buffer_V_we0">
+                        <obj_property name="ElementShortName">axi_elt_dma_buffer_V_we0</obj_property>
+                        <obj_property name="ObjectShortName">axi_elt_dma_buffer_V_we0</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                        <obj_property name="label">ap_done(i_write)</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/ap_continue">
+                        <obj_property name="ElementShortName">ap_continue</obj_property>
+                        <obj_property name="ObjectShortName">ap_continue</obj_property>
+                        <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="image_w_out_group">
+                     <obj_property name="label">image_w_out(image_w_c_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_out_blk_n">
+                        <obj_property name="ElementShortName">image_w_out_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_out_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_out_din">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_out_full_n">
+                        <obj_property name="ElementShortName">image_w_out_full_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_out_full_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/image_w_out_write">
+                        <obj_property name="ElementShortName">image_w_out_write</obj_property>
+                        <obj_property name="ObjectShortName">image_w_out_write</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="i_out_group">
+                     <obj_property name="label">i_out(i_c_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_out_blk_n">
+                        <obj_property name="ElementShortName">i_out_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">i_out_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_out_din">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_out_full_n">
+                        <obj_property name="ElementShortName">i_out_full_n</obj_property>
+                        <obj_property name="ObjectShortName">i_out_full_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/DMAReadMM_U0/i_out_write">
+                        <obj_property name="ElementShortName">i_out_write</obj_property>
+                        <obj_property name="ObjectShortName">i_out_write</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="M2S_FormatLocalBuffer_U0_group">
+               <obj_property name="label">M2S_FormatLocalBuffer_U0</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="M2S_FormatLocalBuffer_U0_Input_group">
+                  <obj_property name="label">Input Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="axi_elt_dma_buffer_V_group">
+                     <obj_property name="label">axi_elt_dma_buffer_V(axi_elt_dma_buffer_V_U, PIPO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/axi_elt_dma_buffer_V_address0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/axi_elt_dma_buffer_V_q0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/axi_elt_dma_buffer_V_ce0">
+                        <obj_property name="ElementShortName">axi_elt_dma_buffer_V_ce0</obj_property>
+                        <obj_property name="ObjectShortName">axi_elt_dma_buffer_V_ce0</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                        <obj_property name="label">ap_ready(t_read)</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="M2S_FormatLocalBuffer_U0_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="M2S_FormatLocalBuffer_U0_Output_group">
+                  <obj_property name="label">Output Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="stream_elt_dma_buffer_V_group">
+                     <obj_property name="label">stream_elt_dma_buffer_V(stream_elt_dma_buffer_V_U, PIPO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/stream_elt_dma_buffer_V_address0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/stream_elt_dma_buffer_V_d0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/stream_elt_dma_buffer_V_ce0">
+                        <obj_property name="ElementShortName">stream_elt_dma_buffer_V_ce0</obj_property>
+                        <obj_property name="ObjectShortName">stream_elt_dma_buffer_V_ce0</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/stream_elt_dma_buffer_V_we0">
+                        <obj_property name="ElementShortName">stream_elt_dma_buffer_V_we0</obj_property>
+                        <obj_property name="ObjectShortName">stream_elt_dma_buffer_V_we0</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                        <obj_property name="label">ap_done(i_write)</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/M2S_FormatLocalBuffer_U0/ap_continue">
+                        <obj_property name="ElementShortName">ap_continue</obj_property>
+                        <obj_property name="ObjectShortName">ap_continue</obj_property>
+                        <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="EmptyLocalBuffer_U0_group">
+               <obj_property name="label">EmptyLocalBuffer_U0</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="EmptyLocalBuffer_U0_Input_group">
+                  <obj_property name="label">Input Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="image_w_group">
+                     <obj_property name="label">image_w(image_w_c_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/image_w_blk_n">
+                        <obj_property name="ElementShortName">image_w_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/image_w_dout">
+                        <obj_property name="ElementShortName">image_w_dout[31:0]</obj_property>
+                        <obj_property name="ObjectShortName">image_w_dout[31:0]</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/image_w_empty_n">
+                        <obj_property name="ElementShortName">image_w_empty_n</obj_property>
+                        <obj_property name="ObjectShortName">image_w_empty_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/image_w_read">
+                        <obj_property name="ElementShortName">image_w_read</obj_property>
+                        <obj_property name="ObjectShortName">image_w_read</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="i_group">
+                     <obj_property name="label">i(i_c_U, FIFO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/i_blk_n">
+                        <obj_property name="ElementShortName">i_blk_n</obj_property>
+                        <obj_property name="ObjectShortName">i_blk_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/i_dout">
+                        <obj_property name="ElementShortName">i_dout[30:0]</obj_property>
+                        <obj_property name="ObjectShortName">i_dout[30:0]</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/i_empty_n">
+                        <obj_property name="ElementShortName">i_empty_n</obj_property>
+                        <obj_property name="ObjectShortName">i_empty_n</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/i_read">
+                        <obj_property name="ElementShortName">i_read</obj_property>
+                        <obj_property name="ObjectShortName">i_read</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="stream_elt_dma_buffer_V_group">
+                     <obj_property name="label">stream_elt_dma_buffer_V(stream_elt_dma_buffer_V_U, PIPO)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/stream_elt_dma_buffer_V_address0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/stream_elt_dma_buffer_V_q0">
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/stream_elt_dma_buffer_V_ce0">
+                        <obj_property name="ElementShortName">stream_elt_dma_buffer_V_ce0</obj_property>
+                        <obj_property name="ObjectShortName">stream_elt_dma_buffer_V_ce0</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                        <obj_property name="label">ap_ready(t_read)</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="EmptyLocalBuffer_U0_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/grp_DataMover_mm2s_32bits_fu_96/dataflow_in_loop_M2S_U0/EmptyLocalBuffer_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="EmptyLocalBuffer_U0_Output_group">
+                  <obj_property name="label">Output Channels</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

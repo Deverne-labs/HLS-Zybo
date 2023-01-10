@@ -1,0 +1,7 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling video_mixer.cpp_pre.cpp.tb.cpp
+   Compiling apatb_VideoMixerUnit_util.cpp
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_VideoMixerUnit.cpp
+   Compiling apatb_VideoMixerUnit_ir.ll
+   Generating cosim.tv.exe

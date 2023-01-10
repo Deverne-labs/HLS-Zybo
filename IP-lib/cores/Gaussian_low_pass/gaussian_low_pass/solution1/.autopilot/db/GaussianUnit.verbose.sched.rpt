@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vitis HLS Report for 'GaussianUnit'
+================================================================
+* Date:           Wed Aug 11 14:03:22 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        gaussian_low_pass
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.614 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.55>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%image_h_read = read i32 @_ssdm_op_Read.ap_stable.i32, i32 %image_h" [src/gaussian_low_pass.cpp:3]   --->   Operation 5 'read' 'image_h_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%image_w_read = read i32 @_ssdm_op_Read.ap_stable.i32, i32 %image_w" [src/gaussian_low_pass.cpp:3]   --->   Operation 6 'read' 'image_w_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [2/2] (2.55ns)   --->   "%call_ln12 = call void @Gaussian, i16 %stream_in_V_data_V, i2 %stream_in_V_keep_V, i2 %stream_in_V_strb_V, i1 %stream_in_V_user_V, i1 %stream_in_V_last_V, i16 %stream_out_V_data_V, i2 %stream_out_V_keep_V, i2 %stream_out_V_strb_V, i1 %stream_out_V_user_V, i1 %stream_out_V_last_V, i32 %image_w_read, i32 %image_h_read, i16 %line_buffer_V_1, i16 %line_buffer_V_0, i16 %line_buffer_V_2, i16 %line_buffer_V_3, i16 %line_buffer_V_4, i16 %sliding_window_V_0_1, i16 %sliding_window_V_0_2, i16 %sliding_window_V_0_3, i16 %sliding_window_V_0_4, i16 %sliding_window_V_1_1, i16 %sliding_window_V_1_2, i16 %sliding_window_V_1_3, i16 %sliding_window_V_1_4, i16 %sliding_window_V_2_1, i16 %sliding_window_V_2_2, i16 %sliding_window_V_2_3, i16 %sliding_window_V_2_4, i16 %sliding_window_V_3_1, i16 %sliding_window_V_3_2, i16 %sliding_window_V_3_3, i16 %sliding_window_V_3_4, i16 %sliding_window_V_4_1, i16 %sliding_window_V_4_2, i16 %sliding_window_V_4_3, i16 %sliding_window_V_4_4" [src/gaussian_low_pass.cpp:12]   --->   Operation 7 'call' 'call_ln12' <Predicate = true> <Delay = 2.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 4.16>
+ST_3 : Operation 8 [1/2] (4.16ns)   --->   "%call_ln12 = call void @Gaussian, i16 %stream_in_V_data_V, i2 %stream_in_V_keep_V, i2 %stream_in_V_strb_V, i1 %stream_in_V_user_V, i1 %stream_in_V_last_V, i16 %stream_out_V_data_V, i2 %stream_out_V_keep_V, i2 %stream_out_V_strb_V, i1 %stream_out_V_user_V, i1 %stream_out_V_last_V, i32 %image_w_read, i32 %image_h_read, i16 %line_buffer_V_1, i16 %line_buffer_V_0, i16 %line_buffer_V_2, i16 %line_buffer_V_3, i16 %line_buffer_V_4, i16 %sliding_window_V_0_1, i16 %sliding_window_V_0_2, i16 %sliding_window_V_0_3, i16 %sliding_window_V_0_4, i16 %sliding_window_V_1_1, i16 %sliding_window_V_1_2, i16 %sliding_window_V_1_3, i16 %sliding_window_V_1_4, i16 %sliding_window_V_2_1, i16 %sliding_window_V_2_2, i16 %sliding_window_V_2_3, i16 %sliding_window_V_2_4, i16 %sliding_window_V_3_1, i16 %sliding_window_V_3_2, i16 %sliding_window_V_3_3, i16 %sliding_window_V_3_4, i16 %sliding_window_V_4_1, i16 %sliding_window_V_4_2, i16 %sliding_window_V_4_3, i16 %sliding_window_V_4_4" [src/gaussian_low_pass.cpp:12]   --->   Operation 8 'call' 'call_ln12' <Predicate = true> <Delay = 4.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 9 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 9 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stream_in_V_data_V, i2 %stream_in_V_keep_V, i2 %stream_in_V_strb_V, i1 %stream_in_V_user_V, i1 %stream_in_V_last_V, void @empty, i32 1, i32 1, void @empty_2, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %stream_in_V_data_V"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_V_keep_V"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_V_strb_V"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_V_user_V"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_V_last_V"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stream_out_V_data_V, i2 %stream_out_V_keep_V, i2 %stream_out_V_strb_V, i1 %stream_out_V_user_V, i1 %stream_out_V_last_V, void @empty, i32 1, i32 1, void @empty_2, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %stream_out_V_data_V"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_out_V_keep_V"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_out_V_strb_V"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_out_V_user_V"   --->   Operation 20 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_out_V_last_V"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %image_w"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %image_w, void @empty_4, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %image_h"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %image_h, void @empty_4, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%ret_ln13 = ret" [src/gaussian_low_pass.cpp:13]   --->   Operation 26 'ret' 'ret_ln13' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 2.55ns
+The critical path consists of the following:
+	wire read on port 'image_h' (src/gaussian_low_pass.cpp:3) [57]  (0 ns)
+	'call' operation ('call_ln12', src/gaussian_low_pass.cpp:12) to 'Gaussian' [59]  (2.55 ns)
+
+ <State 3>: 4.17ns
+The critical path consists of the following:
+	'call' operation ('call_ln12', src/gaussian_low_pass.cpp:12) to 'Gaussian' [59]  (4.17 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

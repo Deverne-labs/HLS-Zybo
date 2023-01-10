@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/src/generics_n_options.h"/>
+    <originFiles name="data_mover_s2mm_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/src/data_mover_s2mm_utils.h"/>
+    <originFiles name="data_mover_s2mm.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/src/data_mover_s2mm.h"/>
+    <originFiles name="data_mover_s2mm.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/src/data_mover_s2mm.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="Pattern_in_0.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/src/Pattern_in_0.txt"/>
+    <originFiles name="Pattern_in_1.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/src/Pattern_in_1.txt"/>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/src/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

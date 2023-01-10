@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_M2S'
+================================================================
+* Date:           Fri Aug 13 11:22:20 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Data_Mover_MM2S
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 7, States = { 1 2 3 4 5 6 7 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.63>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%i_read = read i31 @_ssdm_op_Read.ap_auto.i31, i31 %i" [src/data_mover_mm2s.cpp:22]   --->   Operation 8 'read' 'i_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%image_w_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %image_w" [src/data_mover_mm2s.cpp:22]   --->   Operation 9 'read' 'image_w_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%MM_video_in_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %MM_video_in_2" [src/data_mover_mm2s.cpp:22]   --->   Operation 10 'read' 'MM_video_in_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i_c2 = alloca i32 1" [src/data_mover_mm2s.cpp:22]   --->   Operation 11 'alloca' 'i_c2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 31> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%image_w_c1 = alloca i32 1" [src/data_mover_mm2s.cpp:22]   --->   Operation 12 'alloca' 'image_w_c1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%MM_video_in_2_c = alloca i32 1" [src/data_mover_mm2s.cpp:22]   --->   Operation 13 'alloca' 'MM_video_in_2_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i_c = alloca i32 1" [src/data_mover_mm2s.cpp:22]   --->   Operation 14 'alloca' 'i_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 31> <Depth = 3> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%image_w_c = alloca i32 1" [src/data_mover_mm2s.cpp:22]   --->   Operation 15 'alloca' 'image_w_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 3> <FIFO>
+ST_1 : Operation 16 [1/1] (3.63ns)   --->   "%call_ln22 = call void @dataflow_in_loop_M2S.entry3, i32 %MM_video_in_2_read, i32 %image_w_read, i31 %i_read, i32 %MM_video_in_2_c, i32 %image_w_c1, i31 %i_c2" [src/data_mover_mm2s.cpp:22]   --->   Operation 16 'call' 'call_ln22' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln20 = call void @DMAReadMM, i32 %MM_video_in, i32 %MM_video_in_2_c, i32 %image_w_c1, i31 %i_c2, i32 %axi_elt_dma_buffer_V, i32 %image_w_c, i31 %i_c" [src/data_mover_mm2s.cpp:20]   --->   Operation 17 'call' 'call_ln20' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln20 = call void @DMAReadMM, i32 %MM_video_in, i32 %MM_video_in_2_c, i32 %image_w_c1, i31 %i_c2, i32 %axi_elt_dma_buffer_V, i32 %image_w_c, i31 %i_c" [src/data_mover_mm2s.cpp:20]   --->   Operation 18 'call' 'call_ln20' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln21 = call void @M2S_FormatLocalBuffer, i32 %axi_elt_dma_buffer_V, i8 %stream_elt_dma_buffer_V" [src/data_mover_mm2s.cpp:21]   --->   Operation 19 'call' 'call_ln21' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln21 = call void @M2S_FormatLocalBuffer, i32 %axi_elt_dma_buffer_V, i8 %stream_elt_dma_buffer_V" [src/data_mover_mm2s.cpp:21]   --->   Operation 20 'call' 'call_ln21' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln22 = call void @EmptyLocalBuffer, i8 %STR_video_out_V_data_V, i1 %STR_video_out_V_keep_V, i1 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, i32 %image_w_c, i31 %i_c, i8 %stream_elt_dma_buffer_V" [src/data_mover_mm2s.cpp:22]   --->   Operation 21 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 3.25>
+ST_7 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %MM_video_in, void @empty_12, i32 0, i32 0, void @empty_7, i32 0, i32 552960, void @empty_9, void @empty_8, void @empty_7, i32 16, i32 16, i32 64, i32 16, void @empty_7, void @empty_7"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %STR_video_out_V_data_V, i1 %STR_video_out_V_keep_V, i1 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, void @empty_5, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln20 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_7" [src/data_mover_mm2s.cpp:20]   --->   Operation 24 'specdataflowpipeline' 'specdataflowpipeline_ln20' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 25 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @image_w_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i32 %image_w_c, i32 %image_w_c" [src/data_mover_mm2s.cpp:22]   --->   Operation 25 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln22 = specinterface void @_ssdm_op_SpecInterface, i32 %image_w_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str" [src/data_mover_mm2s.cpp:22]   --->   Operation 26 'specinterface' 'specinterface_ln22' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 27 [1/1] (0.00ns)   --->   "%empty_19 = specchannel i32 @_ssdm_op_SpecChannel, void @i_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i31 %i_c, i31 %i_c" [src/data_mover_mm2s.cpp:22]   --->   Operation 27 'specchannel' 'empty_19' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln22 = specinterface void @_ssdm_op_SpecInterface, i31 %i_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str" [src/data_mover_mm2s.cpp:22]   --->   Operation 28 'specinterface' 'specinterface_ln22' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 29 [1/1] (0.00ns)   --->   "%empty_20 = specchannel i32 @_ssdm_op_SpecChannel, void @MM_video_in_OC_2_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %MM_video_in_2_c, i32 %MM_video_in_2_c" [src/data_mover_mm2s.cpp:22]   --->   Operation 29 'specchannel' 'empty_20' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln22 = specinterface void @_ssdm_op_SpecInterface, i32 %MM_video_in_2_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str" [src/data_mover_mm2s.cpp:22]   --->   Operation 30 'specinterface' 'specinterface_ln22' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 31 [1/1] (0.00ns)   --->   "%empty_21 = specchannel i32 @_ssdm_op_SpecChannel, void @image_w_c1_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %image_w_c1, i32 %image_w_c1" [src/data_mover_mm2s.cpp:22]   --->   Operation 31 'specchannel' 'empty_21' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln22 = specinterface void @_ssdm_op_SpecInterface, i32 %image_w_c1, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str" [src/data_mover_mm2s.cpp:22]   --->   Operation 32 'specinterface' 'specinterface_ln22' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "%empty_22 = specchannel i32 @_ssdm_op_SpecChannel, void @i_c2_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i31 %i_c2, i31 %i_c2" [src/data_mover_mm2s.cpp:22]   --->   Operation 33 'specchannel' 'empty_22' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln22 = specinterface void @_ssdm_op_SpecInterface, i31 %i_c2, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str" [src/data_mover_mm2s.cpp:22]   --->   Operation 34 'specinterface' 'specinterface_ln22' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 35 [1/2] (3.25ns)   --->   "%call_ln22 = call void @EmptyLocalBuffer, i8 %STR_video_out_V_data_V, i1 %STR_video_out_V_keep_V, i1 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, i32 %image_w_c, i31 %i_c, i8 %stream_elt_dma_buffer_V" [src/data_mover_mm2s.cpp:22]   --->   Operation 35 'call' 'call_ln22' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln22 = ret" [src/data_mover_mm2s.cpp:22]   --->   Operation 36 'ret' 'ret_ln22' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.63ns
+The critical path consists of the following:
+	wire read on port 'i' (src/data_mover_mm2s.cpp:22) [14]  (0 ns)
+	'call' operation ('call_ln22', src/data_mover_mm2s.cpp:22) to 'dataflow_in_loop_M2S.entry3' [35]  (3.63 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 3.25ns
+The critical path consists of the following:
+	'call' operation ('call_ln22', src/data_mover_mm2s.cpp:22) to 'EmptyLocalBuffer' [38]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

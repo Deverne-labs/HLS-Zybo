@@ -1,0 +1,291 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 27386
+License: Customer
+
+Current time: 	Thu Aug 12 09:34:41 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 5.4.0-77-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 3
+Available disk space: 163 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vivado/2020.2/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	lbo
+User home directory: /home/lbo
+User working directory: /home/lbo/Projects/esiee/hardware/BSD
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/lbo/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/lbo/Projects/esiee/software/vitis
+Vitis workspace log file location: /home/lbo/Projects/esiee/software/vitis/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectToolBarButton("Restore", "WorkbenchWindow", "ToolItem.RESTORE");
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Platform Project", "WorkbenchWindow", "MenuItem.PLATFORM_PROJECT");
+setTextField("zybo_z1_7020", "New Platform Project (Create new platform project)", "NewPlatformProjectWizard", "Text.PLATFORM_PROJECT_NAME");
+selectButton("Next", "New Platform Project (Create new platform project)", "NewPlatformProjectWizard", "Button.NEXT");
+selectButton("Browse", "New Platform Project (Platform)", "NewPlatformProjectWizard", "Button.BROWSE");
+setFileDialog("/home/lbo/Projects/esiee/hardware/BSD/design_1_wrapper.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Finish", "New Platform Project (Platform)", "NewPlatformProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("zybo_z1_7020", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Configuration for project zybo_z1_7020", "zybo_z1_7020", "WorkbenchWindow", "ToolItem.BUILD_CONFIGURATION");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectMenuItem("File", "zybo_z1_7020", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "zybo_z1_7020", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Application Project", "zybo_z1_7020", "WorkbenchWindow", "MenuItem.APPLICATION_PROJECT");
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("base_application", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("Empty Application", "SW development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SRC");
+selectTable("lscript.ld", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTreeTable("src", "base_application_system > base_application", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("_ide", "base_application_system > base_application", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("src", "base_application_system > base_application", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("base_application_system", "base_application_system > base_application", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("video_capture", "Import Sources (File system)", "FileSystemImportWizard", "Tree.VIDEO_CAPTURE");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("src", "base_application", "Import into Folder", "ContainerSelectionDialog", "Tree.Workspace");
+selectButton("OK", "Import into Folder", "ContainerSelectionDialog", "Button.OK");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SRC");
+selectTable("lscript.ld", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("README.txt", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("Xilinx.spec", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTree("dynclk", "src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.DYNCLK");
+selectTree("display_ctrl", "src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.DISPLAY_CTRL");
+selectTree("dynclk", "src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.DYNCLK");
+selectTree("intc", "src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.INTC");
+selectTree("timer_ps", "src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.TIMER_PS");
+selectTree("video_capture", "src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.VIDEO_CAPTURE");
+selectTree("src", "src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SRC");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+selectTreeTable("video_demo.c", "base_application_system > base_application > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "base_application_system > base_application", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectButton("OK", "Open Declaration", "Button", "OK");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("DYNC", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+activateView("video_demo.c", "base_application/src/video_demo.c", "CEditor", "CTabItem.VIDEO_DEMO_C");
+activateView("xparameters.h", "zybo_z1_7020/export/zybo_z1_7020/sw/zybo_z1_7020/st", "CEditor", "CTabItem.XPARAMETERS_H");
+activateView("video_demo.c", "base_application/src/video_demo.c", "CEditor", "CTabItem.VIDEO_DEMO_C");
+activateView("xparameters.h", "zybo_z1_7020/export/zybo_z1_7020/sw/zybo_z1_7020/st", "CEditor", "CTabItem.XPARAMETERS_H");
+activateView("*video_demo.c", "base_application/src/video_demo.c", "Editor", "CTabItem.*VIDEO_DEMO_C");
+setText("#ifndef XPARAMETERS_H /* prevent circular inclusion", "Find/Replace", "FindReplaceDialog", "StyledText");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("VTC", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+setText("#ifndef XPARAMETERS_H /* prevent circular inclusion", "zybo_z1_7020", "StyledText", "StyledText");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("VDMA", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("AXIVDMA", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("GPIO_VIDEO", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("VTC", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("GPIO", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("VTC", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("V_TC_IN_IRQ", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+setCombo("AXI_GPIO_VIDEO_IP2INTC_IRPT_INTR", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("AXI_GPIO_VIDEO", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("AXI_GPIO_VIDEO_DEVICE_ID", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("GPIO_VIDEO_DEVICE_ID", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("VIDEO_DEVICE_ID", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("DEVICE_ID", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("GPIO", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "base_application_system > base_application", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("Debug", "base_application_system > base_application", "video_demo.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "base_application_system > base_application", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", "base_application_system > base_application", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("Yes", "FPGA Configuration", "MessageDialogWithToggle", "Button.YES");
+selectToolBarButton("Shows background operations in Progress view", "base_application_system", "WorkbenchWindow", "ToolItem.SHOWS_BACKGROUND");
+activateView("Progress", "ProgressView", "CTabItem.PROGRESS");
+selectToolBarButton("Cancel Operation", "Progress", "ProgressView", "ToolItem.CANCEL_OPERATION");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("No", "FPGA Configuration", "MessageDialogWithToggle", "Button.NO");
+selectToolBarButton("Debug", "base_application", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "base_application", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("zybo_z1_7020", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("zybo_z1_7020", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Configuration for project zybo_z1_7020", "zybo_z1_7020", "WorkbenchWindow", "ToolItem.BUILD_CONFIGURATION");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectMenuItem("Debug As", "Console", "WorkbenchWindow", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "zybo_z1_7020", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("base_application_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "base_application_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+activateView("Memory", "MemoryView", "CTabItem.MEMORY");
+selectTreeTable("Debug", "base_application_system > base_application", "Memory", "MemoryView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Resume", "base_application", "WorkbenchWindow", "ToolItem.RESUME");

@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'EmptyLocalBuffer'
+================================================================
+* Date:           Fri Aug 13 11:22:20 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Data_Mover_MM2S
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.186 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_27_1  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    163|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     79|    -|
+|Register         |        -|    -|     106|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     106|    242|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln27_fu_126_p2         |         +|   0|  0|  39|          32|           1|
+    |sub_i_i_i_fu_120_p2        |         +|   0|  0|  39|          32|           2|
+    |and_ln32_fu_152_p2         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_01001  |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_io         |       and|   0|  0|   2|           1|           1|
+    |icmp_ln22_fu_114_p2        |      icmp|   0|  0|  17|          31|           1|
+    |icmp_ln27_fu_132_p2        |      icmp|   0|  0|  18|          32|          32|
+    |icmp_ln32_fu_146_p2        |      icmp|   0|  0|  18|          32|           1|
+    |icmp_ln33_fu_157_p2        |      icmp|   0|  0|  18|          32|          32|
+    |ap_block_state1            |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1    |       xor|   0|  0|   2|           2|           1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 163|         199|          77|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------+----+-----------+-----+-----------+
+    |            Name           | LUT| Input Size| Bits| Total Bits|
+    +---------------------------+----+-----------+-----+-----------+
+    |STR_video_out_TDATA_blk_n  |   9|          2|    1|          2|
+    |ap_NS_fsm                  |  20|          4|    1|          4|
+    |ap_done                    |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1    |  14|          3|    1|          3|
+    |bf_idx_reg_103             |   9|          2|   32|         64|
+    |i_blk_n                    |   9|          2|    1|          2|
+    |image_w_blk_n              |   9|          2|    1|          2|
+    +---------------------------+----+-----------+-----+-----------+
+    |Total                      |  79|         17|   38|         79|
+    +---------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |and_ln32_reg_191         |   1|   0|    1|          0|
+    |ap_CS_fsm                |   3|   0|    3|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |bf_idx_reg_103           |  32|   0|   32|          0|
+    |icmp_ln22_reg_167        |   1|   0|    1|          0|
+    |icmp_ln27_reg_182        |   1|   0|    1|          0|
+    |icmp_ln33_reg_196        |   1|   0|    1|          0|
+    |image_w_read_reg_162     |  32|   0|   32|          0|
+    |sub_i_i_i_reg_172        |  32|   0|   32|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 106|   0|  106|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------+-----+-----+------------+-------------------------+--------------+
+|             RTL Ports            | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++----------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                            |   in|    1|  ap_ctrl_hs|         EmptyLocalBuffer|  return value|
+|ap_rst                            |   in|    1|  ap_ctrl_hs|         EmptyLocalBuffer|  return value|
+|ap_start                          |   in|    1|  ap_ctrl_hs|         EmptyLocalBuffer|  return value|
+|ap_done                           |  out|    1|  ap_ctrl_hs|         EmptyLocalBuffer|  return value|
+|ap_continue                       |   in|    1|  ap_ctrl_hs|         EmptyLocalBuffer|  return value|
+|ap_idle                           |  out|    1|  ap_ctrl_hs|         EmptyLocalBuffer|  return value|
+|ap_ready                          |  out|    1|  ap_ctrl_hs|         EmptyLocalBuffer|  return value|
+|STR_video_out_TDATA               |  out|    8|        axis|   STR_video_out_V_data_V|       pointer|
+|STR_video_out_TREADY              |   in|    1|        axis|   STR_video_out_V_data_V|       pointer|
+|STR_video_out_TVALID              |  out|    1|        axis|   STR_video_out_V_last_V|       pointer|
+|STR_video_out_TLAST               |  out|    1|        axis|   STR_video_out_V_last_V|       pointer|
+|STR_video_out_TKEEP               |  out|    1|        axis|   STR_video_out_V_keep_V|       pointer|
+|STR_video_out_TSTRB               |  out|    1|        axis|   STR_video_out_V_strb_V|       pointer|
+|STR_video_out_TUSER               |  out|    1|        axis|   STR_video_out_V_user_V|       pointer|
+|image_w_dout                      |   in|   32|     ap_fifo|                  image_w|       pointer|
+|image_w_empty_n                   |   in|    1|     ap_fifo|                  image_w|       pointer|
+|image_w_read                      |  out|    1|     ap_fifo|                  image_w|       pointer|
+|i_dout                            |   in|   31|     ap_fifo|                        i|       pointer|
+|i_empty_n                         |   in|    1|     ap_fifo|                        i|       pointer|
+|i_read                            |  out|    1|     ap_fifo|                        i|       pointer|
+|stream_elt_dma_buffer_V_address0  |  out|   11|   ap_memory|  stream_elt_dma_buffer_V|         array|
+|stream_elt_dma_buffer_V_ce0       |  out|    1|   ap_memory|  stream_elt_dma_buffer_V|         array|
+|stream_elt_dma_buffer_V_q0        |   in|    8|   ap_memory|  stream_elt_dma_buffer_V|         array|
++----------------------------------+-----+-----+------------+-------------------------+--------------+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 13 10:34:58 2021
+# Process ID: 10385
+# Current directory: /home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/Non_maximal_suppression/solution1/sim/vhdl
+# Command line: wbtcv -mode batch -source /home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/Non_maximal_suppression/solution1/sim/vhdl/xsim.dir/NonMaximalSuppresionUnit/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/Non_maximal_suppression/solution1/sim/vhdl/webtalk.log
+# Journal file: /home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/Non_maximal_suppression/solution1/sim/vhdl/webtalk.jou
+#-----------------------------------------------------------
+source /home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/Non_maximal_suppression/solution1/sim/vhdl/xsim.dir/NonMaximalSuppresionUnit/webtalk/xsim_webtalk.tcl -notrace

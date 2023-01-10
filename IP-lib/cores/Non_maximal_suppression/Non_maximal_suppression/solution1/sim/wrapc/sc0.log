@@ -1,0 +1,7 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_NonMaximalSuppresionUnit.cpp
+   Compiling non_maximal_suppresion.cpp_pre.cpp.tb.cpp
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_NonMaximalSuppresionUnit_util.cpp
+   Compiling apatb_NonMaximalSuppresionUnit_ir.ll
+   Generating cosim.tv.exe

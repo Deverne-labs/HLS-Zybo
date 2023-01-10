@@ -1,0 +1,58 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'lbo' on host 'lbo-MS-7A70' (Linux_x86_64 version 5.4.0-77-generic) on Fri Aug 13 09:10:17 CEST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm'
+Sourcing Tcl script '/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project Data_Mover_S2MM 
+INFO: [HLS 200-10] Opening project '/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM'.
+INFO: [HLS 200-1510] Running: set_top DataMoverUnit_s2mm_32bits 
+INFO: [HLS 200-1510] Running: add_files src/generics_n_options.h 
+INFO: [HLS 200-10] Adding design file 'src/generics_n_options.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/data_mover_s2mm_utils.h 
+INFO: [HLS 200-10] Adding design file 'src/data_mover_s2mm_utils.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/data_mover_s2mm.h 
+INFO: [HLS 200-10] Adding design file 'src/data_mover_s2mm.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/data_mover_s2mm.cpp 
+INFO: [HLS 200-10] Adding design file 'src/data_mover_s2mm.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/Pattern_in_0.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'src/Pattern_in_0.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/Pattern_in_1.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'src/Pattern_in_1.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'src/tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=PH920
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Boutigny_L
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library PH920 -rtl vhdl -vendor Boutigny_L -version 1.0 
+INFO: [HLS 200-1510] Running: set_directive_top -name DataMoverUnit_s2mm_32bits DataMoverUnit_s2mm_32bits 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -vendor Boutigny_L -library PH920 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-740] Implementing PIPO DataMoverUnit_s2mm_32bits_dataflow_in_loop_S2M_stream_elt_dma_buffer_V_memcore using a separate memory for each block
+INFO: [HLS 200-741] Implementing PIPO DataMoverUnit_s2mm_32bits_dataflow_in_loop_S2M_axi_elt_dma_buffer_V_memcore using a single memory for all blocks
+INFO: [HLS 200-740] Implementing PIPO DataMoverUnit_s2mm_32bits_dataflow_in_loop_S2M_stream_elt_dma_buffer_V_memcore using a separate memory for each block
+INFO: [HLS 200-741] Implementing PIPO DataMoverUnit_s2mm_32bits_dataflow_in_loop_S2M_axi_elt_dma_buffer_V_memcore using a single memory for all blocks
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 13 09:10:27 2021...
+INFO: [HLS 200-802] Generated output file Data_Mover_S2MM/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 10.33 seconds. CPU system time: 0.63 seconds. Elapsed time: 11.88 seconds; current allocated memory: 205.167 MB.

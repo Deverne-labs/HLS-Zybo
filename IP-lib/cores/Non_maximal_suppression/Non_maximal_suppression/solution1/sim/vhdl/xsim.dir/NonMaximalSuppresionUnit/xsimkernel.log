@@ -1,0 +1,7 @@
+Running: xsim.dir/NonMaximalSuppresionUnit/xsimk -simmode gui -wdb NonMaximalSuppresionUnit.wdb -simrunnum 0 -socket 37269
+Design successfully loaded
+Design Loading Memory Usage: 46196 KB (Peak: 46196 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 137340 KB (Peak: 185464 KB)
+Simulation CPU Usage: 1060 ms

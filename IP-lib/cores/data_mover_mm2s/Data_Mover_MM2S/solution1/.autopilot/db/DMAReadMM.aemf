@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1628846540645">
+  <ports id="1" name="MM_video_in" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="MM_video_in_2" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="image_w" type="PortType" coreName="FIFO_SRL" coreId="25" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="i" type="PortType" coreName="FIFO_SRL" coreId="1936484392" bitwidth="31" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="axi_elt_dma_buffer_V" type="PortType" coreName="RAM" coreId="49" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="6" name="image_w_out" type="PortType" coreName="FIFO_SRL" coreId="22" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="i_out" type="PortType" coreName="FIFO_SRL" coreId="78" bitwidth="31" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="67" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="69" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="72" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="75" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.5"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.6"/>
+  <edges id="80" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="83" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="104" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="107" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="111" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="124" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="128" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="131" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="132" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="133" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="136" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="138" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="148" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="152" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@ports.4"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="159" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="162" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="381" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="382" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="383" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="384" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="385" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="386" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="387" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="388" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <blocks id="38" name="entry" type="BlockType">
+    <controlOutputObjs>.lr.ph.i.i.i.i</controlOutputObjs>
+    <controlOutputObjs>.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="MM_video_in_2_read" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" bitwidth="32" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>MM_video_in_2</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="image_w_read" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DMAReadMM" bitwidth="32" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>image_w</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i_read" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" bitwidth="31" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>i</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="image_w_out_write_ln53" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DMAReadMM" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>image_w_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="i_out_write_ln0" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>i_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="tmp" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="tmp_reg_284" coreId="8" contextFuncName="DMAReadMM" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="sub_ln53" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="sub_ln53_fu_155_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="DMAReadMM" bitwidth="32" opcode="sub" m_display="0" m_delay="2.55" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="trunc_ln53_1_i" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="trunc_ln53_1_i_reg_289" coreId="0" contextFuncName="DMAReadMM" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="zext_ln53" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="zext_ln53_fu_201_p1" coreId="4294967295" contextFuncName="DMAReadMM" bitwidth="31" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="sub_ln53_1" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="sub_ln53_1_fu_204_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="DMAReadMM" bitwidth="31" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="2.49" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="trunc_ln53_2_i" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="trunc_ln53_2_i_reg_294" coreId="728984680" contextFuncName="DMAReadMM" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln53_1" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="zext_ln53_1_fu_210_p1" coreId="4177" contextFuncName="DMAReadMM" bitwidth="31" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="burst_size" lineNumber="53" originalName="burst_size" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="burst_size_fu_213_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="DMAReadMM" bitwidth="31" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.73" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="sext_ln53" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="sext_ln53_fu_220_p1" coreId="132" contextFuncName="DMAReadMM" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="empty" rtlName="empty_fu_181_p1" coreId="4237591904" bitwidth="21" opcode="trunc" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="mul_i_i_i_i" rtlName="mul_i_i_i_i_fu_224_p3" coreId="778138721" bitwidth="32" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="tmp_1" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="tmp_1_fu_185_p4" coreId="1919950882" contextFuncName="DMAReadMM" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="icmp_ln54" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="icmp_ln54_fu_195_p2" opType="icmp" coreId="1031301478" contextFuncName="DMAReadMM" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.46" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln54" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="574451311" contextFuncName="DMAReadMM" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.exit</controlInputObjs>
+      <controlInputObjs>.lr.ph.i.i.i.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_mm2s.cpp">
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="46" name=".lr.ph.i.i.i.i" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_51</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="empty_33" lineNumber="53" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="empty_33_fu_231_p1" coreId="1229869633" contextFuncName="DMAReadMM" bitwidth="29" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="53" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="empty_34" rtlName="empty_34_fu_235_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.55" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="trunc_ln1_i" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="trunc_ln1_i_reg_318" coreId="4237785200" contextFuncName="DMAReadMM" bitwidth="30" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="sext_ln54" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="sext_ln54_fu_250_p1" coreId="1730571381" contextFuncName="DMAReadMM" bitwidth="32" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="MM_video_in_addr" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="11" contextFuncName="DMAReadMM" bitwidth="32" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>MM_video_in</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="empty_35" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="readreq" coreId="113" contextFuncName="DMAReadMM" bitwidth="1" opcode="readreq" nodeLabel="2.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="br_ln54" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="4237788745" contextFuncName="DMAReadMM" opcode="br" nodeLabel="8.0" m_display="0" m_delay="1.58" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      <controlInputObjs>block_51</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_mm2s.cpp">
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="62" name=".exit.loopexit" type="BlockType">
+    <controlInputObjs>block_51</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="br_ln0" coreId="4237874912" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <controlInputObjs>.exit</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="64" name=".exit" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>.exit.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="_ln22" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="0" contextFuncName="DataMover_mm2s_32bits" opcode="ret" nodeLabel="12.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_mm2s.cpp">
+      <validLinenumbers>22</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="228" pipe_depth="3" RegionName="VITIS_LOOP_54_1">
+    <basic_blocks id="51" name="block_51" type="BlockType">
+      <controlInputObjs>.lr.ph.i.i.i.i</controlInputObjs>
+      <controlInputObjs>.split.i.i.i.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.exit.loopexit</controlOutputObjs>
+      <controlOutputObjs>.split.i.i.i.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="bf_idx" lineNumber="54" originalName="bf_idx" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="49" contextFuncName="DMAReadMM" bitwidth="29" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <controlInputObjs>.split.i.i.i.i</controlInputObjs>
+        <controlInputObjs>.lr.ph.i.i.i.i</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="add_ln54" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="add_ln54_fu_260_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="DMAReadMM" bitwidth="29" opcode="add" nodeLabel="9.0" m_display="0" m_delay="2.46" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="icmp_ln54_1" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="icmp_ln54_1_fu_266_p2" opType="icmp" coreId="4237860160" contextFuncName="DMAReadMM" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="2.46" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln54" lineNumber="54" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="4237863840" contextFuncName="DMAReadMM" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="54" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split.i.i.i.i</controlInputObjs>
+        <controlInputObjs>.exit.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/data_mover_mm2s.cpp">
+        <validLinenumbers>54</validLinenumbers>
+        <validLinenumbers>20</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="60" name=".split.i.i.i.i" type="BlockType">
+      <controlInputObjs>block_51</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_51</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="trunc_ln57" lineNumber="57" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="trunc_ln57_fu_271_p1" coreId="4237865360" contextFuncName="DMAReadMM" bitwidth="9" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="57" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln57" lineNumber="57" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="zext_ln57_fu_275_p1" coreId="4237865768" contextFuncName="DMAReadMM" bitwidth="32" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="57" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="axi_elt_dma_buffer_V_addr" lineNumber="57" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="4237867769" contextFuncName="DMAReadMM" bitwidth="9" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="57" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>axi_elt_dma_buffer_V</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="MM_video_in_addr_read" lineNumber="57" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" contextFuncName="DMAReadMM" bitwidth="32" opcode="read" nodeLabel="10.0" m_display="0" m_delay="7.3" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="57" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="axi_elt_dma_buffer_V_addr_write_ln57" lineNumber="57" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="DMAReadMM" opcode="store" nodeLabel="11.0" m_display="0" m_delay="3.25" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="57" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DMAReadMM"/>
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="br_ln0" coreId="536871040" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_51</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/data_mover_mm2s.cpp">
+        <validLinenumbers>57</validLinenumbers>
+        <validLinenumbers>20</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <regnodes realName="trunc_ln53_1_i_reg_289">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_33_reg_313">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln53_reg_308">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_284">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln54_1_reg_334">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1_i_reg_318">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="MM_video_in_2_read_reg_279">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="bf_idx_reg_136">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln53_2_i_reg_294">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="MM_video_in_addr_read_reg_343">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln54_reg_304">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="MM_video_in_addr_reg_323">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln54_reg_329">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_299">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln57_reg_338">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <expressionNodes realName="axi_elt_dma_buffer_V_addr_gep_fu_123">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln53_1_fu_204">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1_i_fu_240">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln53_1_fu_210">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MM_video_in_addr_fu_253">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln57_fu_275">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_147">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln53_1_i_fu_161">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bf_idx_phi_fu_140">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln53_fu_201">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_33_fu_231">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln54_1_fu_266">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln53_fu_220">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln54_fu_250">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_185">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln57_fu_271">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_fu_181">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln53_fu_155">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln54_fu_195">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_fu_260">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_i_i_fu_224">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_34_fu_235">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="burst_size_fu_213">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln53_2_i_fu_171">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_readreq_fu_112">
+    <nodeIds>44</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_read_read_fu_90">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_w_read_read_fu_84">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln53_write_fu_96">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="MM_video_in_addr_read_read_fu_118">
+    <nodeIds>57</nodeIds>
+  </ioNodes>
+  <ioNodes realName="MM_video_in_2_read_read_fu_78">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_104">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="axi_elt_dma_buffer_V">
+    <nodeIds>58</nodeIds>
+  </memoryPorts>
+  <ioPorts name="MM_video_in"/>
+  <ioPorts name="MM_video_in_2">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="axi_elt_dma_buffer_V(p0)">
+    <contents name="store">
+      <nodeIds>58</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="i">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="i_out">
+    <contents name="write">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w_out">
+    <contents name="write">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="7" latency="7"/>
+    </states>
+    <states id="4">
+      <operations id="44" stage="6" latency="7"/>
+    </states>
+    <states id="5">
+      <operations id="44" stage="5" latency="7"/>
+    </states>
+    <states id="6">
+      <operations id="44" stage="4" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="44" stage="3" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="44" stage="2" latency="7"/>
+    </states>
+    <states id="9">
+      <operations id="44" stage="1" latency="7"/>
+      <operations id="45" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="57" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="DMAReadMM" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="8">
+      <basicBlocks>38</basicBlocks>
+      <basicBlocks>46</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_54_1" mII="1" mDepth="3" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>51</basicBlocks>
+      <basicBlocks>60</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>62</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>64</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

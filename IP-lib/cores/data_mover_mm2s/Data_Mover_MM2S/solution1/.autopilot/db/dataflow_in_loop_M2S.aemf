@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1628846540877">
+  <ports id="1" name="MM_video_in" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeFifo">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="MM_video_in_2" type="PortType" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="image_w" type="PortType" coreId="52" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="i" type="PortType" coreId="132" bitwidth="31">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="STR_video_out_V_data_V" type="PortType" coreId="257" bitwidth="8" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="6" name="STR_video_out_V_keep_V" type="PortType" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="7" name="STR_video_out_V_strb_V" type="PortType" coreId="132" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="8" name="STR_video_out_V_user_V" type="PortType" coreId="132" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="9" name="STR_video_out_V_last_V" type="PortType" coreId="11" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="43" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="46" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="48" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="65" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="69" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@ports.4"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@ports.5"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@ports.6"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@ports.7"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@ports.8"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="83" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="84" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="85" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="293" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="294" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="295" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="296" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="297" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="298" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="299" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" id="187" RegionName="dataflow_in_loop_M2S">
+    <basic_blocks id="40" name="dataflow_in_loop_M2S" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i_read" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="1279795773" contextFuncName="DataMover_mm2s_32bits" bitwidth="31" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>i</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="image_w_read" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="0" contextFuncName="DataMover_mm2s_32bits" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>image_w</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="MM_video_in_2_read" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="0" contextFuncName="DataMover_mm2s_32bits" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>MM_video_in_2</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i_c2" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="i_c2_U" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_mm2s_32bits" bitwidth="31" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="image_w_c1" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="image_w_c1_U" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_mm2s_32bits" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="MM_video_in_2_c" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="MM_video_in_2_c_U" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_mm2s_32bits" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="i_c" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="i_c_U" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_mm2s_32bits" bitwidth="31" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="image_w_c" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="image_w_c_U" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_mm2s_32bits" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln22" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="dataflow_in_loop_M2S_entry3_U0" coreId="0" contextFuncName="DataMover_mm2s_32bits" opcode="call" m_display="0" m_delay="3.63" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>dataflow_in_loop_M2S_entry3</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln20" lineNumber="20" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="DMAReadMM_U0" coreId="3485746" contextFuncName="DataMover_mm2s_32bits" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="20" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>MM_video_in</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>DMAReadMM</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln21" lineNumber="21" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="M2S_FormatLocalBuffer_U0" coreId="4238592168" contextFuncName="DataMover_mm2s_32bits" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <constName>M2S_FormatLocalBuffer</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln22" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." rtlName="EmptyLocalBuffer_U0" coreId="132" contextFuncName="DataMover_mm2s_32bits" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>EmptyLocalBuffer</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln22" lineNumber="22" fileName="src/data_mover_mm2s.cpp" fileDirectory=".." coreId="0" contextFuncName="DataMover_mm2s_32bits" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_mm2s.cpp" linenumber="22" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s" functionName="DataMover_mm2s_32bits"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/data_mover_mm2s.cpp">
+        <validLinenumbers>22</validLinenumbers>
+        <validLinenumbers>20</validLinenumbers>
+        <validLinenumbers>21</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="i_c2_reg_172">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="i_c_reg_190">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="image_w_c_reg_196">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="MM_video_in_2_c_reg_184">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="image_w_c1_reg_178">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_c2_fu_82">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_c_fu_94">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MM_video_in_2_c_fu_90">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="image_w_c_fu_98">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="image_w_c1_fu_86">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_DMAReadMM_fu_120">
+    <nodeIds>36</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_EmptyLocalBuffer_fu_133">
+    <nodeIds>38</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ln22_dataflow_in_loop_M2S_entry3_fu_159">
+    <nodeIds>35</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_M2S_FormatLocalBuffer_fu_151">
+    <nodeIds>37</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="MM_video_in_2_read_read_fu_114">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_read_read_fu_102">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_w_read_read_fu_108">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="axi_elt_dma_buffer_V" portID="100">
+    <nodeIds>36</nodeIds>
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="stream_elt_dma_buffer_V" portID="100">
+    <nodeIds>38</nodeIds>
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <ioPorts name="MM_video_in">
+    <contents name="call">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="MM_video_in_2">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_data_V">
+    <contents name="call">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_keep_V">
+    <contents name="call">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_last_V">
+    <contents name="call">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_strb_V">
+    <contents name="call">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_user_V">
+    <contents name="call">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="i">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="36" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="36" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="37" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="37" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="38" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="2"/>
+      <operations id="39" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dataflow_in_loop_M2S" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mIsDfPipe="true">
+      <basicBlocks>40</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.3/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.3/@sink/@inst">
+        <processe_list name="dataflow_in_loop_M2S_entry3_U0" ssdmobj_id="35">
+          <pins>
+            <port name="MM_video_in_2" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_74" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_M2S_entry3_U0" ssdmobj_id="35" object_id="_85"/>
+          </pins>
+          <pins>
+            <port name="image_w" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_75" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_M2S_entry3_U0" ssdmobj_id="35" object_id="_85"/>
+          </pins>
+          <pins>
+            <port name="i" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_76" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_M2S_entry3_U0" ssdmobj_id="35" object_id="_85"/>
+          </pins>
+        </processe_list>
+        <processe_list name="DMAReadMM_U0" ssdmobj_id="36">
+          <pins>
+            <port name="MM_video_in" type="BUSType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_73" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="DMAReadMM_U0" ssdmobj_id="36" object_id="_93"/>
+          </pins>
+        </processe_list>
+        <processe_list name="M2S_FormatLocalBuffer_U0" ssdmobj_id="37"/>
+        <processe_list name="EmptyLocalBuffer_U0" ssdmobj_id="38">
+          <pins>
+            <port name="STR_video_out_V_data_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_77" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </pins>
+          <pins>
+            <port name="STR_video_out_V_keep_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_78" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </pins>
+          <pins>
+            <port name="STR_video_out_V_strb_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_79" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </pins>
+          <pins>
+            <port name="STR_video_out_V_user_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_80" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </pins>
+          <pins>
+            <port name="STR_video_out_V_last_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_81" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="2" suggested_depth="2" name="MM_video_in_2_c" ssdmobj_id="19">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_M2S_entry3_U0" ssdmobj_id="35" object_id="_85"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="DMAReadMM_U0" ssdmobj_id="36" object_id="_93"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="2" suggested_depth="2" name="image_w_c1" ssdmobj_id="18">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_M2S_entry3_U0" ssdmobj_id="35" object_id="_85"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="DMAReadMM_U0" ssdmobj_id="36" object_id="_93"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="31" suggested_type="2" suggested_depth="2" name="i_c2" ssdmobj_id="17">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_M2S_entry3_U0" ssdmobj_id="35" object_id="_85"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="DMAReadMM_U0" ssdmobj_id="36" object_id="_93"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="axi_elt_dma_buffer_V" ssdmobj_id="11">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="DMAReadMM_U0" ssdmobj_id="36" object_id="_93"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="M2S_FormatLocalBuffer_U0" ssdmobj_id="37" object_id="_127"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="32" suggested_type="2" suggested_depth="3" name="image_w_c" ssdmobj_id="21">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="DMAReadMM_U0" ssdmobj_id="36" object_id="_93"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="3" bitwidth="31" suggested_type="2" suggested_depth="3" name="i_c" ssdmobj_id="20">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="DMAReadMM_U0" ssdmobj_id="36" object_id="_93"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="stream_elt_dma_buffer_V" ssdmobj_id="13">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="M2S_FormatLocalBuffer_U0" ssdmobj_id="37" object_id="_127"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="EmptyLocalBuffer_U0" ssdmobj_id="38" object_id="_98"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

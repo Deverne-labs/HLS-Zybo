@@ -1,0 +1,1622 @@
+INFO-FLOW: Workspace /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1 opened at Wed Aug 11 11:54:17 CEST 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.89 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z020:-clg400:-1 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       add_library done; 0.11 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.03 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.28 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z020:-clg400:-1 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     add_library done; 0.12 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.16 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.608 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/gradient_generator.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling src/gradient_generator.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang src/gradient_generator.cpp -foptimization-record-file=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.gradient_generator.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.gradient_generator.cpp.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.gradient_generator.cpp.err.log 
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+Execute       set_directive_top GradientGenUnit -name=GradientGenUnit 
+INFO-FLOW: Setting directive 'TOP' name=GradientGenUnit 
+INFO-FLOW: Setting directive 'TOP' name=GradientGenUnit 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=GradientGenUnit 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/.systemc_flag -fix-errors /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 2.73 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/all.directive.json -fix-errors /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 2.38 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 2.7 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 5.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang-tidy.gradient_generator.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang-tidy.gradient_generator.pp.0.cpp.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang-tidy.gradient_generator.pp.0.cpp.err.log 
+Command         ap_eval done; 3.96 sec.
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 4.27 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/xilinx-dataflow-lawyer.gradient_generator.pp.0.cpp.diag.yml /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/xilinx-dataflow-lawyer.gradient_generator.pp.0.cpp.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/xilinx-dataflow-lawyer.gradient_generator.pp.0.cpp.err.log 
+Command       ap_eval done; 2.13 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.gradient_generator.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.gradient_generator.pp.0.cpp.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.gradient_generator.pp.0.cpp.err.log 
+Command       ap_eval done; 2.13 sec.
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/gradient_generator.cpp:8:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/gradient_generator.cpp:9:23
+WARNING: [HLS 207-5333] using floating point absolute value function 'fabs' when argument is of integer type: src/gradient_generator.cpp:102:9
+INFO: [HLS 207-4495] use function 'std::abs' instead: src/gradient_generator.cpp:102:9
+INFO: [HLS 207-4255] include the header <cstdlib> or explicitly provide a declaration for 'std::abs': src/gradient_generator.cpp:102:9
+WARNING: [HLS 207-5333] using floating point absolute value function 'fabs' when argument is of integer type: src/gradient_generator.cpp:114:9
+INFO: [HLS 207-4495] use function 'std::abs' instead: src/gradient_generator.cpp:114:9
+INFO: [HLS 207-4255] include the header <cstdlib> or explicitly provide a declaration for 'std::abs': src/gradient_generator.cpp:114:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 16.29 seconds. CPU system time: 0.57 seconds. Elapsed time: 16.48 seconds; current allocated memory: 194.406 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.g.bc"  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/gradient_generator.g.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.0.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 1.68 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.68 sec.
+Execute       run_link_or_opt -opt -out /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=GradientGenUnit -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=GradientGenUnit -reflow-float-conversion -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 0.62 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.62 sec.
+Execute       run_link_or_opt -out /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=GradientGenUnit 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=GradientGenUnit -mllvm -hls-db-dir -mllvm /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.lto.bc > /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.44 sec.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'GradientGen(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/gradient_generator.cpp:88:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'GradientGen(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/gradient_generator.cpp:87:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'GradientGen(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/gradient_generator.cpp:39:15)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const' into 'fp_struct<double>::to_double() const' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:518:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const' into 'fp_struct<double>::to_ieee() const' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:533:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'fabs' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/c/fabsdouble.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fabs' into 'KernelApplier_GX(ap_uint<8> (*) [3])' (src/gradient_generator.cpp:94:0)
+INFO: [HLS 214-178] Inlining function 'fabs' into 'KernelApplier_GY(ap_uint<8> (*) [3])' (src/gradient_generator.cpp:105:0)
+INFO: [HLS 214-178] Inlining function 'KernelApplier_GX(ap_uint<8> (*) [3])' into 'GradientGen(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/gradient_generator.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'KernelApplier_GY(ap_uint<8> (*) [3])' into 'GradientGen(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/gradient_generator.cpp:20:0)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.01 seconds. CPU system time: 0.16 seconds. Elapsed time: 3.17 seconds; current allocated memory: 195.850 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.852 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top GradientGenUnit -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.0.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.13 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 223.891 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.1.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.19 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 262.307 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.g.1.bc to /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.o.1.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_33_2' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:500) in function 'GradientGen' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_41_3' (src/gradient_generator.cpp:41) in function 'GradientGen' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_46_4' (src/gradient_generator.cpp:46) in function 'GradientGen' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_47_5' (src/gradient_generator.cpp:47) in function 'GradientGen' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_97_1' (src/gradient_generator.cpp:96) in function 'GradientGen' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_98_2' (src/gradient_generator.cpp:96) in function 'GradientGen' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_108_1' (src/gradient_generator.cpp:107) in function 'GradientGen' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_109_2' (src/gradient_generator.cpp:107) in function 'GradientGen' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sliding_window.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sliding_window.V'  in dimension 2 completely.
+Command         transform done; 0.31 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/gradient_generator.cpp:22:26) to (src/gradient_generator.cpp:86:19) in function 'GradientGen'... converting 13 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'GradientGen' (src/gradient_generator.cpp:19)...6 expression(s) balanced.
+Command         transform done; 0.18 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.47 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.5 seconds; current allocated memory: 325.146 MB.
+Execute         get_config_compile -enable_loop_extract 
+Execute         get_config_compile -disable_auto_rewind 
+Execute         get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.o.2.bc -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_32_1' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:500:21) in function 'GradientGen'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buffer.V.0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buffer.V.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buffer.V.1'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buffer.V.0' (src/gradient_generator.cpp:42:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buffer.V.2' (src/gradient_generator.cpp:44:26)
+Command         transform done; 0.22 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 343.809 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.13 sec.
+Command     elaborate done; 20.78 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'GradientGenUnit' ...
+Execute       ap_set_top_model GradientGenUnit 
+Execute       get_model_list GradientGenUnit -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model GradientGenUnit 
+Execute       preproc_iomode -model GradientGen 
+Execute       get_model_list GradientGenUnit -filter all-wo-channel 
+INFO-FLOW: Model list for configure: GradientGen GradientGenUnit
+INFO-FLOW: Configuring Module : GradientGen ...
+Execute       set_default_model GradientGen 
+Execute       apply_spec_resource_limit GradientGen 
+INFO-FLOW: Configuring Module : GradientGenUnit ...
+Execute       set_default_model GradientGenUnit 
+Execute       apply_spec_resource_limit GradientGenUnit 
+INFO-FLOW: Model list for preprocess: GradientGen GradientGenUnit
+INFO-FLOW: Preprocessing Module: GradientGen ...
+Execute       set_default_model GradientGen 
+Execute       cdfg_preprocess -model GradientGen 
+Execute       rtl_gen_preprocess GradientGen 
+INFO-FLOW: Preprocessing Module: GradientGenUnit ...
+Execute       set_default_model GradientGenUnit 
+Execute       cdfg_preprocess -model GradientGenUnit 
+Execute       rtl_gen_preprocess GradientGenUnit 
+INFO-FLOW: Model list for synthesis: GradientGen GradientGenUnit
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GradientGen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model GradientGen 
+Execute       schedule -model GradientGen 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_1_VITIS_LOOP_33_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_32_1_VITIS_LOOP_33_2'
+WARNING: [HLS 200-871] Estimated clock period (7.614ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'GradientGen' consists of the following:	'phi' operation ('h', src/gradient_generator.cpp:32) with incoming values : ('select_ln32_5', src/gradient_generator.cpp:32) [40]  (0 ns)
+	'add' operation ('add_ln32_1', src/gradient_generator.cpp:32) [58]  (2.52 ns)
+	'icmp' operation ('notrhs_mid1', src/gradient_generator.cpp:32) [68]  (2.47 ns)
+	'select' operation ('select_ln32_3', src/gradient_generator.cpp:32) [69]  (0.993 ns)
+	'and' operation ('and_ln78_2', src/gradient_generator.cpp:78) [192]  (0 ns)
+	'and' operation ('and_ln78_1', src/gradient_generator.cpp:78) [193]  (0.978 ns)
+	blocking operation 0.648 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 344.551 MB.
+Execute       syn_report -verbosereport -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.sched.adb -f 
+INFO-FLOW: Finish scheduling GradientGen.
+Execute       set_default_model GradientGen 
+Execute       bind -model GradientGen 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 345.372 MB.
+Execute       syn_report -verbosereport -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.2 sec.
+Execute       db_write -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.bind.adb -f 
+INFO-FLOW: Finish binding GradientGen.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GradientGenUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model GradientGenUnit 
+Execute       schedule -model GradientGenUnit 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 345.494 MB.
+Execute       syn_report -verbosereport -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.sched.adb -f 
+INFO-FLOW: Finish scheduling GradientGenUnit.
+Execute       set_default_model GradientGenUnit 
+Execute       bind -model GradientGenUnit 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 345.652 MB.
+Execute       syn_report -verbosereport -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.15 sec.
+Execute       db_write -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.bind.adb -f 
+INFO-FLOW: Finish binding GradientGenUnit.
+Execute       get_model_list GradientGenUnit -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess GradientGen 
+Execute       rtl_gen_preprocess GradientGenUnit 
+INFO-FLOW: Model list for RTL generation: GradientGen GradientGenUnit
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GradientGen' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model GradientGen -top_prefix GradientGenUnit_ -sub_prefix GradientGenUnit_ -mg_file /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'sliding_window_V_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sliding_window_V_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sliding_window_V_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sliding_window_V_2_2' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_6_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GradientGen'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 347.222 MB.
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute       gen_rtl GradientGen -style xilinx -f -lang vhdl -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/vhdl/GradientGenUnit_GradientGen 
+Execute       gen_rtl GradientGen -style xilinx -f -lang vlog -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/verilog/GradientGenUnit_GradientGen 
+Execute       syn_report -csynth -model GradientGen -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/report/GradientGen_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.12 sec.
+Execute       syn_report -rtlxml -model GradientGen -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/report/GradientGen_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model GradientGen -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.26 sec.
+Execute       db_write -model GradientGen -f -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.adb 
+Execute       gen_tb_info GradientGen -p /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GradientGenUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model GradientGenUnit -top_prefix  -sub_prefix GradientGenUnit_ -mg_file /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GX_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GX_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GX_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GX_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GX_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GY_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GY_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GY_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GY_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/stream_out_GY_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/image_w' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'GradientGenUnit/image_h' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'GradientGenUnit' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GradientGenUnit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.58 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.58 seconds; current allocated memory: 350.929 MB.
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute       gen_rtl GradientGenUnit -istop -style xilinx -f -lang vhdl -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/vhdl/GradientGenUnit 
+Execute       gen_rtl GradientGenUnit -istop -style xilinx -f -lang vlog -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/verilog/GradientGenUnit 
+Execute       syn_report -csynth -model GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/report/GradientGenUnit_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/report/GradientGenUnit_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.16 sec.
+Execute       db_write -model GradientGenUnit -f -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.adb 
+Execute       gen_tb_info GradientGenUnit -p /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit 
+Execute       export_constraint_db -f -tool general -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.constraint.tcl 
+Execute       syn_report -designview -model GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.design.xml 
+Command       syn_report done; 0.14 sec.
+Execute       syn_report -csynthDesign -model GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model GradientGenUnit -o /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks GradientGenUnit 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain GradientGenUnit 
+INFO-FLOW: Model list for RTL component generation: GradientGen GradientGenUnit
+INFO-FLOW: Handling components in module [GradientGen] ... 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+INFO-FLOW: Found component GradientGenUnit_sitodp_32s_64_6_no_dsp_1.
+INFO-FLOW: Append model GradientGenUnit_sitodp_32s_64_6_no_dsp_1
+INFO-FLOW: Found component GradientGenUnit_mul_32ns_32ns_64_2_1.
+INFO-FLOW: Append model GradientGenUnit_mul_32ns_32ns_64_2_1
+INFO-FLOW: Found component GradientGenUnit_GradientGen_line_buffer_V_1.
+INFO-FLOW: Append model GradientGenUnit_GradientGen_line_buffer_V_1
+INFO-FLOW: Found component GradientGenUnit_GradientGen_line_buffer_V_0.
+INFO-FLOW: Append model GradientGenUnit_GradientGen_line_buffer_V_0
+INFO-FLOW: Handling components in module [GradientGenUnit] ... 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Found component GradientGenUnit_regslice_both.
+INFO-FLOW: Append model GradientGenUnit_regslice_both
+INFO-FLOW: Append model GradientGen
+INFO-FLOW: Append model GradientGenUnit
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: GradientGenUnit_sitodp_32s_64_6_no_dsp_1 GradientGenUnit_mul_32ns_32ns_64_2_1 GradientGenUnit_GradientGen_line_buffer_V_1 GradientGenUnit_GradientGen_line_buffer_V_0 GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGenUnit_regslice_both GradientGen GradientGenUnit
+INFO-FLOW: To file: write model GradientGenUnit_sitodp_32s_64_6_no_dsp_1
+INFO-FLOW: To file: write model GradientGenUnit_mul_32ns_32ns_64_2_1
+INFO-FLOW: To file: write model GradientGenUnit_GradientGen_line_buffer_V_1
+INFO-FLOW: To file: write model GradientGenUnit_GradientGen_line_buffer_V_0
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGenUnit_regslice_both
+INFO-FLOW: To file: write model GradientGen
+INFO-FLOW: To file: write model GradientGenUnit
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): GradientGenUnit
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'GradientGenUnit_mul_32ns_32ns_64_2_1_Multiplier_0'
+INFO: [RTMG 210-278] Implementing memory 'GradientGenUnit_GradientGen_line_buffer_V_1_ram (RAM)' using auto RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'GradientGenUnit_GradientGen_line_buffer_V_0_ram (RAM)' using auto RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.11 sec.
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=GradientGenUnit xml_exists=0
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.12 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.constraint.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=36
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=17
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=21 #gSsdmPorts=36
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.tbgen.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.constraint.tcl 
+Execute       sc_get_clocks GradientGenUnit 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/misc/GradientGenUnit_ap_sitodp_4_no_dsp_32_ip.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.07 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.11 seconds; current allocated memory: 359.309 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for GradientGenUnit.
+INFO: [VLOG 209-307] Generating Verilog RTL for GradientGenUnit.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute       syn_report -model GradientGenUnit -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 131.34 MHz
+Command     autosyn done; 2.49 sec.
+Command   csynth_design done; 23.27 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 22.85 seconds. CPU system time: 0.81 seconds. Elapsed time: 23.27 seconds; current allocated memory: 359.625 MB.
+Command ap_source done; 24.74 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1 opened at Wed Aug 11 11:55:33 CEST 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.93 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z020:-clg400:-1 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       add_library done; 0.12 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.09 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.28 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z020:-clg400:-1 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     add_library done; 0.11 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.14 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   export_design -rtl vhdl -format ip_catalog -vendor Deverene -library DVR-002 -version 1.0 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -vendor Deverene -library DVR-002 -version 1.0 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -output 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -library=DVR-002 -rtl=vhdl -vendor=Deverene -version=1.0 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl vhdl -vendor Deverene -library DVR-002 -version 1.0
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): GradientGenUnit
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -rtl vhdl
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vhdl -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vhdl -tool Vivado -impltomg_flag
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=GradientGenUnit xml_exists=1
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+Execute     get_config_export -disable_deadlock_detection 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to GradientGenUnit
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.24 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.compgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.tcl 
+Execute     get_config_export -disable_deadlock_detection 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to GradientGenUnit
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.constraint.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=36
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=17
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=1 #modelList=21 #gSsdmPorts=36
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGen.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.constraint.tcl 
+Execute     sc_get_clocks GradientGenUnit 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/misc/GradientGenUnit_ap_sitodp_4_no_dsp_32_ip.tcl 
+INFO-FLOW: DBG:CMD:       copying IP vlog from /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/vhdl
+Execute     get_config_export -format 
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=36 g_lang=vhdl is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=GradientGenUnit
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=GradientGenUnit
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.rtl_wrap.cfg.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.constraint.tcl 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/GradientGenUnit.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/ip/pack.sh
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s gradient_generator/solution1/impl/export.zip 
+INFO: [HLS 200-802] Generated output file gradient_generator/solution1/impl/export.zip
+Command   export_design done; 14.75 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 12.98 seconds. CPU system time: 0.91 seconds. Elapsed time: 14.75 seconds; current allocated memory: 202.357 MB.
+Command ap_source done; 16.19 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1 opened at Sun Sep 12 16:43:48 CEST 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.07 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z020:-clg400:-1 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       add_library done; 0.16 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.3 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -library=DVR-002 
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+Execute     config_export -library=DVR-002 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=vhdl 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+Execute     config_export -rtl=vhdl 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vendor=Deverene 
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverene
+Execute     config_export -vendor=Deverene 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+Execute     config_export -version=1.0 
+Command   open_solution done; 1.53 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z020:-clg400:-1 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     add_library done; 0.14 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.19 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverene -version 1.0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverene -version 1.0 
+Execute   source ./gradient_generator/solution1/directives.tcl 
+Execute     set_directive_top -name GradientGenUnit GradientGenUnit 
+INFO: [HLS 200-1510] Running: set_directive_top -name GradientGenUnit GradientGenUnit 
+INFO-FLOW: Setting directive 'TOP' name=GradientGenUnit 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 9.59 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 18.3 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 18.01 seconds. CPU system time: 0.45 seconds. Elapsed time: 18.3 seconds; current allocated memory: 191.993 MB.
+Command ap_source done; 20.05 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1 opened at Thu Sep 23 13:36:30 CEST 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.11 sec.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.05 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z020:-clg400:-1 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       add_library done; 0.14 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.23 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -library=DVR-002 
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+Execute     config_export -library=DVR-002 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=vhdl 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+Execute     config_export -rtl=vhdl 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vendor=Deverene 
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverene
+Execute     config_export -vendor=Deverene 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+Execute     config_export -version=1.0 
+Command   open_solution done; 1.47 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z020:-clg400:-1 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     add_library done; 0.13 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.17 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverene -version 1.0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverene -version 1.0 
+Execute   source ./gradient_generator/solution1/directives.tcl 
+Execute     set_directive_top -name GradientGenUnit GradientGenUnit 
+INFO: [HLS 200-1510] Running: set_directive_top -name GradientGenUnit GradientGenUnit 
+INFO-FLOW: Setting directive 'TOP' name=GradientGenUnit 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 16.09 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 24.47 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 24.23 seconds. CPU system time: 0.5 seconds. Elapsed time: 24.47 seconds; current allocated memory: 191.994 MB.
+Command ap_source done; 26.12 sec.
+Execute cleanup_all 

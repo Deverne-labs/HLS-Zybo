@@ -1,0 +1,26 @@
+
+
+================================================================
+== Synthesis Summary Report of 'GradientGenUnit'
+================================================================
++ General Information: 
+    * Date:           Wed Aug 11 11:54:41 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        gradient_generator
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |               Modules               |  Issue |       | Latency | Latency| Iteration|         | Trip |          |        |    |           |           |     |
+    |               & Loops               |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF    |    LUT    | URAM|
+    +-------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |+ GradientGenUnit                    |  Timing|   0.31|        -|       -|         -|        -|     -|        no|  3 (1%)|   -|  979 (~0%)|  1737 (3%)|    -|
+    | + grp_GradientGen_fu_84             |  Timing|   0.31|        -|       -|         -|        -|     -|        no|  3 (1%)|   -|  974 (~0%)|  1697 (3%)|    -|
+    |  o VITIS_LOOP_32_1_VITIS_LOOP_33_2  |       -|  -7.30|        -|       -|        11|        1|     -|       yes|       -|   -|          -|          -|    -|
+    +-------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+

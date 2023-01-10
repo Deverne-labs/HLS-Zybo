@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gaussian_low_pass.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/gaussian_low_pass.cpp"/>
+    <originFiles name="gaussian_low_pass.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/gaussian_low_pass.h"/>
+    <originFiles name="gaussian_low_pass_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/gaussian_low_pass_utils.h"/>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/generics_n_options.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Pattern_in_GX_GX.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/Pattern_in_GX_GX.txt"/>
+    <originFiles name="Pattern_in_GX_GY.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/Pattern_in_GX_GY.txt"/>
+    <originFiles name="Pattern_in_GY_GY.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/Pattern_in_GY_GY.txt"/>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gaussian_low_pass/src/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

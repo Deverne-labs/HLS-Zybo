@@ -1,0 +1,193 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 4938
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jan 10 11:04:31 CET 2023
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 5.4.0-125-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 0
+Screen size: 1920x967
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lbo
+User home directory: /home/lbo
+User working directory: /home/lbo/Projects/DVR-003-001/V1.0/HW/BSD
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2020.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/lbo/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/lbo/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/lbo/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/vivado.log
+Vivado journal file location: 	/home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-4938-lbo-portable
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,361 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 96 MB (+98042kb) [00:00:07]
+// [Engine Memory]: 1,348 MB (+1261533kb) [00:00:07]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: Zybo-Z7-20-HDMI.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project Zybo-Z7-20-HDMI.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,371 MB. GUI used memory: 51 MB. Current time: 1/10/23, 11:04:32 AM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+3611kb) [00:00:17]
+// [Engine Memory]: 1,417 MB (+2035kb) [00:00:18]
+// [Engine Memory]: 1,497 MB (+9672kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  3874 ms.
+// Tcl Message: open_project Zybo-Z7-20-HDMI.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/lbo/Projects/esiee/hardware/BSD' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/Zybo-Z7-20-HDMI.ipdefs/repo_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lbo/Projects/DVR-003-001/V1.0/HW/IPs'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'. 
+// [GUI Memory]: 116 MB (+7443kb) [00:00:20]
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 7280.293 ; gain = 105.125 ; free physical = 14053 ; free virtual = 22492 
+// Project name: Zybo-Z7-20-HDMI; location: /home/lbo/Projects/DVR-003-001/V1.0/HW/BSD; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Reading block design file </home/lbo/Projects/DVR-003-001/V1.0/HW/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd>... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,573 MB. GUI used memory: 83 MB. Current time: 1/10/23, 11:04:47 AM CET
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,576 MB (+3883kb) [00:00:28]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 129 MB (+7524kb) [00:00:29]
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_GP0 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0 Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0 
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2417 ms.
+// [GUI Memory]: 139 MB (+3165kb) [00:00:35]
+// [Engine Memory]: 1,698 MB (+46151kb) [00:00:36]
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 7772.129 ; gain = 466.820 ; free physical = 13758 ; free virtual = 22300 
+// 'bF' command handler elapsed time: 11 seconds
+// [Engine Memory]: 1,801 MB (+18355kb) [00:00:37]
+dismissDialog("Open Block Design"); // bz
+// [GUI Memory]: 161 MB (+15379kb) [00:00:38]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// [Engine Memory]: 2,030 MB (+145555kb) [00:00:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,023 MB. GUI used memory: 117 MB. Current time: 1/10/23, 11:05:02 AM CET
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// [GUI Memory]: 170 MB (+873kb) [00:00:52]
+// [GUI Memory]: 182 MB (+4636kb) [00:04:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,953 MB. GUI used memory: 114 MB. Current time: 1/10/23, 11:35:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,909 MB. GUI used memory: 100 MB. Current time: 1/10/23, 12:05:03 PM CET

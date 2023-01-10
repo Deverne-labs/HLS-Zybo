@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/./sim/autowrap/testbench/data_mover_mm2s.cpp_pre.cpp.tb.cpp

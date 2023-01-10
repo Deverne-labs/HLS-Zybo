@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 11 13:37:04 2021
+# Process ID: 23890
+# Current directory: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl/vivado.log
+# Journal file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl/DataMoverUnit_mm2s_32bits.wcfg
+close_sim

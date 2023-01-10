@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+/// Generic Settings Check////
+- (IMAGE_MAX_W_g) Buffer size defined as 2048, must be 2048
+ size of ddr is 			 : 552960 
+ size of ddr line stride is : 512 
+ size of ddr line is 	     : 480 
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

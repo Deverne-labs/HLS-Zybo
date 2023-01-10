@@ -1,0 +1,1287 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'lbo' on host 'lbo-MS-7A70' (Linux_x86_64 version 5.4.0-81-generic) on Thu Sep 23 13:36:30 CEST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator'
+Sourcing Tcl script '/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project gradient_generator 
+INFO: [HLS 200-10] Opening project '/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator'.
+INFO: [HLS 200-1510] Running: set_top GradientGenUnit 
+INFO: [HLS 200-1510] Running: add_files src/generics_n_options.h 
+INFO: [HLS 200-10] Adding design file 'src/generics_n_options.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/gradient_generator.cpp 
+INFO: [HLS 200-10] Adding design file 'src/gradient_generator.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/gradient_generator.h 
+INFO: [HLS 200-10] Adding design file 'src/gradient_generator.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/gradient_generator_utils.h 
+INFO: [HLS 200-10] Adding design file 'src/gradient_generator_utils.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'src/tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/Test_pattern.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'src/Test_pattern.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../Color_to_gray/color_to_gray/solution1/csim/build/Pattern_out.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../Color_to_gray/color_to_gray/solution1/csim/build/Pattern_out.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/Pattern_in.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'src/Pattern_in.txt' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverene
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverene -version 1.0 
+INFO: [HLS 200-1510] Running: set_directive_top -name GradientGenUnit GradientGenUnit 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/tb.cpp in debug mode
+   Compiling ../../../../src/gradient_generator.cpp in debug mode
+   Generating csim.exe
+make: Warning: File '/dev/null' has modification time 5490 s in the future
+In file included from /tools/Xilinx/Vitis_HLS/2020.2/include/ap_utils.h:77:0,
+                 from ../../../../src/gradient_generator_utils.h:2,
+                 from ../../../../src/gradient_generator.h:1,
+                 from ../../../../src/tb.cpp:1:
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:165:31: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_IfRead(...) SSDM_OP_ATTR;
+                               ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:166:32: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_IfWrite(...) SSDM_OP_ATTR;
+                                ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:167:36: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbRead(...) SSDM_OP_ATTR;
+                                    ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:167:36: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbRead(...) SSDM_OP_ATTR;
+                                    ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:168:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbWrite(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:168:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbWrite(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:169:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanRead(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:169:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanRead(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:170:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanWrite(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:170:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanWrite(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:173:32: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_StreamRead(...) SSDM_OP_ATTR;
+                                ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:174:33: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_StreamWrite(...) SSDM_OP_ATTR;
+                                 ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:175:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbRead(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:175:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbRead(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:176:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbWrite(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:176:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbWrite(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:177:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanRead(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:177:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanRead(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:178:40: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanWrite(...) SSDM_OP_ATTR;
+                                        ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:178:40: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanWrite(...) SSDM_OP_ATTR;
+                                        ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:179:36: note: in expansion of macro ‘SSDM_OP_ATTR’
+     unsigned _ssdm_StreamSize(...) SSDM_OP_ATTR;
+                                    ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:180:32: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_ReadReq(...) SSDM_OP_ATTR;
+                                ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:181:29: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Read(...) SSDM_OP_ATTR;
+                             ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:182:33: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_WriteReq(...) SSDM_OP_ATTR;
+                                 ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:183:30: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Write(...) SSDM_OP_ATTR;
+                              ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:184:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbReadReq(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:184:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbReadReq(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:185:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbWriteReq(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:185:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbWriteReq(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:190:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_MemShiftRead(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:192:29: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Wait(...) SSDM_OP_ATTR;
+                             ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:193:29: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Poll(...) SSDM_OP_ATTR;
+                             ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:195:31: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Return(...) SSDM_OP_ATTR;
+                               ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:198:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecSynModule(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:199:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecTopModule(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:200:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecProcessDecl(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:201:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecProcessDef(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:202:33: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPort(...) SSDM_SPEC_ATTR;
+                                 ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:203:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecConnection(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:204:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecChannel(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:205:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecSensitive(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:206:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecModuleInst(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:207:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPortMap(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:209:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecReset(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:211:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPlatform(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:212:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecClockDomain(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:213:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPowerDomain(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:215:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecRegionBegin(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:216:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecRegionEnd(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:218:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLoopName(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:220:42: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLoopTripCount(...) SSDM_SPEC_ATTR;
+                                          ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:222:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecStateBegin(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:223:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecStateEnd(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:225:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecInterface(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:227:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPipeline(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:228:45: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecDataflowPipeline(...) SSDM_SPEC_ATTR;
+                                             ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:231:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLatency(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:232:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecParallel(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:233:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecProtocol(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:234:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecOccurrence(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:236:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecResource(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:237:42: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecResourceLimit(...) SSDM_SPEC_ATTR;
+                                          ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:238:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecCHCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:239:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecFUCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:240:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecIFCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:241:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecIPCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:242:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecKeepValue(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:243:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecMemCore(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:245:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecExt(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:250:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayDimSize(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:252:33: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_RegionBegin(...) SSDM_SPEC_ATTR;
+                                 ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:253:31: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_RegionEnd(...) SSDM_SPEC_ATTR;
+                               ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:255:28: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_Unroll(...) SSDM_SPEC_ATTR;
+                            ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:256:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_UnrollRegion(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:258:31: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineAll(...) SSDM_SPEC_ATTR;
+                               ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:259:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineLoop(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:260:28: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_Inline(...) SSDM_SPEC_ATTR;
+                            ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:261:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineSelf(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:262:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineRegion(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:264:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayMap(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:265:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayPartition(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:266:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayReshape(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:268:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecStream(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:270:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecStable(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:271:42: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecStableContent(...) SSDM_SPEC_ATTR;
+                                          ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:273:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecBindPort(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:275:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPipoDepth(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:277:30: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecExpr(...) SSDM_SPEC_ATTR;
+                              ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:278:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecExprBalance(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:280:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecDependence(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:282:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecLoopMerge(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:283:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecLoopFlatten(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:284:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecLoopRewind(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:286:43: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecFuncInstantiation(...) SSDM_SPEC_ATTR;
+                                           ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:287:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecFuncBuffer(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:288:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecFuncExtract(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:289:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecConstant(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:291:30: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_DataPack(...) SSDM_SPEC_ATTR;
+                              ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:292:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecDataPack(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:294:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecBitsMap(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:295:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLicense(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vitis_HLS/2020.2/include/hls_hotbm_apfixed.h:45:0,
+                 from /tools/Xilinx/Vitis_HLS/2020.2/include/hls_math.h:1065,
+                 from ../../../../src/gradient_generator_utils.h:6,
+                 from ../../../../src/gradient_generator.h:1,
+                 from ../../../../src/tb.cpp:1:
+/tools/Xilinx/Vitis_HLS/2020.2/include/utils/x_hls_utils.h:243:40: warning: ‘hls_preserve’ attribute directive ignored [-Wattributes]
+ __attribute__((hls_preserve)) T reg(T d)
+                                        ^
+In file included from /tools/Xilinx/Vitis_HLS/2020.2/include/ap_utils.h:77:0,
+                 from ../../../../src/gradient_generator_utils.h:2,
+                 from ../../../../src/gradient_generator.h:1,
+                 from ../../../../src/gradient_generator.cpp:1:
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:165:31: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_IfRead(...) SSDM_OP_ATTR;
+                               ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:166:32: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_IfWrite(...) SSDM_OP_ATTR;
+                                ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:167:36: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbRead(...) SSDM_OP_ATTR;
+                                    ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:167:36: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbRead(...) SSDM_OP_ATTR;
+                                    ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:168:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbWrite(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:168:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfNbWrite(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:169:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanRead(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:169:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanRead(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:170:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanWrite(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:170:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_IfCanWrite(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:173:32: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_StreamRead(...) SSDM_OP_ATTR;
+                                ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:174:33: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_StreamWrite(...) SSDM_OP_ATTR;
+                                 ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:175:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbRead(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:175:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbRead(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:176:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbWrite(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:176:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamNbWrite(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:177:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanRead(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:177:39: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanRead(...) SSDM_OP_ATTR;
+                                       ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:178:40: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanWrite(...) SSDM_OP_ATTR;
+                                        ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:178:40: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_  _ssdm_StreamCanWrite(...) SSDM_OP_ATTR;
+                                        ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:179:36: note: in expansion of macro ‘SSDM_OP_ATTR’
+     unsigned _ssdm_StreamSize(...) SSDM_OP_ATTR;
+                                    ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:180:32: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_ReadReq(...) SSDM_OP_ATTR;
+                                ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:181:29: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Read(...) SSDM_OP_ATTR;
+                             ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:182:33: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_WriteReq(...) SSDM_OP_ATTR;
+                                 ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:183:30: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Write(...) SSDM_OP_ATTR;
+                              ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:184:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbReadReq(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:184:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbReadReq(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:185:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbWriteReq(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘bitwidth’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:185:38: note: in expansion of macro ‘SSDM_OP_ATTR’
+     _uint1_ _ssdm_op_NbWriteReq(...) SSDM_OP_ATTR;
+                                      ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:190:37: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_MemShiftRead(...) SSDM_OP_ATTR;
+                                     ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:192:29: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Wait(...) SSDM_OP_ATTR;
+                             ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:193:29: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Poll(...) SSDM_OP_ATTR;
+                             ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:154:76: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_OP_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                            ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:195:31: note: in expansion of macro ‘SSDM_OP_ATTR’
+     void _ssdm_op_Return(...) SSDM_OP_ATTR;
+                               ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:198:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecSynModule(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:199:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecTopModule(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:200:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecProcessDecl(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:201:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecProcessDef(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:202:33: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPort(...) SSDM_SPEC_ATTR;
+                                 ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:203:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecConnection(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:204:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecChannel(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:205:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecSensitive(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:206:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecModuleInst(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:207:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPortMap(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:209:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecReset(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:211:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPlatform(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:212:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecClockDomain(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:213:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPowerDomain(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:215:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecRegionBegin(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:216:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecRegionEnd(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:218:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLoopName(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:220:42: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLoopTripCount(...) SSDM_SPEC_ATTR;
+                                          ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:222:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecStateBegin(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:223:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     int _ssdm_op_SpecStateEnd(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:225:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecInterface(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:227:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPipeline(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:228:45: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecDataflowPipeline(...) SSDM_SPEC_ATTR;
+                                             ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:231:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLatency(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:232:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecParallel(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:233:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecProtocol(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:234:39: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecOccurrence(...) SSDM_SPEC_ATTR;
+                                       ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:236:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecResource(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:237:42: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecResourceLimit(...) SSDM_SPEC_ATTR;
+                                          ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:238:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecCHCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:239:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecFUCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:240:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecIFCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:241:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecIPCore(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:242:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecKeepValue(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:243:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecMemCore(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:245:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecExt(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:250:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayDimSize(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:252:33: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_RegionBegin(...) SSDM_SPEC_ATTR;
+                                 ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:253:31: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_RegionEnd(...) SSDM_SPEC_ATTR;
+                               ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:255:28: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_Unroll(...) SSDM_SPEC_ATTR;
+                            ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:256:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_UnrollRegion(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:258:31: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineAll(...) SSDM_SPEC_ATTR;
+                               ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:259:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineLoop(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:260:28: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_Inline(...) SSDM_SPEC_ATTR;
+                            ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:261:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineSelf(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:262:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_InlineRegion(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:264:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayMap(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:265:40: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayPartition(...) SSDM_SPEC_ATTR;
+                                        ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:266:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecArrayReshape(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:268:32: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecStream(...) SSDM_SPEC_ATTR;
+                                ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:270:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecStable(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:271:42: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecStableContent(...) SSDM_SPEC_ATTR;
+                                          ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:273:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecBindPort(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:275:38: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecPipoDepth(...) SSDM_SPEC_ATTR;
+                                      ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:277:30: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecExpr(...) SSDM_SPEC_ATTR;
+                              ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:278:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecExprBalance(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:280:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecDependence(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:282:35: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecLoopMerge(...) SSDM_SPEC_ATTR;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:283:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecLoopFlatten(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:284:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecLoopRewind(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:286:43: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecFuncInstantiation(...) SSDM_SPEC_ATTR;
+                                           ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:287:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecFuncBuffer(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:288:37: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecFuncExtract(...) SSDM_SPEC_ATTR;
+                                     ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:289:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecConstant(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:291:30: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_DataPack(...) SSDM_SPEC_ATTR;
+                              ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:292:34: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_SpecDataPack(...) SSDM_SPEC_ATTR;
+                                  ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:294:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecBitsMap(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:153:78: warning: ‘overloadable’ attribute directive ignored [-Wattributes]
+ #define SSDM_SPEC_ATTR __attribute__ ((nothrow)) __attribute__((overloadable))
+                                                                              ^
+/tools/Xilinx/Vitis_HLS/2020.2/include/etc/autopilot_ssdm_op.h:295:36: note: in expansion of macro ‘SSDM_SPEC_ATTR’
+     void _ssdm_op_SpecLicense(...) SSDM_SPEC_ATTR;
+                                    ^~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vitis_HLS/2020.2/include/hls_hotbm_apfixed.h:45:0,
+                 from /tools/Xilinx/Vitis_HLS/2020.2/include/hls_math.h:1065,
+                 from ../../../../src/gradient_generator_utils.h:6,
+                 from ../../../../src/gradient_generator.h:1,
+                 from ../../../../src/gradient_generator.cpp:1:
+/tools/Xilinx/Vitis_HLS/2020.2/include/utils/x_hls_utils.h:243:40: warning: ‘hls_preserve’ attribute directive ignored [-Wattributes]
+ __attribute__((hls_preserve)) T reg(T d)
+                                        ^
+make: warning:  Clock skew detected.  Your build may be incomplete.
+The maximum depth reached by any of the 3 hls::stream() instances in the design is 2073600
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 24.23 seconds. CPU system time: 0.5 seconds. Elapsed time: 24.47 seconds; current allocated memory: 191.994 MB.

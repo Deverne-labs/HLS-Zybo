@@ -1,0 +1,10 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/lib//server/libjvm.so(+0xc04c3b) [0x7f902926ac3b]
+/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/lib//server/libjvm.so(JVM_handle_linux_signal+0x14e) [0x7f902926f8de]
+/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/lib//server/libjvm.so(+0xbfd538) [0x7f9029263538]
+/tools/Xilinx/Vivado/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib/libjfxwebkit.so(+0x205ae18) [0x7f8fb6c61e18]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3f040) [0x7f90803ea040]
+[0x5da25216]

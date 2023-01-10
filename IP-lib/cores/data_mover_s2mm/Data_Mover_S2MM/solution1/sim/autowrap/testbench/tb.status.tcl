@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm/Data_Mover_S2MM/solution1/./sim/autowrap/testbench/data_mover_s2mm.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_processing_system7_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_2_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_3_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_xbar_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ColorToGrayUnit_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_ColorToGrayUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_Image_dim_register_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_Image_dim_register_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_CornerResponseUnit_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_CornerResponseUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_broadcaster_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_axis_broadcaster_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_cc_1_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_auto_cc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_GradientGenUnit_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_GradientGenUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_GradConvolutionUnit_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_GradConvolutionUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_1_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_GaussianUnit_0_1_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_GaussianUnit_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_broadcaster_0_1_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_axis_broadcaster_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_GradConvGenerator_A_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_GradConvGenerator_A_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_GradConvolutionUnit_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_GaussianUnit_1_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_GaussianUnit_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_GaussianUnit_0_1_synth_1"/>
+	</Run>
+	<Run Id="design_1_GradConvGenerator_B_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_GradConvGenerator_B_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_GradConvolutionUnit_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_GaussianUnit_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_GaussianUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_GaussianUnit_0_1_synth_1"/>
+	</Run>
+	<Run Id="design_1_NonMaximalSuppresion_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_NonMaximalSuppresion_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_cc_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_proc_sys_reset_0_1_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_proc_sys_reset_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_vdma_0_2_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_axi_vdma_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ISP_param_register_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_ISP_param_register_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_gpio_0_0_synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_processing_system7_0_0_synth_1"/>
+		<Parent Id="design_1_xbar_2_synth_1"/>
+		<Parent Id="design_1_xbar_3_synth_1"/>
+		<Parent Id="design_1_ColorToGrayUnit_0_0_synth_1"/>
+		<Parent Id="design_1_Image_dim_register_0_synth_1"/>
+		<Parent Id="design_1_CornerResponseUnit_0_0_synth_1"/>
+		<Parent Id="design_1_axis_broadcaster_0_0_synth_1"/>
+		<Parent Id="design_1_auto_cc_1_synth_1"/>
+		<Parent Id="design_1_GradientGenUnit_0_0_synth_1"/>
+		<Parent Id="design_1_GradConvolutionUnit_0_0_synth_1"/>
+		<Parent Id="design_1_auto_pc_1_synth_1"/>
+		<Parent Id="design_1_GaussianUnit_0_1_synth_1"/>
+		<Parent Id="design_1_axis_broadcaster_0_1_synth_1"/>
+		<Parent Id="design_1_GradConvGenerator_A_0_synth_1"/>
+		<Parent Id="design_1_GaussianUnit_1_0_synth_1"/>
+		<Parent Id="design_1_GradConvGenerator_B_0_synth_1"/>
+		<Parent Id="design_1_GaussianUnit_0_0_synth_1"/>
+		<Parent Id="design_1_NonMaximalSuppresion_0_0_synth_1"/>
+		<Parent Id="design_1_auto_cc_0_synth_1"/>
+		<Parent Id="design_1_proc_sys_reset_0_1_synth_1"/>
+		<Parent Id="design_1_axi_vdma_0_2_synth_1"/>
+		<Parent Id="design_1_ISP_param_register_0_synth_1"/>
+		<Parent Id="design_1_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

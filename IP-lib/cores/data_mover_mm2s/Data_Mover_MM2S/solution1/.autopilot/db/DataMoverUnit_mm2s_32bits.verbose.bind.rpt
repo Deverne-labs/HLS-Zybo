@@ -1,0 +1,736 @@
+
+
+================================================================
+== Vitis HLS Report for 'DataMoverUnit_mm2s_32bits'
+================================================================
+* Date:           Fri Aug 13 11:22:20 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Data_Mover_MM2S
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                 |                       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |             Instance            |         Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_DataMover_mm2s_32bits_fu_96  |DataMover_mm2s_32bits  |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        +---------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%image_h_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %image_h" [src/data_mover_mm2s.cpp:3]   --->   Operation 4 'read' 'image_h_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%image_w_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %image_w" [src/data_mover_mm2s.cpp:3]   --->   Operation 5 'read' 'image_w_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%MM_video_in_offset_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %MM_video_in_offset" [src/data_mover_mm2s.cpp:3]   --->   Operation 6 'read' 'MM_video_in_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln10 = call void @DataMover_mm2s_32bits, i32 %MM_video_in, i32 %MM_video_in_offset_read, i8 %STR_video_out_V_data_V, i1 %STR_video_out_V_keep_V, i1 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, i32 %image_w_read, i32 %image_h_read, i32 %axi_elt_dma_buffer_V, i8 %stream_elt_dma_buffer_V" [src/data_mover_mm2s.cpp:10]   --->   Operation 7 'call' 'call_ln10' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln10 = call void @DataMover_mm2s_32bits, i32 %MM_video_in, i32 %MM_video_in_offset_read, i8 %STR_video_out_V_data_V, i1 %STR_video_out_V_keep_V, i1 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, i32 %image_w_read, i32 %image_h_read, i32 %axi_elt_dma_buffer_V, i8 %stream_elt_dma_buffer_V" [src/data_mover_mm2s.cpp:10]   --->   Operation 8 'call' 'call_ln10' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 9 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %MM_video_in, void @empty_12, i32 0, i32 0, void @empty_7, i32 0, i32 552960, void @empty_9, void @empty_8, void @empty_7, i32 16, i32 16, i32 64, i32 16, void @empty_7, void @empty_7"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %MM_video_in"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %MM_video_in_offset, void @empty, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %STR_video_out_V_data_V, i1 %STR_video_out_V_keep_V, i1 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, void @empty_5, i32 1, i32 1, void @empty_10, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %STR_video_out_V_data_V"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %STR_video_out_V_keep_V"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %STR_video_out_V_strb_V"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %STR_video_out_V_user_V"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %STR_video_out_V_last_V"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %image_w"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %image_w, void @empty_11, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %image_h"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %image_h, void @empty_11, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %mm2s_line_buffer_size"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %mm2s_line_buffer_size, void @empty_11, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%write_ln9 = write void @_ssdm_op_Write.ap_none.i16P0A, i16 %mm2s_line_buffer_size, i16 2048" [src/data_mover_mm2s.cpp:9]   --->   Operation 25 'write' 'write_ln9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%ret_ln11 = ret" [src/data_mover_mm2s.cpp:11]   --->   Operation 26 'ret' 'ret_ln11' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ MM_video_in]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; pingpong=0; private_global=0; IO mode=m_axi:ce=0
+Port [ MM_video_in_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ STR_video_out_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ STR_video_out_V_keep_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ STR_video_out_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ STR_video_out_V_user_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ STR_video_out_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ image_w]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ image_h]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ mm2s_line_buffer_size]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ axi_elt_dma_buffer_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ stream_elt_dma_buffer_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+image_h_read            (read         ) [ 0010]
+image_w_read            (read         ) [ 0010]
+MM_video_in_offset_read (read         ) [ 0010]
+call_ln10               (call         ) [ 0000]
+spectopmodule_ln0       (spectopmodule) [ 0000]
+specinterface_ln0       (specinterface) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specinterface_ln0       (specinterface) [ 0000]
+specinterface_ln0       (specinterface) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specinterface_ln0       (specinterface) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specinterface_ln0       (specinterface) [ 0000]
+specbitsmap_ln0         (specbitsmap  ) [ 0000]
+specinterface_ln0       (specinterface) [ 0000]
+write_ln9               (write        ) [ 0000]
+ret_ln11                (ret          ) [ 0000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="MM_video_in">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="MM_video_in"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="MM_video_in_offset">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="MM_video_in_offset"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="STR_video_out_V_data_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="STR_video_out_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="STR_video_out_V_keep_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="STR_video_out_V_keep_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="STR_video_out_V_strb_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="STR_video_out_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="STR_video_out_V_user_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="STR_video_out_V_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="STR_video_out_V_last_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="STR_video_out_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="image_w">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="image_w"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="image_h">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="image_h"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="mm2s_line_buffer_size">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mm2s_line_buffer_size"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="axi_elt_dma_buffer_V">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="axi_elt_dma_buffer_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="stream_elt_dma_buffer_V">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="stream_elt_dma_buffer_V"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_none.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DataMover_mm2s_32bits"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_12"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_10"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_11"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_none.i16P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="image_h_read_read_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="32" slack="0"/>
+<pin id="72" dir="0" index="1" bw="32" slack="0"/>
+<pin id="73" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="image_h_read/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="image_w_read_read_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="32" slack="0"/>
+<pin id="78" dir="0" index="1" bw="32" slack="0"/>
+<pin id="79" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="image_w_read/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="MM_video_in_offset_read_read_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="32" slack="0"/>
+<pin id="84" dir="0" index="1" bw="32" slack="0"/>
+<pin id="85" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="MM_video_in_offset_read/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="write_ln9_write_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="0" slack="0"/>
+<pin id="90" dir="0" index="1" bw="16" slack="0"/>
+<pin id="91" dir="0" index="2" bw="13" slack="0"/>
+<pin id="92" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln9/3 "/>
+</bind>
+</comp>
+
+<comp id="96" class="1004" name="grp_DataMover_mm2s_32bits_fu_96">
+<pin_list>
+<pin id="97" dir="0" index="0" bw="0" slack="0"/>
+<pin id="98" dir="0" index="1" bw="32" slack="0"/>
+<pin id="99" dir="0" index="2" bw="32" slack="0"/>
+<pin id="100" dir="0" index="3" bw="8" slack="0"/>
+<pin id="101" dir="0" index="4" bw="1" slack="0"/>
+<pin id="102" dir="0" index="5" bw="1" slack="0"/>
+<pin id="103" dir="0" index="6" bw="1" slack="0"/>
+<pin id="104" dir="0" index="7" bw="1" slack="0"/>
+<pin id="105" dir="0" index="8" bw="32" slack="0"/>
+<pin id="106" dir="0" index="9" bw="32" slack="0"/>
+<pin id="107" dir="0" index="10" bw="32" slack="0"/>
+<pin id="108" dir="0" index="11" bw="8" slack="0"/>
+<pin id="109" dir="1" index="12" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln10/1 "/>
+</bind>
+</comp>
+
+<comp id="122" class="1005" name="image_h_read_reg_122">
+<pin_list>
+<pin id="123" dir="0" index="0" bw="32" slack="1"/>
+<pin id="124" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="image_h_read "/>
+</bind>
+</comp>
+
+<comp id="127" class="1005" name="image_w_read_reg_127">
+<pin_list>
+<pin id="128" dir="0" index="0" bw="32" slack="1"/>
+<pin id="129" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="image_w_read "/>
+</bind>
+</comp>
+
+<comp id="132" class="1005" name="MM_video_in_offset_read_reg_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="32" slack="1"/>
+<pin id="134" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="MM_video_in_offset_read "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="74"><net_src comp="24" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="75"><net_src comp="16" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="24" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="14" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="86"><net_src comp="26" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="87"><net_src comp="2" pin="0"/><net_sink comp="82" pin=1"/></net>
+
+<net id="93"><net_src comp="66" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="94"><net_src comp="18" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+<net id="95"><net_src comp="68" pin="0"/><net_sink comp="88" pin=2"/></net>
+
+<net id="110"><net_src comp="28" pin="0"/><net_sink comp="96" pin=0"/></net>
+
+<net id="111"><net_src comp="0" pin="0"/><net_sink comp="96" pin=1"/></net>
+
+<net id="112"><net_src comp="82" pin="2"/><net_sink comp="96" pin=2"/></net>
+
+<net id="113"><net_src comp="4" pin="0"/><net_sink comp="96" pin=3"/></net>
+
+<net id="114"><net_src comp="6" pin="0"/><net_sink comp="96" pin=4"/></net>
+
+<net id="115"><net_src comp="8" pin="0"/><net_sink comp="96" pin=5"/></net>
+
+<net id="116"><net_src comp="10" pin="0"/><net_sink comp="96" pin=6"/></net>
+
+<net id="117"><net_src comp="12" pin="0"/><net_sink comp="96" pin=7"/></net>
+
+<net id="118"><net_src comp="76" pin="2"/><net_sink comp="96" pin=8"/></net>
+
+<net id="119"><net_src comp="70" pin="2"/><net_sink comp="96" pin=9"/></net>
+
+<net id="120"><net_src comp="20" pin="0"/><net_sink comp="96" pin=10"/></net>
+
+<net id="121"><net_src comp="22" pin="0"/><net_sink comp="96" pin=11"/></net>
+
+<net id="125"><net_src comp="70" pin="2"/><net_sink comp="122" pin=0"/></net>
+
+<net id="126"><net_src comp="122" pin="1"/><net_sink comp="96" pin=9"/></net>
+
+<net id="130"><net_src comp="76" pin="2"/><net_sink comp="127" pin=0"/></net>
+
+<net id="131"><net_src comp="127" pin="1"/><net_sink comp="96" pin=8"/></net>
+
+<net id="135"><net_src comp="82" pin="2"/><net_sink comp="132" pin=0"/></net>
+
+<net id="136"><net_src comp="132" pin="1"/><net_sink comp="96" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: STR_video_out_V_data_V | {1 2 }
+	Port: STR_video_out_V_keep_V | {1 2 }
+	Port: STR_video_out_V_strb_V | {1 2 }
+	Port: STR_video_out_V_user_V | {1 2 }
+	Port: STR_video_out_V_last_V | {1 2 }
+	Port: mm2s_line_buffer_size | {3 }
+	Port: axi_elt_dma_buffer_V | {1 2 }
+	Port: stream_elt_dma_buffer_V | {1 2 }
+ - Input state : 
+	Port: DataMoverUnit_mm2s_32bits : MM_video_in | {1 2 }
+	Port: DataMoverUnit_mm2s_32bits : MM_video_in_offset | {1 }
+	Port: DataMoverUnit_mm2s_32bits : image_w | {1 }
+	Port: DataMoverUnit_mm2s_32bits : image_h | {1 }
+	Port: DataMoverUnit_mm2s_32bits : axi_elt_dma_buffer_V | {1 2 }
+	Port: DataMoverUnit_mm2s_32bits : stream_elt_dma_buffer_V | {1 2 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|------------------------------------|---------|---------|---------|
+| Operation|           Functional Unit          |  Delay  |    FF   |   LUT   |
+|----------|------------------------------------|---------|---------|---------|
+|   call   |   grp_DataMover_mm2s_32bits_fu_96  |  12.704 |   864   |   519   |
+|----------|------------------------------------|---------|---------|---------|
+|          |       image_h_read_read_fu_70      |    0    |    0    |    0    |
+|   read   |       image_w_read_read_fu_76      |    0    |    0    |    0    |
+|          | MM_video_in_offset_read_read_fu_82 |    0    |    0    |    0    |
+|----------|------------------------------------|---------|---------|---------|
+|   write  |        write_ln9_write_fu_88       |    0    |    0    |    0    |
+|----------|------------------------------------|---------|---------|---------|
+|   Total  |                                    |  12.704 |   864   |   519   |
+|----------|------------------------------------|---------|---------|---------|
+
+Memories:
++-----------------------+--------+--------+--------+
+|                       |  BRAM  |   FF   |   LUT  |
++-----------------------+--------+--------+--------+
+|  axi_elt_dma_buffer_V |    1   |    0   |    0   |
+|stream_elt_dma_buffer_V|    1   |    0   |    0   |
++-----------------------+--------+--------+--------+
+|         Total         |    2   |    0   |    0   |
++-----------------------+--------+--------+--------+
+
+* Register list:
++-------------------------------+--------+
+|                               |   FF   |
++-------------------------------+--------+
+|MM_video_in_offset_read_reg_132|   32   |
+|      image_h_read_reg_122     |   32   |
+|      image_w_read_reg_127     |   32   |
++-------------------------------+--------+
+|             Total             |   96   |
++-------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|---------------------------------|------|------|------|--------||---------||---------|
+|               Comp              |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|---------------------------------|------|------|------|--------||---------||---------|
+| grp_DataMover_mm2s_32bits_fu_96 |  p2  |   2  |  32  |   64   ||    9    |
+| grp_DataMover_mm2s_32bits_fu_96 |  p8  |   2  |  32  |   64   ||    9    |
+| grp_DataMover_mm2s_32bits_fu_96 |  p9  |   2  |  32  |   64   ||    9    |
+|---------------------------------|------|------|------|--------||---------||---------|
+|              Total              |      |      |      |   192  ||  4.764  ||    27   |
+|---------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |  BRAM  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |    -   |   12   |   864  |   519  |
+|   Memory  |    2   |    -   |    0   |    0   |
+|Multiplexer|    -   |    4   |    -   |   27   |
+|  Register |    -   |    -   |   96   |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |    2   |   17   |   960  |   546  |
++-----------+--------+--------+--------+--------+

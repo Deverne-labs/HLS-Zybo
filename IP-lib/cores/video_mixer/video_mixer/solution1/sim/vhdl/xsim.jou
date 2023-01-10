@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 16 15:27:30 2021
+# Process ID: 7902
+# Current directory: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/VideoMixerUnit/xsim_script.tcl}
+# Log file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/xsim.log
+# Journal file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/VideoMixerUnit/xsim_script.tcl
+source VideoMixerUnit.tcl

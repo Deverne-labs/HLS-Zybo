@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1628682999531">
+  <ports id="1" name="stream_in_1_V_data_V" type="PortType" originalName="stream_in_1" coreId="84" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="stream_in_1_V_keep_V" type="PortType" originalName="stream_in_1" coreId="671088768" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="stream_in_1_V_strb_V" type="PortType" originalName="stream_in_1" coreId="1869635878" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="stream_in_1_V_user_V" type="PortType" originalName="stream_in_1" coreId="539112760" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="stream_in_1_V_last_V" type="PortType" originalName="stream_in_1" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="stream_in_2_V_data_V" type="PortType" originalName="stream_in_2" coreId="0" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="stream_in_2_V_keep_V" type="PortType" originalName="stream_in_2" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="stream_in_2_V_strb_V" type="PortType" originalName="stream_in_2" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="stream_in_2_V_user_V" type="PortType" originalName="stream_in_2" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="10" name="stream_in_2_V_last_V" type="PortType" originalName="stream_in_2" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="stream_out_V_data_V" type="PortType" originalName="stream_out" coreId="671088768" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="12" name="stream_out_V_keep_V" type="PortType" originalName="stream_out" coreId="3403231568" bitwidth="2" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="13" name="stream_out_V_strb_V" type="PortType" originalName="stream_out" coreId="3403231744" bitwidth="2" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="14" name="stream_out_V_user_V" type="PortType" originalName="stream_out" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="15" name="stream_out_V_last_V" type="PortType" originalName="stream_out" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="16" name="image_w" type="PortType" originalName="image_w" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="17" name="image_h" type="PortType" originalName="image_h" coreId="3403233977" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="63" source_obj="//@ports.16" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="65" source_obj="//@ports.15" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="78" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="81" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="83" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="85" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="87" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="97" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="111" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="112" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="113" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="114" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="115" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="118" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="119" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="120" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="121" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="122" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.10"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.11"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.12"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.13"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.14"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="149" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="239" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="240" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="241" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="28" name=".lr.ph142" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_37</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="image_h_read" originalName="image_h" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>image_h</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="image_w_read" originalName="image_w" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>image_w</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="sub" rtlName="sub_fu_180_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.55" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="cast" rtlName="grp_fu_174_p00" coreId="3403234912" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="cast1" rtlName="grp_fu_174_p10" coreId="0" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="bound" rtlName="mul_32ns_32ns_64_2_1_U1" opType="mul" coreId="3403235824" bitwidth="64" opcode="mul" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln59" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." coreId="49" contextFuncName="GradConvolution" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+      <controlInputObjs>block_37</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/gradient_convolution.cpp">
+      <validLinenumbers>59</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="60" name="._crit_edge143.loopexit" type="BlockType">
+    <controlInputObjs>block_37</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="_ln73" lineNumber="73" fileName="src/gradient_convolution.cpp" fileDirectory=".." coreId="3403192848" contextFuncName="GradConvolution" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="73" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/gradient_convolution.cpp">
+      <validLinenumbers>73</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="196" pipe_depth="2" RegionName="VITIS_LOOP_59_1_VITIS_LOOP_60_2">
+    <basic_blocks id="37" name="block_37" type="BlockType">
+      <controlInputObjs>.lr.ph142</controlInputObjs>
+      <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge143.loopexit</controlOutputObjs>
+      <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="indvar_flatten" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." coreId="0" contextFuncName="GradConvolution" bitwidth="64" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.lr.ph142</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="line" lineNumber="59" originalName="line" fileName="src/gradient_convolution.cpp" fileDirectory=".." coreId="0" contextFuncName="GradConvolution" bitwidth="31" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.lr.ph142</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="column" originalName="column" coreId="0" bitwidth="31" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.lr.ph142</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="add_ln59" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="add_ln59_fu_185_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="GradConvolution" bitwidth="64" opcode="add" nodeLabel="2.0" m_display="0" m_delay="3.52" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="zext_ln60" lineNumber="60" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="zext_ln60_fu_191_p1" coreId="3403342776" contextFuncName="GradConvolution" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="60" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln60" lineNumber="60" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="icmp_ln60_fu_195_p2" opType="icmp" coreId="0" contextFuncName="GradConvolution" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.47" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="60" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln59" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="icmp_ln59_fu_200_p2" opType="icmp" coreId="3403344016" contextFuncName="GradConvolution" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.77" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln59" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." coreId="9" contextFuncName="GradConvolution" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+        <controlInputObjs>._crit_edge143.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/gradient_convolution.cpp">
+        <validLinenumbers>59</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="58" name="._crit_edge.loopexit" type="BlockType">
+      <controlInputObjs>block_37</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_37</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="select_ln59" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="select_ln59_fu_205_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="GradConvolution" bitwidth="31" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.73" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="zext_ln59" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="zext_ln59_fu_213_p1" coreId="49" contextFuncName="GradConvolution" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="add_ln59_1" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="add_ln59_1_fu_217_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="GradConvolution" bitwidth="31" opcode="add" nodeLabel="2.0" m_display="0" m_delay="2.52" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="select_ln59_1" lineNumber="59" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="select_ln59_1_fu_223_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="GradConvolution" bitwidth="31" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.73" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="59" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="empty" lineNumber="283" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="12" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="read"/>
+        <dataInputObjs>stream_in_1_V_data_V</dataInputObjs>
+        <dataInputObjs>stream_in_1_V_keep_V</dataInputObjs>
+        <dataInputObjs>stream_in_1_V_strb_V</dataInputObjs>
+        <dataInputObjs>stream_in_1_V_user_V</dataInputObjs>
+        <dataInputObjs>stream_in_1_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="in_element_int_1_data_V" lineNumber="283" originalName="in_element_int_1.data.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreId="0" contextFuncName="read" bitwidth="8" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="empty_11" lineNumber="283" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="12" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="read"/>
+        <dataInputObjs>stream_in_2_V_data_V</dataInputObjs>
+        <dataInputObjs>stream_in_2_V_keep_V</dataInputObjs>
+        <dataInputObjs>stream_in_2_V_strb_V</dataInputObjs>
+        <dataInputObjs>stream_in_2_V_user_V</dataInputObjs>
+        <dataInputObjs>stream_in_2_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="in_element_int_2_data_V" lineNumber="283" originalName="in_element_int_2.data.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreId="11" contextFuncName="read" bitwidth="8" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="283" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="zext_ln215" lineNumber="215" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="ret_fu_268_p10" coreId="0" contextFuncName="ap_int_base_8_false_s" bitwidth="16" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="215" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="ap_int_base&amp;lt;8, false&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="zext_ln215_1" lineNumber="215" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="ret_fu_268_p00" coreId="1952539763" contextFuncName="ap_int_base_8_false_s" bitwidth="16" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="215" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="ap_int_base&amp;lt;8, false&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="ret" lineNumber="1345" originalName="ret" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="mul_8ns_8ns_16_1_1_U2" opType="mul" coreId="1953067639" contextFuncName="operator_mul_8_false_8_false" bitwidth="16" opcode="mul" nodeLabel="3.0" m_display="0" m_delay="4.17" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1345" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="operator*&amp;lt;8, false, 8, false&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="or_ln66" lineNumber="66" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="or_ln66_fu_239_p2" opType="or" coreId="132" contextFuncName="GradConvolution" bitwidth="31" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="66" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="out_element_int_user_V" lineNumber="66" originalName="out_element_int.user.V" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="out_element_int_user_V_fu_245_p2" opType="icmp" coreId="0" contextFuncName="GradConvolution" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.47" m_topoIndex="25" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="66" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="out_element_int_last_V" lineNumber="67" originalName="out_element_int.last.V" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="out_element_int_last_V_fu_251_p2" opType="icmp" coreId="13" contextFuncName="GradConvolution" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.47" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="67" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="stream_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="write"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>stream_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>stream_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>stream_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>stream_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>stream_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="column_1" lineNumber="60" originalName="column" fileName="src/gradient_convolution.cpp" fileDirectory=".." rtlName="column_1_fu_256_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="GradConvolution" bitwidth="31" opcode="add" nodeLabel="2.0" m_display="0" m_delay="2.52" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gradient_convolution.cpp" linenumber="60" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution" functionName="GradConvolution"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln0" coreId="0" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_37</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h">
+        <validLinenumbers>283</validLinenumbers>
+        <validLinenumbers>304</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="src/gradient_convolution.cpp">
+        <validLinenumbers>59</validLinenumbers>
+        <validLinenumbers>66</validLinenumbers>
+        <validLinenumbers>67</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>215</validLinenumbers>
+        <validLinenumbers>1345</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="icmp_ln59_reg_306">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="image_w_read_reg_275">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="cast_reg_281">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="out_element_int_last_V_reg_330">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln59_1_reg_310">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln59_reg_301">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="bound_reg_296">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="cast1_reg_286">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_reg_291">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="out_element_int_user_V_reg_325">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="in_element_int_2_data_V_reg_320">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="line_reg_144">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="in_element_int_1_data_V_reg_315">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="column_1_reg_335">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="column_reg_155">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_133">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <expressionNodes realName="select_ln59_1_fu_223">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_element_int_2_data_V_fu_235">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_phi_fu_137">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cast_fu_166">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_fu_191">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cast1_fu_170">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln59_fu_185">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln66_fu_239">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_fu_180">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_element_int_user_V_fu_245">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln59_fu_213">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="line_phi_fu_148">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln59_1_fu_217">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_element_int_1_data_V_fu_231">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_fu_268">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln59_fu_200">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln60_fu_195">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln59_fu_205">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln215_1_fu_265">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln215_fu_262">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="column_phi_fu_159">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="column_1_fu_256">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_element_int_last_V_fu_251">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_174">
+    <nodeIds>26</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="image_w_read_read_fu_78">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_11_read_fu_98">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_h_read_read_fu_72">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_84">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln304_write_fu_112">
+    <nodeIds>55</nodeIds>
+  </ioNodes>
+  <ioPorts name="image_h">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_1_V_data_V">
+    <contents name="read">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_1_V_keep_V">
+    <contents name="read">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_1_V_last_V">
+    <contents name="read">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_1_V_strb_V">
+    <contents name="read">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_1_V_user_V">
+    <contents name="read">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_2_V_data_V">
+    <contents name="read">
+      <nodeIds>47</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_2_V_keep_V">
+    <contents name="read">
+      <nodeIds>47</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_2_V_last_V">
+    <contents name="read">
+      <nodeIds>47</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_2_V_strb_V">
+    <contents name="read">
+      <nodeIds>47</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_in_2_V_user_V">
+    <contents name="read">
+      <nodeIds>47</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_out_V_data_V">
+    <contents name="write">
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_out_V_keep_V">
+    <contents name="write">
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_out_V_last_V">
+    <contents name="write">
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_out_V_strb_V">
+    <contents name="write">
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_out_V_user_V">
+    <contents name="write">
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="2"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="59" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="GradConvolution" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_59_1_VITIS_LOOP_60_2" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>58</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>60</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

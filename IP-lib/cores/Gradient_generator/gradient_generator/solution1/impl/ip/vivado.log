@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Aug 11 11:55:36 2021
+# Process ID: 15711
+# Current directory: /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/ip/vivado.log
+# Journal file: /home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_generator/gradient_generator/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'GradientGenUnit_ap_sitodp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'GradientGenUnit_ap_sitodp_4_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'GradientGenUnit_ap_sitodp_4_no_dsp_32'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 11 11:55:46 2021...

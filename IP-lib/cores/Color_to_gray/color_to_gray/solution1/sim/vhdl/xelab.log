@@ -1,0 +1,53 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_ColorToGrayUnit_top glbl -prj ColorToGrayUnit.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s ColorToGrayUnit -debug wave 
+Multi-threading is on. Using 4 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/ColorToGrayUnit.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_ColorToGrayUnit_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/ColorToGrayUnit_regslice_both.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ColorToGrayUnit_regslice_both'
+INFO: [VRFC 10-3107] analyzing entity 'ColorToGrayUnit_regslice_both_w1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/ColorToGrayUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ColorToGrayUnit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/ColorToGrayUnit_mul_32ns_32ns_64_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ColorToGrayUnit_mul_32ns_32ns_64_2_1_Multiplier_0'
+INFO: [VRFC 10-3107] analyzing entity 'ColorToGrayUnit_mul_32ns_32ns_64_2_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/ColorToGrayUnit_am_addmul_9ns_8ns_12ns_21_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ColorToGrayUnit_am_addmul_9ns_8ns_12ns_21_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'ColorToGrayUnit_am_addmul_9ns_8ns_12ns_21_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/AESL_axi_s_stream_in.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_stream_in'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/esiee/hardware/IPs/cores/Color_to_gray/color_to_gray/solution1/sim/vhdl/AESL_axi_s_stream_out.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_stream_out'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling module work.glbl
+Compiling architecture behav of entity xil_defaultlib.ColorToGrayUnit_mul_32ns_32ns_64_2_1_Multiplier_0 [colortograyunit_mul_32ns_32ns_64...]
+Compiling architecture arch of entity xil_defaultlib.ColorToGrayUnit_mul_32ns_32ns_64_2_1 [\ColorToGrayUnit_mul_32ns_32ns_6...]
+Compiling architecture behav of entity xil_defaultlib.ColorToGrayUnit_am_addmul_9ns_8ns_12ns_21_4_1_DSP48_0 [colortograyunit_am_addmul_9ns_8n...]
+Compiling architecture arch of entity xil_defaultlib.ColorToGrayUnit_am_addmul_9ns_8ns_12ns_21_4_1 [\ColorToGrayUnit_am_addmul_9ns_8...]
+Compiling architecture behav of entity xil_defaultlib.ColorToGrayUnit_regslice_both [\ColorToGrayUnit_regslice_both(d...]
+Compiling architecture behav of entity xil_defaultlib.ColorToGrayUnit_regslice_both [\ColorToGrayUnit_regslice_both(d...]
+Compiling architecture behav of entity xil_defaultlib.ColorToGrayUnit_regslice_both [\ColorToGrayUnit_regslice_both(d...]
+Compiling architecture behav of entity xil_defaultlib.ColorToGrayUnit_regslice_both [\ColorToGrayUnit_regslice_both(d...]
+Compiling architecture behav of entity xil_defaultlib.ColorToGrayUnit [colortograyunit_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_stream_in [aesl_axi_s_stream_in_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_stream_out [aesl_axi_s_stream_out_default]
+Compiling architecture behav of entity xil_defaultlib.apatb_colortograyunit_top
+Built simulation snapshot ColorToGrayUnit

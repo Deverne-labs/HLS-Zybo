@@ -1,0 +1,127 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.304658",
+   "Default View_TopLeft":"2334,354",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 5610 -y 804 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 5610 -y 830 -defaultsOSRD
+preplace port hdmi_in -pg 1 -lvl 0 -x -170 -y 1210 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -lvl 4 -x 5610 -y 1250 -defaultsOSRD
+preplace port hdmi_in_hpd -pg 1 -lvl 4 -x 5610 -y 906 -defaultsOSRD
+preplace port hdmi_out -pg 1 -lvl 4 -x 5610 -y 1620 -defaultsOSRD
+preplace port hdmi_out_ddc -pg 1 -lvl 4 -x 5610 -y 850 -defaultsOSRD
+preplace inst Zynq_PS -pg 1 -lvl 2 -x 4920 -y 990 -defaultsOSRD -resize 351 436
+preplace inst HDMI_in_interface -pg 1 -lvl 1 -x 360 -y 1740 -defaultsOSRD -resize 210 404
+preplace inst HDMI_out_interface -pg 1 -lvl 3 -x 5410 -y 1700 -defaultsOSRD -resize 193 336
+preplace inst ISP -pg 1 -lvl 1 -x 360 -y 310 -defaultsOSRD -resize 468 624
+preplace inst Overlaying -pg 1 -lvl 1 -x 360 -y 1140 -defaultsOSRD -resize 311 344
+preplace inst ISP|GradientGenUnit_0 -pg 1 -lvl 3 -x 1220 -y 480 -defaultsOSRD
+preplace inst ISP|axis_broadcaster_0 -pg 1 -lvl 4 -x 1620 -y 500 -defaultsOSRD
+preplace inst ISP|GradConvGenerator_A -pg 1 -lvl 5 -x 2060 -y 770 -defaultsOSRD
+preplace inst ISP|GradConvGenerator_B -pg 1 -lvl 5 -x 2060 -y 150 -defaultsOSRD
+preplace inst ISP|axis_broadcaster_1 -pg 1 -lvl 4 -x 1620 -y 340 -defaultsOSRD
+preplace inst ISP|GradConvGenerator_C -pg 1 -lvl 5 -x 2060 -y 420 -defaultsOSRD
+preplace inst ISP|GaussianUnit_0 -pg 1 -lvl 6 -x 2510 -y 170 -defaultsOSRD
+preplace inst ISP|GaussianUnit_1 -pg 1 -lvl 6 -x 2510 -y 760 -defaultsOSRD
+preplace inst ISP|GaussianUnit_2 -pg 1 -lvl 6 -x 2510 -y 510 -defaultsOSRD
+preplace inst ISP|CornerResponseUnit_0 -pg 1 -lvl 7 -x 2920 -y 210 -defaultsOSRD
+preplace inst ISP|axi_vdma_0 -pg 1 -lvl 1 -x 420 -y 350 -defaultsOSRD
+preplace inst ISP|GPIO_dim_register -pg 1 -lvl 1 -x 420 -y 530 -defaultsOSRD
+preplace inst ISP|GPIO_param_register -pg 1 -lvl 7 -x 2920 -y 730 -defaultsOSRD
+preplace inst ISP|GPIO_control_register -pg 1 -lvl 1 -x 420 -y 720 -defaultsOSRD
+preplace inst ISP|axi_mem_intercon -pg 1 -lvl 10 -x 4290 -y 480 -defaultsOSRD
+preplace inst ISP|ColorToGrayUnit_0 -pg 1 -lvl 2 -x 840 -y 460 -defaultsOSRD
+preplace inst ISP|DataMoverUnit_s2mm_3_0 -pg 1 -lvl 9 -x 3850 -y 560 -defaultsOSRD
+preplace inst ISP|GPIO_BAR_register -pg 1 -lvl 8 -x 3340 -y 700 -defaultsOSRD
+preplace inst ISP|GND -pg 1 -lvl 8 -x 3340 -y 80 -defaultsOSRD
+preplace inst ISP|NonMaximalSuppresion_0 -pg 1 -lvl 8 -x 3340 -y 260 -defaultsOSRD
+preplace netloc Net 1 0 3 -130 1960 NJ 1960 5220
+preplace netloc dvi2rgb_0_aPixelClkLckd 1 1 1 4590 1010n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -140 1970 NJ 1970 5260
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 3 -100 1430 NJ 1430 5250
+preplace netloc xlconstant_0_dout 1 0 3 -80 1980 4600J 1950 5230
+preplace netloc resetn_1 1 0 3 -70 1400 NJ 1400 5210
+preplace netloc HDMI_out_interface_irq 1 1 3 4630 1220 NJ 1220 5530
+preplace netloc RefClk_1 1 0 3 -60 1380 NJ 1380 5180
+preplace netloc vid_io_in_reset_1 1 0 3 -20 1420 NJ 1420 5200
+preplace netloc HDMI_in_interface_PixelClk 1 1 1 4600 1030n
+preplace netloc HDMI_in_interface_irq 1 1 1 4620 1050n
+preplace netloc Zynq_PS_FCLK_CLK3 1 0 3 -110 1390 NJ 1390 5160
+preplace netloc ap_rst_n_1 1 0 3 -90 1370 NJ 1370 5130
+preplace netloc Zynq_PS_peripheral_aresetn3 1 0 3 -60 1360 NJ 1360 5120
+preplace netloc s_axi_aresetn1_1 1 0 3 -50 1410 NJ 1410 5140
+preplace netloc ctrl_1 1 2 1 5280 850n
+preplace netloc video_in_1 1 1 2 4580 1310 5240J
+preplace netloc Zynq_PS_M08_AXI 1 0 3 -80 -30 NJ -30 5140
+preplace netloc Zynq_PS_DDR 1 2 2 5280J 804 NJ
+preplace netloc Zynq_PS_hdmi_in_hpd 1 2 2 NJ 906 NJ
+preplace netloc Zynq_PS_M05_AXI 1 0 3 -60 -40 NJ -40 5130
+preplace netloc s00_axi_1 1 2 1 5270 878n
+preplace netloc ctrl_2 1 0 3 -80 950 4560J 750 5120
+preplace netloc HDMI_in_interface_M_AXIS 1 1 1 4570 930n
+preplace netloc Zynq_PS_M04_AXI1 1 0 3 -110 -50 NJ -50 5260
+preplace netloc Zynq_PS_M05_AXI1 1 0 3 -40 1340 NJ 1340 5190
+preplace netloc Overlaying_M00_AXI 1 1 1 4560 970n
+preplace netloc Zynq_PS_M07_AXI1 1 0 3 -30 1350 NJ 1350 5170
+preplace netloc HDMI_in_interface_hdmi_in_ddc 1 1 3 4610J 1320 NJ 1320 5540J
+preplace netloc Zynq_PS_M06_AXI1 1 0 3 -20 1330 NJ 1330 5150
+preplace netloc ISP_M00_AXI 1 1 1 4630 480n
+preplace netloc Zynq_PS_M_AXIS_MM2S 1 0 3 -120 -80 NJ -80 5150
+preplace netloc Zynq_PS_M07_AXI 1 0 3 -90 -60 NJ -60 5160
+preplace netloc Zynq_PS_FIXED_IO 1 2 2 NJ 824 5540J
+preplace netloc Zynq_PS_hdmi_out_ddc 1 2 2 NJ 837 5530J
+preplace netloc HDMI_out_interface_hdmi_out 1 3 1 NJ 1620
+preplace netloc Zynq_PS_M06_AXI 1 0 3 -100 -70 NJ -70 5250
+preplace netloc hdmi_in_1 1 0 1 -150 1210n
+preplace netloc ISP|Net 1 0 10 180 620 640 610 1010 610 1420 250 1800 10 2290 310 2710 350 3120 560 3580 710 4120
+preplace netloc ISP|Net2 1 1 8 660 580 1030 660 NJ 660 1840 610 2300 320 2730 370 3150 540 3540J
+preplace netloc ISP|Net3 1 1 8 670 590 1040 620 NJ 620 1850 280 2320 330 2740 380 3140 610 NJ
+preplace netloc ISP|Net4 1 1 8 630 340 1040 270 1400J 240 1870 570 2310 50 2680 50 3150 20 3580J
+preplace netloc ISP|Net1 1 0 10 NJ 840 650 600 1020 600 1430 420 1810 20 2260 300 2720 360 3130 550 3560 720 4140
+preplace netloc ISP|s_axi_lite_aclk_1 1 0 8 170 640 640J 650 NJ 650 1440J 600 NJ 600 2280J 630 2680 830 3130J
+preplace netloc ISP|ISP_param_register_gpio2_io_o 1 7 1 3110 340n
+preplace netloc ISP|ISP_param_register_gpio_io_o 1 7 1 3100 320n
+preplace netloc ISP|s_axi_aresetn_1 1 0 8 190 890 NJ 890 NJ 890 NJ 890 1800J 910 NJ 910 2730 840 3150J
+preplace netloc ISP|ACLK_1 1 0 10 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 2230J 890 NJ 890 NJ 890 NJ 890 4110
+preplace netloc ISP|M00_ARESETN_1 1 0 10 NJ 920 NJ 920 NJ 920 NJ 920 1860J 620 2240J 900 NJ 900 NJ 900 NJ 900 4130
+preplace netloc ISP|GPIO_BAR_register_gpio_io_o 1 8 1 3570 570n
+preplace netloc ISP|GND_dout 1 8 1 3550 80n
+preplace netloc ISP|NonMaximalSuppresion_0_max_response 1 7 2 3090J 780 3530
+preplace netloc ISP|axi_vdma_0_M_AXIS_MM2S 1 1 1 620 340n
+preplace netloc ISP|axis_broadcaster_1_M00_AXIS 1 4 1 1780 120n
+preplace netloc ISP|axi_mem_intercon_M00_AXI 1 10 1 N 480
+preplace netloc ISP|axis_broadcaster_0_M02_AXIS 1 4 1 1820 390n
+preplace netloc ISP|axis_broadcaster_0_M01_AXIS 1 4 1 1780 500n
+preplace netloc ISP|GaussianUnit_2_stream_out 1 6 1 2680 210n
+preplace netloc ISP|GaussianUnit_1_stream_out 1 6 1 2690 190n
+preplace netloc ISP|GradientGenUnit_0_stream_out_GY 1 3 1 1400 320n
+preplace netloc ISP|S_AXI3_1 1 0 8 NJ 800 670J 640 NJ 640 NJ 640 NJ 640 NJ 640 2720J 630 3090
+preplace netloc ISP|GradConvGenerator_A_stream_out 1 5 1 2250 490n
+preplace netloc ISP|axis_broadcaster_1_M02_AXIS 1 4 1 1830 360n
+preplace netloc ISP|S_AXI_1 1 0 1 N 510
+preplace netloc ISP|GradConvGenerator_C_stream_out 1 5 1 2270 420n
+preplace netloc ISP|CornerResponseUnit_0_stream_out 1 7 1 3150 210n
+preplace netloc ISP|NonMaximalSuppresion_0_stream_out 1 8 1 3570 240n
+preplace netloc ISP|GradConvGenerator_B_stream_out 1 5 1 N 150
+preplace netloc ISP|S_AXI1_1 1 0 7 160J 630 NJ 630 NJ 630 NJ 630 NJ 630 2230J 880 2710
+preplace netloc ISP|ColorToGrayUnit_0_stream_out 1 2 1 N 460
+preplace netloc ISP|DataMoverUnit_s2mm_3_0_m_axi_MM_video_out 1 9 1 4100 410n
+preplace netloc ISP|axis_broadcaster_1_M01_AXIS 1 4 1 1790 140n
+preplace netloc ISP|GaussianUnit_0_stream_out 1 6 1 N 170
+preplace netloc ISP|axi_vdma_0_M_AXI_MM2S 1 1 9 NJ 320 1010J 260 NJ 260 1860J 290 NJ 290 2700J 400 NJ 400 NJ 400 4100
+preplace netloc ISP|axis_broadcaster_0_M00_AXIS 1 4 1 1790 480n
+preplace netloc ISP|S_AXI2_1 1 0 1 N 700
+preplace netloc ISP|GradientGenUnit_0_stream_out_GX 1 3 1 1410 470n
+preplace netloc ISP|S_AXI_LITE_1 1 0 1 N 300
+levelinfo -pg 1 -170 360 4920 5410 5610
+levelinfo -hier ISP * 420 840 1220 1620 2060 2510 2920 3340 3850 4290 *
+pagesize -pg 1 -db -bbox -sgen -280 -100 5760 2060
+pagesize -hier ISP -db -bbox -sgen 130 0 4470 930
+"
+}
+{
+   "da_axi4_cnt":"23",
+   "da_clkrst_cnt":"6"
+}

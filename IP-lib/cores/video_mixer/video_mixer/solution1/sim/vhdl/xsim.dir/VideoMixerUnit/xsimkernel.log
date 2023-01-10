@@ -1,0 +1,7 @@
+Running: xsim.dir/VideoMixerUnit/xsimk -simmode gui -wdb VideoMixerUnit.wdb -simrunnum 0 -socket 50087
+Design successfully loaded
+Design Loading Memory Usage: 99932 KB (Peak: 99932 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 254584 KB (Peak: 287356 KB)
+Simulation CPU Usage: 20490 ms

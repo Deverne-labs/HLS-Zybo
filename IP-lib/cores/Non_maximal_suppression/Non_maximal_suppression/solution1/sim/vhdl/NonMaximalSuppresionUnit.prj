@@ -1,0 +1,13 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv work "glbl.v"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit.vhd"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit_NonMaximalSuppresion_line_buffer_V_0.vhd"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit_NonMaximalSuppresion.vhd"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit_regslice_both.vhd"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit.autotb.vhd"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit_mul_32ns_32ns_64_2_1.vhd"
+vhdl xil_defaultlib "AESL_axi_s_stream_in.vhd"
+vhdl xil_defaultlib "AESL_axi_s_stream_out.vhd"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit_NonMaximalSuppresion_line_buffer_V_1.vhd"
+vhdl xil_defaultlib "NonMaximalSuppresionUnit_mul_mul_16ns_16ns_32_4_1.vhd"
+

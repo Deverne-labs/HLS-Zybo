@@ -1,0 +1,160 @@
+
+
+================================================================
+== Vitis HLS Report for 'GradientGenUnit'
+================================================================
+* Date:           Wed Aug 11 11:54:40 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        gradient_generator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.614 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
+        |                       |             |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |        Instance       |    Module   |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_GradientGen_fu_84  |GradientGen  |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      6|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        3|    0|     974|   1697|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     34|    -|
+|Register         |        -|    -|       5|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        3|    0|     979|   1737|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        1|    0|      ~0|      3|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------+-------------+---------+----+-----+------+-----+
+    |        Instance       |    Module   | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +-----------------------+-------------+---------+----+-----+------+-----+
+    |grp_GradientGen_fu_84  |GradientGen  |        3|   0|  974|  1697|    0|
+    +-----------------------+-------------+---------+----+-----+------+-----+
+    |Total                  |             |        3|   0|  974|  1697|    0|
+    +-----------------------+-------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------------------+----------+----+---+----+------------+------------+
+    |                Variable Name               | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_GradientGen_fu_84_stream_out_GX_TREADY  |       and|   0|  0|   2|           1|           1|
+    |grp_GradientGen_fu_84_stream_out_GY_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state4                             |        or|   0|  0|   2|           1|           1|
+    +--------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                       |          |   0|  0|   6|           3|           3|
+    +--------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                      |  25|          5|    1|          5|
+    |stream_in_TREADY_int_regslice  |   9|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          |  34|          7|    2|          7|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+---+----+-----+-----------+
+    |                Name                | FF| LUT| Bits| Const Bits|
+    +------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                           |  4|   0|    4|          0|
+    |grp_GradientGen_fu_84_ap_start_reg  |  1|   0|    1|          0|
+    +------------------------------------+---+----+-----+-----------+
+    |Total                               |  5|   0|    5|          0|
+    +------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++----------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|         GradientGenUnit|  return value|
+|ap_rst_n              |   in|    1|  ap_ctrl_hs|         GradientGenUnit|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|         GradientGenUnit|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|         GradientGenUnit|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|         GradientGenUnit|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|         GradientGenUnit|  return value|
+|stream_in_TDATA       |   in|    8|        axis|      stream_in_V_data_V|       pointer|
+|stream_in_TVALID      |   in|    1|        axis|      stream_in_V_last_V|       pointer|
+|stream_in_TREADY      |  out|    1|        axis|      stream_in_V_last_V|       pointer|
+|stream_in_TLAST       |   in|    1|        axis|      stream_in_V_last_V|       pointer|
+|stream_in_TKEEP       |   in|    1|        axis|      stream_in_V_keep_V|       pointer|
+|stream_in_TSTRB       |   in|    1|        axis|      stream_in_V_strb_V|       pointer|
+|stream_in_TUSER       |   in|    1|        axis|      stream_in_V_user_V|       pointer|
+|stream_out_GX_TDATA   |  out|    8|        axis|  stream_out_GX_V_data_V|       pointer|
+|stream_out_GX_TVALID  |  out|    1|        axis|  stream_out_GX_V_last_V|       pointer|
+|stream_out_GX_TREADY  |   in|    1|        axis|  stream_out_GX_V_last_V|       pointer|
+|stream_out_GX_TLAST   |  out|    1|        axis|  stream_out_GX_V_last_V|       pointer|
+|stream_out_GX_TKEEP   |  out|    1|        axis|  stream_out_GX_V_keep_V|       pointer|
+|stream_out_GX_TSTRB   |  out|    1|        axis|  stream_out_GX_V_strb_V|       pointer|
+|stream_out_GX_TUSER   |  out|    1|        axis|  stream_out_GX_V_user_V|       pointer|
+|stream_out_GY_TDATA   |  out|    8|        axis|  stream_out_GY_V_data_V|       pointer|
+|stream_out_GY_TVALID  |  out|    1|        axis|  stream_out_GY_V_last_V|       pointer|
+|stream_out_GY_TREADY  |   in|    1|        axis|  stream_out_GY_V_last_V|       pointer|
+|stream_out_GY_TLAST   |  out|    1|        axis|  stream_out_GY_V_last_V|       pointer|
+|stream_out_GY_TKEEP   |  out|    1|        axis|  stream_out_GY_V_keep_V|       pointer|
+|stream_out_GY_TSTRB   |  out|    1|        axis|  stream_out_GY_V_strb_V|       pointer|
+|stream_out_GY_TUSER   |  out|    1|        axis|  stream_out_GY_V_user_V|       pointer|
+|image_w               |   in|   32|   ap_stable|                 image_w|        scalar|
+|image_h               |   in|   32|   ap_stable|                 image_h|        scalar|
++----------------------+-----+-----+------------+------------------------+--------------+
+

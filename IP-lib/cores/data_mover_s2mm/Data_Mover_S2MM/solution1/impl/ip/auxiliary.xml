@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="DataMoverUnit_s2mm_32bits" xd:componentRef="DataMoverUnit_s2mm_32bits" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="*(MM_video_out)" xd:originalName="MM_video_out" xd:direction="inout" xd:interfaceRef="m_axi_MM_video_out" xd:busTypeRef="aximm" xd:dataWidth="1" xd:bufferDirection="out"/>
+  <xd:arg xd:name="STR_video_in.data" xd:originalName="STR_video_in" xd:direction="in" xd:interfaceRef="STR_video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STR_video_in.keep" xd:originalName="STR_video_in" xd:direction="in" xd:interfaceRef="STR_video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STR_video_in.strb" xd:originalName="STR_video_in" xd:direction="in" xd:interfaceRef="STR_video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STR_video_in.user" xd:originalName="STR_video_in" xd:direction="in" xd:interfaceRef="STR_video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STR_video_in.last" xd:originalName="STR_video_in" xd:direction="in" xd:interfaceRef="STR_video_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MM_video_out" xd:originalName="MM_video_out" xd:direction="in" xd:interfaceRef="MM_video_out_offset" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:aximmInterfaceRef="m_axi_MM_video_out" xd:dataWidth="32"/>
+  <xd:arg xd:name="image_w" xd:originalName="image_w" xd:direction="in" xd:interfaceRef="image_w" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="image_h" xd:originalName="image_h" xd:direction="in" xd:interfaceRef="image_h" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="invert_X" xd:originalName="invert_X" xd:direction="in" xd:interfaceRef="invert_X" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="invert_Y" xd:originalName="invert_Y" xd:direction="in" xd:interfaceRef="invert_Y" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(s2mm_line_buffer_size)" xd:originalName="s2mm_line_buffer_size" xd:direction="out" xd:interfaceRef="s2mm_line_buffer_size" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="2"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="2602" xd:FF="2604" xd:BRAM="7" xd:DSP="0"/>
+</xd:acceleratorMap>

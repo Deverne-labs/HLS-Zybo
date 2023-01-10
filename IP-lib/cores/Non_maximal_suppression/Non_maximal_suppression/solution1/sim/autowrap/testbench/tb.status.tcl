@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/lbo/Projects/esiee/hardware/IPs/cores/Non_maximal_suppression/Non_maximal_suppression/solution1/./sim/autowrap/testbench/non_maximal_suppresion.cpp_pre.cpp.tb.cpp

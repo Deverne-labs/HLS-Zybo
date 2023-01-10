@@ -1,0 +1,190 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dataflow_in_loop_M2S'" level="0">
+<item name = "Date">Fri Aug 13 11:22:20 2021
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">Data_Mover_MM2S</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="DMAReadMM_U0">DMAReadMM, ?, ?, ?, ?, ?, ?, none</column>
+<column name="EmptyLocalBuffer_U0">EmptyLocalBuffer, ?, ?, ?, ?, ?, ?, none</column>
+<column name="M2S_FormatLocalBuffer_U0">M2S_FormatLocalBuffer, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, none</column>
+<column name="dataflow_in_loop_M2S_entry3_U0">dataflow_in_loop_M2S_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 12, -</column>
+<column name="FIFO">-, -, 495, 340, -</column>
+<column name="Instance">-, -, 472, 849, -</column>
+<column name="Memory">4, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, 18, -</column>
+<column name="Register">-, -, 2, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DMAReadMM_U0">DMAReadMM, 0, 0, 302, 391, 0</column>
+<column name="EmptyLocalBuffer_U0">EmptyLocalBuffer, 0, 0, 106, 242, 0</column>
+<column name="M2S_FormatLocalBuffer_U0">M2S_FormatLocalBuffer, 0, 0, 62, 178, 0</column>
+<column name="dataflow_in_loop_M2S_entry3_U0">dataflow_in_loop_M2S_entry3, 0, 0, 2, 38, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="axi_elt_dma_buffer_V_U">dataflow_in_loop_M2S_axi_elt_dma_buffer_V, 2, 0, 0, 0, 512, 32, 1, 16384</column>
+<column name="stream_elt_dma_buffer_V_U">dataflow_in_loop_M2S_stream_elt_dma_buffer_V, 2, 0, 0, 0, 2048, 8, 1, 16384</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="MM_video_in_2_c_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="i_c2_U">0, 99, 0, -, 2, 31, 62</column>
+<column name="i_c_U">0, 99, 0, -, 3, 31, 93</column>
+<column name="image_w_c1_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="image_w_c_U">0, 99, 0, -, 3, 32, 96</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="DMAReadMM_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="dataflow_in_loop_M2S_entry3_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_DMAReadMM_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_dataflow_in_loop_M2S_entry3_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_DMAReadMM_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_dataflow_in_loop_M2S_entry3_U0_ap_ready">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_DMAReadMM_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_dataflow_in_loop_M2S_entry3_U0_ap_ready">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="m_axi_MM_video_in_AWVALID">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWREADY">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWADDR">out, 32, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWID">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWLEN">out, 32, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWSIZE">out, 3, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWBURST">out, 2, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWLOCK">out, 2, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWCACHE">out, 4, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWPROT">out, 3, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWQOS">out, 4, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWREGION">out, 4, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_AWUSER">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_WVALID">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_WREADY">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_WDATA">out, 32, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_WSTRB">out, 4, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_WLAST">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_WID">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_WUSER">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARVALID">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARREADY">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARADDR">out, 32, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARID">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARLEN">out, 32, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARSIZE">out, 3, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARBURST">out, 2, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARLOCK">out, 2, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARCACHE">out, 4, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARPROT">out, 3, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARQOS">out, 4, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARREGION">out, 4, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_ARUSER">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_RVALID">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_RREADY">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_RDATA">in, 32, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_RLAST">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_RID">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_RUSER">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_RRESP">in, 2, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_BVALID">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_BREADY">out, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_BRESP">in, 2, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_BID">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="m_axi_MM_video_in_BUSER">in, 1, m_axi, MM_video_in, pointer</column>
+<column name="MM_video_in_2">in, 32, ap_none, MM_video_in_2, scalar</column>
+<column name="MM_video_in_2_ap_vld">in, 1, ap_none, MM_video_in_2, scalar</column>
+<column name="image_w">in, 32, ap_none, image_w, scalar</column>
+<column name="image_w_ap_vld">in, 1, ap_none, image_w, scalar</column>
+<column name="i">in, 31, ap_none, i, scalar</column>
+<column name="i_ap_vld">in, 1, ap_none, i, scalar</column>
+<column name="STR_video_out_TDATA">out, 8, axis, STR_video_out_V_data_V, pointer</column>
+<column name="STR_video_out_TKEEP">out, 1, axis, STR_video_out_V_keep_V, pointer</column>
+<column name="STR_video_out_TSTRB">out, 1, axis, STR_video_out_V_strb_V, pointer</column>
+<column name="STR_video_out_TUSER">out, 1, axis, STR_video_out_V_user_V, pointer</column>
+<column name="STR_video_out_TLAST">out, 1, axis, STR_video_out_V_last_V, pointer</column>
+<column name="STR_video_out_TVALID">out, 1, axis, STR_video_out_V_last_V, pointer</column>
+<column name="STR_video_out_TREADY">in, 1, axis, STR_video_out_V_last_V, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dataflow_in_loop_M2S, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dataflow_in_loop_M2S, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dataflow_in_loop_M2S, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dataflow_in_loop_M2S, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dataflow_in_loop_M2S, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dataflow_in_loop_M2S, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, dataflow_in_loop_M2S, return value</column>
+</table>
+</item>
+</section>
+</profile>

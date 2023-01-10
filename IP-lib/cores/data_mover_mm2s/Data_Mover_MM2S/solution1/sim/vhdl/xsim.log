@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 11 13:36:46 2021
+# Process ID: 23711
+# Current directory: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/DataMoverUnit_mm2s_32bits/xsim_script.tcl}
+# Log file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl/xsim.log
+# Journal file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/DataMoverUnit_mm2s_32bits/xsim_script.tcl
+# xsim {DataMoverUnit_mm2s_32bits} -autoloadwcfg -tclbatch {DataMoverUnit_mm2s_32bits.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source DataMoverUnit_mm2s_32bits.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set mm2s_line_buffer_size_group [add_wave_group mm2s_line_buffer_size(wire) -into $coutputgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/mm2s_line_buffer_size -into $mm2s_line_buffer_size_group -radix hex
+## set STR_video_out_group [add_wave_group STR_video_out(axis) -into $coutputgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/STR_video_out_TLAST -into $STR_video_out_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/STR_video_out_TUSER -into $STR_video_out_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/STR_video_out_TSTRB -into $STR_video_out_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/STR_video_out_TKEEP -into $STR_video_out_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/STR_video_out_TREADY -into $STR_video_out_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/STR_video_out_TVALID -into $STR_video_out_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/STR_video_out_TDATA -into $STR_video_out_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set image_h_group [add_wave_group image_h(wire) -into $cinputgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/image_h -into $image_h_group -radix hex
+## set image_w_group [add_wave_group image_w(wire) -into $cinputgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/image_w -into $image_w_group -radix hex
+## set return_group [add_wave_group return(wire) -into $cinputgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/MM_video_in_offset -into $return_group -radix hex
+## set MM_video_in_group [add_wave_group MM_video_in(axi_master) -into $cinputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $MM_video_in_group]
+## set wdata_group [add_wave_group "Write Channel" -into $MM_video_in_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $MM_video_in_group]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_BID -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_RID -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARID -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_WID -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWID -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/m_axi_MM_video_in_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_start -into $blocksiggroup
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_done -into $blocksiggroup
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_idle -into $blocksiggroup
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_DataMoverUnit_mm2s_32bits_top/AESL_inst_DataMoverUnit_mm2s_32bits/ap_clk -into $clockgroup
+## save_wave_config DataMoverUnit_mm2s_32bits.wcfg
+## run all
+Note: simulation done!
+Time: 404835 ns  Iteration: 1  Process: /apatb_DataMoverUnit_mm2s_32bits_top/generate_sim_done_proc  File: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl/DataMoverUnit_mm2s_32bits.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 404835 ns  Iteration: 1  Process: /apatb_DataMoverUnit_mm2s_32bits_top/generate_sim_done_proc  File: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/data_mover_mm2s/Data_Mover_MM2S/solution1/sim/vhdl/DataMoverUnit_mm2s_32bits.autotb.vhd
+$finish called at time : 404835 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jan 11 13:36:58 2021...

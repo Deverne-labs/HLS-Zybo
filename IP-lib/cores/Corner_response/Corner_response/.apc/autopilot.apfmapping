@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="corner_response.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/corner_response.cpp"/>
+    <originFiles name="corner_response.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/corner_response.h"/>
+    <originFiles name="corner_response_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/corner_response_utils.h"/>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/generics_n_options.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Pattern_in_GX_GX.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/Pattern_in_GX_GX.txt"/>
+    <originFiles name="Pattern_in_GX_GY.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/Pattern_in_GX_GY.txt"/>
+    <originFiles name="Pattern_in_GY_GY.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/Pattern_in_GY_GY.txt"/>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Corner_response/src/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

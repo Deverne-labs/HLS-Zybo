@@ -1,0 +1,219 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 23 14:12:35 2021
+# Process ID: 14825
+# Current directory: /home/lbo/Projects/esiee/hardware/BSD
+# Command line: vivado Zybo-Z7-20-HDMI.xpr
+# Log file: /home/lbo/Projects/esiee/hardware/BSD/vivado.log
+# Journal file: /home/lbo/Projects/esiee/hardware/BSD/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Zybo-Z7-20-HDMI.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.ipdefs/repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lbo/Projects/esiee/hardware/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 7465.027 ; gain = 100.121 ; free physical = 3394 ; free virtual = 10930
+open_bd_design {/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_GP0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'M_AXI_GP0_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'M_AXI_GP0_aximm_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HP0_aximm_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_HP0_aximm_rd_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_HP0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_133M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_video
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_GP1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- digilentinc.com:ip:dvi2rgb:2.0 - dvi2rgb_1
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_in
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_in
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_out
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding component instance block -- Deverene:DVR-002:GradientGenUnit:1.0 - GradientGenUnit_0
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_0
+Adding component instance block -- Deverne:DVR-002:GradConvolutionUnit:1.0 - GradConvGenerator_A
+Adding component instance block -- Deverne:DVR-002:GradConvolutionUnit:1.0 - GradConvGenerator_B
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_1
+Adding component instance block -- Deverne:DVR-002:GradConvolutionUnit:1.0 - GradConvGenerator_C
+Adding component instance block -- Deverne:DVR-002:GaussianUnit:1.0 - GaussianUnit_0
+Adding component instance block -- Deverne:DVR-002:GaussianUnit:1.0 - GaussianUnit_1
+Adding component instance block -- Deverne:DVR-002:GaussianUnit:1.0 - GaussianUnit_2
+Adding component instance block -- Deverne:DVR-002:CornerResponseUnit:1.0 - CornerResponseUnit_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_dim_register
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_param_register
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_control_register
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- Deverne:DVR-002:ColorToGrayUnit:1.0 - ColorToGrayUnit_0
+Adding component instance block -- Boutigny_L:PH920:DataMoverUnit_s2mm_32bits:1.0 - DataMoverUnit_s2mm_3_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_BAR_register
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - GND
+Adding component instance block -- Deverne:DVR-002:NonMaximalSuppresionUnit:1.0 - NonMaximalSuppresion_0
+Adding component instance block -- Deverne:DVR-002:DataMoverUnit_mm2s_32bits:1.0 - DataMoverUnit_mm2s_3_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_out
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_control_register
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_dim_register
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - GPIO_BAR_register
+Adding component instance block -- Deverne:DVR-002:VideoMixerUnit:1.0 - VideoMixerUnit_0
+Successfully read diagram <design_1> from block design file </home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 9034.035 ; gain = 1150.805 ; free physical = 3196 ; free virtual = 10731
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.C_ALL_OUTPUTS_2 {0}] [get_bd_cells ISP/GPIO_param_register]
+endgroup
+connect_bd_net [get_bd_pins ISP/NonMaximalSuppresion_0/max_response] [get_bd_pins ISP/GPIO_param_register/gpio2_io_i]
+WARNING: [BD 41-1306] The connection to interface pin </ISP/GPIO_param_register/gpio2_io_i> is being overridden by the user with net <NonMaximalSuppresion_0_max_response>. This pin will not be connected as a part of interface connection <GPIO2>.
+save_bd_design
+Wrote  : </home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /ISP/axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [BD 41-927] Following properties on pin /HDMI_in_interface/dvi2rgb_1/RefClk have been updated from connected ip, but BD cell '/HDMI_in_interface/dvi2rgb_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </HDMI_in_interface/dvi2rgb_1> to completely resolve these warnings.
+Wrote  : </home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/Zynq_PS/S_AXI_HP1_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/Zynq_PS/S_AXI_HP1_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/Zynq_PS/S_AXI_HP1_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/Zynq_PS/axi_mem_intercon_HP0/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/Zynq_PS/axi_mem_intercon_HP0/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/Zynq_PS/axi_mem_intercon_HP0/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/ISP/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/ISP/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/ISP/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/ISP/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Overlaying/axi_mem_intercon/s00_couplers/auto_pc/s_axi_arlock'(1) to pin: '/Overlaying/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Overlaying/axi_mem_intercon/s00_couplers/auto_pc/s_axi_awlock'(1) to pin: '/Overlaying/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/Zynq_PS/axi_mem_intercon_HP0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/Zynq_PS/S_AXI_HP1_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/Zynq_PS/S_AXI_HP1_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/Zynq_PS/S_AXI_HP1_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/Zynq_PS/axi_mem_intercon_HP0/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/Zynq_PS/axi_mem_intercon_HP0/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Zynq_PS/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/Zynq_PS/axi_mem_intercon_HP0/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/ISP/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/ISP/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/ISP/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ISP/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/ISP/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Overlaying/axi_mem_intercon/s00_couplers/auto_pc/s_axi_arlock'(1) to pin: '/Overlaying/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Overlaying/axi_mem_intercon/s00_couplers/auto_pc/s_axi_awlock'(1) to pin: '/Overlaying/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ISP/NonMaximalSuppresion_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ISP/GPIO_param_register .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Zynq_PS/ps7_0_axi_periph_GP0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Zynq_PS/axi_mem_intercon_HP0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Zynq_PS/ps7_0_axi_periph_GP1/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ISP/axi_mem_intercon/s00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ISP/axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ISP/axi_mem_intercon/s01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ISP/axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Overlaying/axi_mem_intercon/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Overlaying/axi_mem_intercon/s00_couplers/auto_us .
+Exporting to file /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 9341.605 ; gain = 0.000 ; free physical = 2994 ; free virtual = 10471
+catch { config_ip_cache -export [get_ips -all design_1_NonMaximalSuppresion_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_Image_dim_register_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 63fe06e46bd5fc87; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = fd5fafc06df78eb3; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 63fe06e46bd5fc87; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = 9f0fbebf54ff3269; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = d0f923f3e1090939; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_1, cache-ID = c5b57f46f3d875bd; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = fd5fafc06df78eb3; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_4] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 352ec9e69f342c17; cache size = 255.277 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = c638fe63598df159; cache size = 255.277 MB.
+export_ip_user_files -of_objects [get_files /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_NonMaximalSuppresion_0_0_synth_1 design_1_Image_dim_register_0_synth_1 -jobs 4
+[Thu Sep 23 14:14:53 2021] Launched design_1_NonMaximalSuppresion_0_0_synth_1, design_1_Image_dim_register_0_synth_1...
+Run output will be captured here:
+design_1_NonMaximalSuppresion_0_0_synth_1: /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_NonMaximalSuppresion_0_0_synth_1/runme.log
+design_1_Image_dim_register_0_synth_1: /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_Image_dim_register_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.ip_user_files/sim_scripts -ip_user_files_dir /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.ip_user_files -ipstatic_source_dir /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.cache/compile_simlib/modelsim} {questa=/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.cache/compile_simlib/questa} {ies=/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.cache/compile_simlib/ies} {xcelium=/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.cache/compile_simlib/xcelium} {vcs=/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.cache/compile_simlib/vcs} {riviera=/home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_Image_dim_register_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_NonMaximalSuppresion_0_0
+[Thu Sep 23 14:15:21 2021] Launched design_1_NonMaximalSuppresion_0_0_synth_1, design_1_Image_dim_register_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_NonMaximalSuppresion_0_0_synth_1: /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_NonMaximalSuppresion_0_0_synth_1/runme.log
+design_1_Image_dim_register_0_synth_1: /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/design_1_Image_dim_register_0_synth_1/runme.log
+synth_1: /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/synth_1/runme.log
+[Thu Sep 23 14:15:21 2021] Launched impl_1...
+Run output will be captured here: /home/lbo/Projects/esiee/hardware/BSD/Zybo-Z7-20-HDMI.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file /home/lbo/Projects/esiee/hardware/BSD/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/lbo/Projects/esiee/hardware/BSD/design_1_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2020.2/data/embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/lbo/Projects/esiee/hardware/BSD/design_1_wrapper.xsa
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 23 14:40:15 2021...

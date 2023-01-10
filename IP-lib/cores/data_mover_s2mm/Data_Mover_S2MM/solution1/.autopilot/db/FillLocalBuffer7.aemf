@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1628838606542">
+  <ports id="1" name="STR_video_in_V_data_V" type="PortType" coreId="2178345240" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="STR_video_in_V_keep_V" type="PortType" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="STR_video_in_V_strb_V" type="PortType" coreId="2178765232" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="STR_video_in_V_user_V" type="PortType" coreId="132" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="STR_video_in_V_last_V" type="PortType" coreId="2178427488" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="image_w" type="PortType" coreName="FIFO_SRL" coreId="913" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="invert_X" type="PortType" coreName="FIFO_SRL" coreId="132" bitwidth="1" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="stream_elt_dma_buffer_V" type="PortType" coreName="RAM" coreId="1009" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="2048">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="9" name="ddr_buffer_out" type="PortType" coreName="FIFO_SRL" coreId="49" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="10" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0" type="PortType" coreName="FIFO_SRL" coreId="49" bitwidth="31" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="image_h" type="PortType" coreName="FIFO_SRL" coreId="49" bitwidth="21" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="12" name="invert_Y" type="PortType" coreName="FIFO_SRL" coreId="132" bitwidth="1" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="image_w_c" type="PortType" coreName="FIFO_SRL" coreId="132" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="14" name="ddr_buffer_out_c" type="PortType" coreName="FIFO_SRL" coreId="49" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="15" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c" type="PortType" coreName="FIFO_SRL" coreId="705" bitwidth="21" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="16" name="image_h_c" type="PortType" coreName="FIFO_SRL" coreId="132" bitwidth="21" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="17" name="invert_Y_c" type="PortType" coreName="FIFO_SRL" coreId="1313" bitwidth="1" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="288" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="291" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="293" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="296" source_obj="//@ports.9" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="299" source_obj="//@ports.10" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="301" source_obj="//@ports.11" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="302" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="305" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.12"/>
+  <edges id="306" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="308" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.13"/>
+  <edges id="309" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="312" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@ports.14"/>
+  <edges id="313" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="315" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@ports.15"/>
+  <edges id="316" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="319" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@ports.16"/>
+  <edges id="320" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="321" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="322" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="325" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="326" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="330" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="331" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="334" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="335" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="336" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="337" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="338" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="339" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="340" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="343" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="344" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="345" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="346" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="347" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="348" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="349" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="350" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="351" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="352" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="353" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="354" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="355" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@ports.7"/>
+  <edges id="358" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="359" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="360" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="361" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="5197" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="5198" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="5199" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="5200" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="265" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_271</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="209" name="image_w_read" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="FillLocalBuffer" bitwidth="32" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+      <dataInputObjs>image_w</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="210" name="invert_X_read" lineNumber="35" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="FillLocalBuffer" bitwidth="1" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="35" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+      <dataInputObjs>invert_X</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="211" name="ddr_buffer_out_read" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" bitwidth="32" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>ddr_buffer_out</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="212" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_read" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" bitwidth="31" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="213" name="image_h_read" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" bitwidth="21" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>image_h</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="214" name="invert_Y_read" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" bitwidth="1" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>invert_Y</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="215" name="trunc_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c_din" coreId="0" contextFuncName="DataMover_s2mm_32bits" bitwidth="21" opcode="trunc" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="247" name="image_w_c_write_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="FillLocalBuffer" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>image_w_c</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="249" name="ddr_buffer_out_c_write_ln0" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>ddr_buffer_out_c</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="251" name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DataMover_s2mm_32bits" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="253" name="image_h_c_write_ln0" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>image_h_c</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="255" name="invert_Y_c_write_ln0" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" opcode="write" m_display="0" m_delay="3.63" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>invert_Y_c</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="261" name="empty" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="empty_fu_202_p1" coreId="961" contextFuncName="FillLocalBuffer" bitwidth="11" opcode="trunc" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="263" name="add_ln36" lineNumber="36" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="add_ln36_fu_206_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="FillLocalBuffer" bitwidth="11" opcode="add" m_display="0" m_delay="1.63" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="36" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="264" name="br_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="13" contextFuncName="FillLocalBuffer" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+      <controlInputObjs>block_271</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+      <validLinenumbers>30</validLinenumbers>
+      <validLinenumbers>35</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>36</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="285" name=".exit" type="BlockType">
+    <controlInputObjs>block_271</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="284" name="_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="7" contextFuncName="DataMover_s2mm_32bits" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="388" pipe_depth="1" RegionName="VITIS_LOOP_30_1">
+    <basic_blocks id="271" name="block_271" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>block_283</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_283</controlOutputObjs>
+      <controlOutputObjs>.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="266" name="empty_63" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="FillLocalBuffer" bitwidth="31" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <controlInputObjs>block_283</controlInputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="267" name="add_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="add_ln30_fu_212_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="FillLocalBuffer" bitwidth="31" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.52" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="268" name="zext_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="zext_ln30_fu_218_p1" coreId="2178895328" contextFuncName="FillLocalBuffer" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="269" name="icmp_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="icmp_ln30_fu_222_p2" opType="icmp" coreId="2751463552" contextFuncName="FillLocalBuffer" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="270" name="br_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="FillLocalBuffer" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.exit</controlInputObjs>
+        <controlInputObjs>block_283</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+        <validLinenumbers>30</validLinenumbers>
+        <validLinenumbers>21</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="283" name="block_283" type="BlockType">
+      <controlInputObjs>block_271</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_271</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="272" name="trunc_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="trunc_ln30_fu_227_p1" coreId="3552825" contextFuncName="FillLocalBuffer" bitwidth="11" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="275" name="empty_64" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="DataMover_s2mm_32bits" bitwidth="12" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <dataInputObjs>STR_video_in_V_data_V</dataInputObjs>
+        <dataInputObjs>STR_video_in_V_keep_V</dataInputObjs>
+        <dataInputObjs>STR_video_in_V_strb_V</dataInputObjs>
+        <dataInputObjs>STR_video_in_V_user_V</dataInputObjs>
+        <dataInputObjs>STR_video_in_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="276" name="tmp_i_i_data_i_i_i_i_i" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="2751463552" contextFuncName="DataMover_s2mm_32bits" bitwidth="8" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="277" name="sub_ln36" lineNumber="36" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="sub_ln36_fu_236_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="FillLocalBuffer" bitwidth="11" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.63" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="36" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="278" name="select_ln35" lineNumber="35" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="select_ln35_fu_241_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="FillLocalBuffer" bitwidth="11" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.69" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="35" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="279" name="zext_ln329" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." rtlName="zext_ln329_fu_248_p1" coreId="2751463552" contextFuncName="DataMover_s2mm_32bits" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="280" name="stream_elt_dma_buffer_V_addr" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="49" contextFuncName="DataMover_s2mm_32bits" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>stream_elt_dma_buffer_V</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="281" name="stream_elt_dma_buffer_V_addr_write_ln21" lineNumber="21" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="DataMover_s2mm_32bits" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="282" name="br_ln30" lineNumber="30" fileName="src/data_mover_s2mm.cpp" fileDirectory=".." coreId="0" contextFuncName="FillLocalBuffer" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="21" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="DataMover_s2mm_32bits"/>
+        <inlineStackInfo fileName="src/data_mover_s2mm.cpp" linenumber="30" fileDirectory="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_s2mm" functionName="FillLocalBuffer"/>
+        <controlInputObjs>block_271</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/data_mover_s2mm.cpp">
+        <validLinenumbers>30</validLinenumbers>
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>36</validLinenumbers>
+        <validLinenumbers>35</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="image_w_read_reg_253">
+    <nodeIds>209</nodeIds>
+  </regnodes>
+  <regnodes realName="invert_X_read_reg_258">
+    <nodeIds>210</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln36_reg_263">
+    <nodeIds>263</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln30_reg_268">
+    <nodeIds>267</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_63_reg_186">
+    <nodeIds>266</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln36_fu_206">
+    <nodeIds>263</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln30_fu_212">
+    <nodeIds>267</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln30_fu_218">
+    <nodeIds>268</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln36_fu_236">
+    <nodeIds>277</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln329_fu_248">
+    <nodeIds>279</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln35_fu_241">
+    <nodeIds>278</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln30_fu_227">
+    <nodeIds>272</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="stream_elt_dma_buffer_V_addr_gep_fu_173">
+    <nodeIds>280</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_fu_202">
+    <nodeIds>261</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_63_phi_fu_190">
+    <nodeIds>266</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln30_fu_222">
+    <nodeIds>269</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i_data_i_i_i_i_i_fu_231">
+    <nodeIds>276</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln21_fu_197">
+    <nodeIds>215</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="image_w_read_read_fu_84">
+    <nodeIds>209</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_128">
+    <nodeIds>249</nodeIds>
+  </ioNodes>
+  <ioNodes realName="invert_Y_read_read_fu_114">
+    <nodeIds>214</nodeIds>
+  </ioNodes>
+  <ioNodes realName="invert_X_read_read_fu_90">
+    <nodeIds>210</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln30_write_fu_120">
+    <nodeIds>247</nodeIds>
+  </ioNodes>
+  <ioNodes realName="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_read_read_fu_102">
+    <nodeIds>212</nodeIds>
+  </ioNodes>
+  <ioNodes realName="image_h_read_read_fu_108">
+    <nodeIds>213</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_151">
+    <nodeIds>255</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ddr_buffer_out_read_read_fu_96">
+    <nodeIds>211</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_143">
+    <nodeIds>253</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_64_read_fu_159">
+    <nodeIds>275</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln21_write_fu_136">
+    <nodeIds>251</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="stream_elt_dma_buffer_V">
+    <nodeIds>281</nodeIds>
+  </memoryPorts>
+  <ioPorts name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0">
+    <contents name="read">
+      <nodeIds>212</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c">
+    <contents name="write">
+      <nodeIds>251</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_in_V_data_V">
+    <contents name="read">
+      <nodeIds>275</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_in_V_keep_V">
+    <contents name="read">
+      <nodeIds>275</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_in_V_last_V">
+    <contents name="read">
+      <nodeIds>275</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_in_V_strb_V">
+    <contents name="read">
+      <nodeIds>275</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_in_V_user_V">
+    <contents name="read">
+      <nodeIds>275</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ddr_buffer_out">
+    <contents name="read">
+      <nodeIds>211</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ddr_buffer_out_c">
+    <contents name="write">
+      <nodeIds>249</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_h">
+    <contents name="read">
+      <nodeIds>213</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_h_c">
+    <contents name="write">
+      <nodeIds>253</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w">
+    <contents name="read">
+      <nodeIds>209</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="image_w_c">
+    <contents name="write">
+      <nodeIds>247</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="invert_X">
+    <contents name="read">
+      <nodeIds>210</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="invert_Y">
+    <contents name="read">
+      <nodeIds>214</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="invert_Y_c">
+    <contents name="write">
+      <nodeIds>255</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_elt_dma_buffer_V(p0)">
+    <contents name="store">
+      <nodeIds>281</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="163" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="173" stage="1" latency="1"/>
+      <operations id="174" stage="1" latency="1"/>
+      <operations id="175" stage="1" latency="1"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="177" stage="1" latency="1"/>
+      <operations id="178" stage="1" latency="1"/>
+      <operations id="179" stage="1" latency="1"/>
+      <operations id="180" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+      <operations id="182" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+      <operations id="185" stage="1" latency="1"/>
+      <operations id="186" stage="1" latency="1"/>
+      <operations id="187" stage="1" latency="1"/>
+      <operations id="188" stage="1" latency="1"/>
+      <operations id="189" stage="1" latency="1"/>
+      <operations id="190" stage="1" latency="1"/>
+      <operations id="191" stage="1" latency="1"/>
+      <operations id="192" stage="1" latency="1"/>
+      <operations id="193" stage="1" latency="1"/>
+      <operations id="194" stage="1" latency="1"/>
+      <operations id="195" stage="1" latency="1"/>
+      <operations id="196" stage="1" latency="1"/>
+      <operations id="197" stage="1" latency="1"/>
+      <operations id="198" stage="1" latency="1"/>
+      <operations id="199" stage="1" latency="1"/>
+      <operations id="200" stage="1" latency="1"/>
+      <operations id="201" stage="1" latency="1"/>
+      <operations id="202" stage="1" latency="1"/>
+      <operations id="203" stage="1" latency="1"/>
+      <operations id="204" stage="1" latency="1"/>
+      <operations id="205" stage="1" latency="1"/>
+      <operations id="206" stage="1" latency="1"/>
+      <operations id="207" stage="1" latency="1"/>
+      <operations id="208" stage="1" latency="1"/>
+      <operations id="209" stage="1" latency="1"/>
+      <operations id="210" stage="1" latency="1"/>
+      <operations id="211" stage="1" latency="1"/>
+      <operations id="212" stage="1" latency="1"/>
+      <operations id="213" stage="1" latency="1"/>
+      <operations id="214" stage="1" latency="1"/>
+      <operations id="215" stage="1" latency="1"/>
+      <operations id="216" stage="1" latency="1"/>
+      <operations id="217" stage="1" latency="1"/>
+      <operations id="218" stage="1" latency="1"/>
+      <operations id="219" stage="1" latency="1"/>
+      <operations id="220" stage="1" latency="1"/>
+      <operations id="221" stage="1" latency="1"/>
+      <operations id="222" stage="1" latency="1"/>
+      <operations id="223" stage="1" latency="1"/>
+      <operations id="224" stage="1" latency="1"/>
+      <operations id="225" stage="1" latency="1"/>
+      <operations id="226" stage="1" latency="1"/>
+      <operations id="227" stage="1" latency="1"/>
+      <operations id="228" stage="1" latency="1"/>
+      <operations id="229" stage="1" latency="1"/>
+      <operations id="230" stage="1" latency="1"/>
+      <operations id="231" stage="1" latency="1"/>
+      <operations id="232" stage="1" latency="1"/>
+      <operations id="233" stage="1" latency="1"/>
+      <operations id="234" stage="1" latency="1"/>
+      <operations id="235" stage="1" latency="1"/>
+      <operations id="236" stage="1" latency="1"/>
+      <operations id="237" stage="1" latency="1"/>
+      <operations id="238" stage="1" latency="1"/>
+      <operations id="239" stage="1" latency="1"/>
+      <operations id="240" stage="1" latency="1"/>
+      <operations id="241" stage="1" latency="1"/>
+      <operations id="242" stage="1" latency="1"/>
+      <operations id="243" stage="1" latency="1"/>
+      <operations id="244" stage="1" latency="1"/>
+      <operations id="245" stage="1" latency="1"/>
+      <operations id="246" stage="1" latency="1"/>
+      <operations id="247" stage="1" latency="1"/>
+      <operations id="248" stage="1" latency="1"/>
+      <operations id="249" stage="1" latency="1"/>
+      <operations id="250" stage="1" latency="1"/>
+      <operations id="251" stage="1" latency="1"/>
+      <operations id="252" stage="1" latency="1"/>
+      <operations id="253" stage="1" latency="1"/>
+      <operations id="254" stage="1" latency="1"/>
+      <operations id="255" stage="1" latency="1"/>
+      <operations id="256" stage="1" latency="1"/>
+      <operations id="257" stage="1" latency="1"/>
+      <operations id="258" stage="1" latency="1"/>
+      <operations id="259" stage="1" latency="1"/>
+      <operations id="260" stage="1" latency="1"/>
+      <operations id="261" stage="1" latency="1"/>
+      <operations id="262" stage="1" latency="1"/>
+      <operations id="263" stage="1" latency="1"/>
+      <operations id="264" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="266" stage="1" latency="1"/>
+      <operations id="267" stage="1" latency="1"/>
+      <operations id="268" stage="1" latency="1"/>
+      <operations id="269" stage="1" latency="1"/>
+      <operations id="270" stage="1" latency="1"/>
+      <operations id="272" stage="1" latency="1"/>
+      <operations id="273" stage="1" latency="1"/>
+      <operations id="274" stage="1" latency="1"/>
+      <operations id="275" stage="1" latency="1"/>
+      <operations id="276" stage="1" latency="1"/>
+      <operations id="277" stage="1" latency="1"/>
+      <operations id="278" stage="1" latency="1"/>
+      <operations id="279" stage="1" latency="1"/>
+      <operations id="280" stage="1" latency="1"/>
+      <operations id="281" stage="1" latency="1"/>
+      <operations id="282" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="284" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="FillLocalBuffer7" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>265</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_30_1" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>271</basicBlocks>
+      <basicBlocks>283</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>285</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

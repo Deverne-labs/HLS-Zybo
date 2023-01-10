@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gradient_convolution_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution/src/gradient_convolution_utils.h"/>
+    <originFiles name="gradient_convolution.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution/src/gradient_convolution.h"/>
+    <originFiles name="gradient_convolution.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution/src/gradient_convolution.cpp"/>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution/src/generics_n_options.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution/src/tb.cpp"/>
+    <originFiles name="Pattern_in_GY.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution/src/Pattern_in_GY.txt"/>
+    <originFiles name="Pattern_in_GX.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/Gradient_convolution/src/Pattern_in_GX.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

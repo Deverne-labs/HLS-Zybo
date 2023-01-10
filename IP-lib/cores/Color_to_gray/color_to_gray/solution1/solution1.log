@@ -1,0 +1,139 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 191.645 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/color_to_gray.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/color_to_gray.cpp:30:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/color_to_gray.cpp:31:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.05 seconds. CPU system time: 0.23 seconds. Elapsed time: 3.24 seconds; current allocated memory: 192.872 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'ColorToGray(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/color_to_gray.cpp:67:12)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'ColorToGray(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/color_to_gray.cpp:80:15)
+INFO: [HLS 214-178] Inlining function 'ColorToGray(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' into 'ColorToGrayUnit(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/color_to_gray.cpp:28:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.44 seconds. CPU system time: 0.22 seconds. Elapsed time: 2.78 seconds; current allocated memory: 194.913 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 194.914 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 202.588 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 212.713 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 244.417 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_64_1' (src/color_to_gray.cpp:64:27) in function 'ColorToGrayUnit'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 242.263 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'ColorToGrayUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ColorToGrayUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=ret) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_64_1_VITIS_LOOP_65_2'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverne
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverne -version 1.0 
+INFO: [HLS 200-1510] Running: set_directive_top -name ColorToGrayUnit ColorToGrayUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.883 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/color_to_gray.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/color_to_gray.cpp:30:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/color_to_gray.cpp:31:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.94 seconds. CPU system time: 0.21 seconds. Elapsed time: 2.96 seconds; current allocated memory: 193.042 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'ColorToGray(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/color_to_gray.cpp:67:12)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'ColorToGray(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/color_to_gray.cpp:80:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.55 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.87 seconds; current allocated memory: 195.251 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.253 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 202.905 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 213.040 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 244.703 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_64_1' (src/color_to_gray.cpp:64:27) in function 'ColorToGray'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 252.182 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'ColorToGrayUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ColorToGray' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

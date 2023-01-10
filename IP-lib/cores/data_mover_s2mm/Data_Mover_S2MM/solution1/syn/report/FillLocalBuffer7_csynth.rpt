@@ -1,0 +1,197 @@
+
+
+================================================================
+== Vitis HLS Report for 'FillLocalBuffer7'
+================================================================
+* Date:           Fri Aug 13 09:10:06 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Data_Mover_S2MM
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.268 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_30_1  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     95|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    146|    -|
+|Register         |        -|    -|      79|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      79|    241|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln30_fu_212_p2     |         +|   0|  0|  38|          31|           1|
+    |add_ln36_fu_206_p2     |         +|   0|  0|  12|          11|           2|
+    |sub_ln36_fu_236_p2     |         -|   0|  0|  12|          11|          11|
+    |ap_block_state2        |       and|   0|  0|   2|           1|           1|
+    |icmp_ln30_fu_222_p2    |      icmp|   0|  0|  18|          32|          32|
+    |ap_block_state1        |        or|   0|  0|   2|           1|           1|
+    |select_ln35_fu_241_p3  |    select|   0|  0|  11|           1|          11|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  95|          88|          59|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                                              Name                                                             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_blk_n    |   9|          2|    1|          2|
+    |DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c_blk_n  |   9|          2|    1|          2|
+    |STR_video_in_TDATA_blk_n                                                                                                       |   9|          2|    1|          2|
+    |ap_NS_fsm                                                                                                                      |  20|          4|    1|          4|
+    |ap_done                                                                                                                        |   9|          2|    1|          2|
+    |ddr_buffer_out_blk_n                                                                                                           |   9|          2|    1|          2|
+    |ddr_buffer_out_c_blk_n                                                                                                         |   9|          2|    1|          2|
+    |empty_63_reg_186                                                                                                               |   9|          2|   31|         62|
+    |image_h_blk_n                                                                                                                  |   9|          2|    1|          2|
+    |image_h_c_blk_n                                                                                                                |   9|          2|    1|          2|
+    |image_w_blk_n                                                                                                                  |   9|          2|    1|          2|
+    |image_w_c_blk_n                                                                                                                |   9|          2|    1|          2|
+    |invert_X_blk_n                                                                                                                 |   9|          2|    1|          2|
+    |invert_Y_blk_n                                                                                                                 |   9|          2|    1|          2|
+    |invert_Y_c_blk_n                                                                                                               |   9|          2|    1|          2|
+    +-------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                                                                          | 146|         32|   45|         92|
+    +-------------------------------------------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |add_ln36_reg_263       |  11|   0|   11|          0|
+    |ap_CS_fsm              |   3|   0|    3|          0|
+    |ap_done_reg            |   1|   0|    1|          0|
+    |empty_63_reg_186       |  31|   0|   31|          0|
+    |image_w_read_reg_253   |  32|   0|   32|          0|
+    |invert_X_read_reg_258  |   1|   0|    1|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  |  79|   0|   79|          0|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------------------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
+|                                                            RTL Ports                                                           | Dir | Bits|  Protocol  |                                                      Source Object                                                      |    C Type    |
++--------------------------------------------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                                                          |   in|    1|  ap_ctrl_hs|                                                                                                         FillLocalBuffer7|  return value|
+|ap_rst                                                                                                                          |   in|    1|  ap_ctrl_hs|                                                                                                         FillLocalBuffer7|  return value|
+|ap_start                                                                                                                        |   in|    1|  ap_ctrl_hs|                                                                                                         FillLocalBuffer7|  return value|
+|ap_done                                                                                                                         |  out|    1|  ap_ctrl_hs|                                                                                                         FillLocalBuffer7|  return value|
+|ap_continue                                                                                                                     |   in|    1|  ap_ctrl_hs|                                                                                                         FillLocalBuffer7|  return value|
+|ap_idle                                                                                                                         |  out|    1|  ap_ctrl_hs|                                                                                                         FillLocalBuffer7|  return value|
+|ap_ready                                                                                                                        |  out|    1|  ap_ctrl_hs|                                                                                                         FillLocalBuffer7|  return value|
+|STR_video_in_TDATA                                                                                                              |   in|    8|        axis|                                                                                                    STR_video_in_V_data_V|       pointer|
+|STR_video_in_TVALID                                                                                                             |   in|    1|        axis|                                                                                                    STR_video_in_V_data_V|       pointer|
+|STR_video_in_TREADY                                                                                                             |  out|    1|        axis|                                                                                                    STR_video_in_V_last_V|       pointer|
+|STR_video_in_TLAST                                                                                                              |   in|    1|        axis|                                                                                                    STR_video_in_V_last_V|       pointer|
+|STR_video_in_TKEEP                                                                                                              |   in|    1|        axis|                                                                                                    STR_video_in_V_keep_V|       pointer|
+|STR_video_in_TSTRB                                                                                                              |   in|    1|        axis|                                                                                                    STR_video_in_V_strb_V|       pointer|
+|STR_video_in_TUSER                                                                                                              |   in|    1|        axis|                                                                                                    STR_video_in_V_user_V|       pointer|
+|image_w_dout                                                                                                                    |   in|   32|     ap_fifo|                                                                                                                  image_w|       pointer|
+|image_w_empty_n                                                                                                                 |   in|    1|     ap_fifo|                                                                                                                  image_w|       pointer|
+|image_w_read                                                                                                                    |  out|    1|     ap_fifo|                                                                                                                  image_w|       pointer|
+|invert_X_dout                                                                                                                   |   in|    1|     ap_fifo|                                                                                                                 invert_X|       pointer|
+|invert_X_empty_n                                                                                                                |   in|    1|     ap_fifo|                                                                                                                 invert_X|       pointer|
+|invert_X_read                                                                                                                   |  out|    1|     ap_fifo|                                                                                                                 invert_X|       pointer|
+|stream_elt_dma_buffer_V_address0                                                                                                |  out|   11|   ap_memory|                                                                                                  stream_elt_dma_buffer_V|         array|
+|stream_elt_dma_buffer_V_ce0                                                                                                     |  out|    1|   ap_memory|                                                                                                  stream_elt_dma_buffer_V|         array|
+|stream_elt_dma_buffer_V_we0                                                                                                     |  out|    1|   ap_memory|                                                                                                  stream_elt_dma_buffer_V|         array|
+|stream_elt_dma_buffer_V_d0                                                                                                      |  out|    8|   ap_memory|                                                                                                  stream_elt_dma_buffer_V|         array|
+|ddr_buffer_out_dout                                                                                                             |   in|   32|     ap_fifo|                                                                                                           ddr_buffer_out|       pointer|
+|ddr_buffer_out_empty_n                                                                                                          |   in|    1|     ap_fifo|                                                                                                           ddr_buffer_out|       pointer|
+|ddr_buffer_out_read                                                                                                             |  out|    1|     ap_fifo|                                                                                                           ddr_buffer_out|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_dout      |   in|   31|     ap_fifo|    DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_empty_n   |   in|    1|     ap_fifo|    DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_read      |  out|    1|     ap_fifo|    DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0|       pointer|
+|image_h_dout                                                                                                                    |   in|   21|     ap_fifo|                                                                                                                  image_h|       pointer|
+|image_h_empty_n                                                                                                                 |   in|    1|     ap_fifo|                                                                                                                  image_h|       pointer|
+|image_h_read                                                                                                                    |  out|    1|     ap_fifo|                                                                                                                  image_h|       pointer|
+|invert_Y_dout                                                                                                                   |   in|    1|     ap_fifo|                                                                                                                 invert_Y|       pointer|
+|invert_Y_empty_n                                                                                                                |   in|    1|     ap_fifo|                                                                                                                 invert_Y|       pointer|
+|invert_Y_read                                                                                                                   |  out|    1|     ap_fifo|                                                                                                                 invert_Y|       pointer|
+|image_w_c_din                                                                                                                   |  out|   32|     ap_fifo|                                                                                                                image_w_c|       pointer|
+|image_w_c_full_n                                                                                                                |   in|    1|     ap_fifo|                                                                                                                image_w_c|       pointer|
+|image_w_c_write                                                                                                                 |  out|    1|     ap_fifo|                                                                                                                image_w_c|       pointer|
+|ddr_buffer_out_c_din                                                                                                            |  out|   32|     ap_fifo|                                                                                                         ddr_buffer_out_c|       pointer|
+|ddr_buffer_out_c_full_n                                                                                                         |   in|    1|     ap_fifo|                                                                                                         ddr_buffer_out_c|       pointer|
+|ddr_buffer_out_c_write                                                                                                          |  out|    1|     ap_fifo|                                                                                                         ddr_buffer_out_c|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c_din     |  out|   21|     ap_fifo|  DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c_full_n  |   in|    1|     ap_fifo|  DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c|       pointer|
+|DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c_write   |  out|    1|     ap_fifo|  DataMover_s2mm_32bits_hls_stream_hls_axis_ap_uint_8_1ul_0ul_0ul_0_ap_uint_32_volatile_int_int_ap_uint_1_ap_uint_1_i_0_c|       pointer|
+|image_h_c_din                                                                                                                   |  out|   21|     ap_fifo|                                                                                                                image_h_c|       pointer|
+|image_h_c_full_n                                                                                                                |   in|    1|     ap_fifo|                                                                                                                image_h_c|       pointer|
+|image_h_c_write                                                                                                                 |  out|    1|     ap_fifo|                                                                                                                image_h_c|       pointer|
+|invert_Y_c_din                                                                                                                  |  out|    1|     ap_fifo|                                                                                                               invert_Y_c|       pointer|
+|invert_Y_c_full_n                                                                                                               |   in|    1|     ap_fifo|                                                                                                               invert_Y_c|       pointer|
+|invert_Y_c_write                                                                                                                |  out|    1|     ap_fifo|                                                                                                               invert_Y_c|       pointer|
++--------------------------------------------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
+

@@ -1,0 +1,1036 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu5ev-sfvc784-2-i'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu5ev-sfvc784-2-i 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.710 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.06 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.95 seconds; current allocated memory: 192.886 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:28:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:36:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<16>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:29:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.64 seconds. CPU system time: 0.21 seconds. Elapsed time: 3.01 seconds; current allocated memory: 195.135 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.136 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 208.504 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 229.181 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 271.767 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (src/video_mixer.cpp:25:27) in function 'VideoMixer'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 284.434 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'VideoMixerUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1364) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=ret_6) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 284.741 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 285.006 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 285.146 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 285.286 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8ns_16ns_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_17ns_19ns_35_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 285.950 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_h' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_w' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'VideoMixerUnit' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixerUnit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 287.302 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'VideoMixerUnit_mul_32ns_32ns_64_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'VideoMixerUnit_mul_8ns_8ns_16_1_1_Multiplier_1'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.85 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.88 seconds; current allocated memory: 295.548 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for VideoMixerUnit.
+INFO: [VLOG 209-307] Generating Verilog RTL for VideoMixerUnit.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 292.40 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.46 seconds. CPU system time: 0.49 seconds. Elapsed time: 7.86 seconds; current allocated memory: 295.848 MB.
+INFO: [HLS 200-112] Total CPU user time: 9.58 seconds. Total CPU system time: 0.82 seconds. Total elapsed time: 9.41 seconds; peak allocated memory: 295.548 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu5ev-sfvc784-2-i'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=PH920
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=BoutignyL
+INFO: [HLS 200-1510] Running: set_part xczu5ev-sfvc784-2-i 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library PH920 -rtl vhdl -vendor BoutignyL 
+INFO: [HLS 200-1510] Running: set_directive_top -name VideoMixerUnit VideoMixerUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.888 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.34 seconds. CPU system time: 0.28 seconds. Elapsed time: 3.21 seconds; current allocated memory: 193.042 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:29:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:41:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:30:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.31 seconds. CPU system time: 0.16 seconds. Elapsed time: 3.48 seconds; current allocated memory: 195.205 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.206 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 207.854 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 226.496 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.28 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.32 seconds; current allocated memory: 267.665 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_26_1' (src/video_mixer.cpp:18:23) in function 'VideoMixer'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 279.136 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu5ev-sfvc784-2-i'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=PH920
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=BoutignyL
+INFO: [HLS 200-1510] Running: set_part xczu5ev-sfvc784-2-i 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library PH920 -rtl vhdl -vendor BoutignyL 
+INFO: [HLS 200-1510] Running: set_directive_top -name VideoMixerUnit VideoMixerUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.856 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.92 seconds. CPU system time: 0.29 seconds. Elapsed time: 3.09 seconds; current allocated memory: 193.088 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:29:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:41:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:30:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.56 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.88 seconds; current allocated memory: 195.221 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.222 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 207.869 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 226.509 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 267.664 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_26_1' (src/video_mixer.cpp:18:23) in function 'VideoMixer'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 279.155 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu5ev-sfvc784-2-i'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=PH920
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=BoutignyL
+INFO: [HLS 200-1510] Running: set_part xczu5ev-sfvc784-2-i 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library PH920 -rtl vhdl -vendor BoutignyL 
+INFO: [HLS 200-1510] Running: set_directive_top -name VideoMixerUnit VideoMixerUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 207.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.91 seconds. CPU system time: 0.26 seconds. Elapsed time: 3.11 seconds; current allocated memory: 209.133 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:28:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:38:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:29:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.86 seconds. CPU system time: 0.22 seconds. Elapsed time: 3.26 seconds; current allocated memory: 211.432 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 211.433 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 222.382 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 239.825 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 277.160 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (src/video_mixer.cpp:25:27) in function 'VideoMixer'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 289.545 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'VideoMixerUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 289.728 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 289.942 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.064 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 290.205 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 290.677 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_h' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_w' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'VideoMixerUnit' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixerUnit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 291.863 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'VideoMixerUnit_mul_32ns_32ns_64_1_1_Multiplier_0'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.71 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.75 seconds; current allocated memory: 300.067 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for VideoMixerUnit.
+INFO: [VLOG 209-307] Generating Verilog RTL for VideoMixerUnit.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 292.40 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.36 seconds. CPU system time: 0.53 seconds. Elapsed time: 8.08 seconds; current allocated memory: 300.381 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverne
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverne 
+INFO: [HLS 200-1510] Running: set_directive_top -name VideoMixerUnit VideoMixerUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.865 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.14 seconds. CPU system time: 0.24 seconds. Elapsed time: 3.02 seconds; current allocated memory: 193.053 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:28:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:38:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:29:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.51 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.87 seconds; current allocated memory: 195.350 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.351 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 206.300 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 223.748 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 261.067 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (src/video_mixer.cpp:25:27) in function 'VideoMixer'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 273.464 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'VideoMixerUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 273.674 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 273.889 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 273.997 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 274.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 274.624 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_h' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_w' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'VideoMixerUnit' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixerUnit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 275.792 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'VideoMixerUnit_mul_32ns_32ns_64_2_1_Multiplier_0'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.71 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.73 seconds; current allocated memory: 284.011 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for VideoMixerUnit.
+INFO: [VLOG 209-307] Generating Verilog RTL for VideoMixerUnit.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.2 seconds. CPU system time: 0.52 seconds. Elapsed time: 7.57 seconds; current allocated memory: 284.325 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7.5ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverne
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 7.5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverne 
+INFO: [HLS 200-1510] Running: set_directive_top -name VideoMixerUnit VideoMixerUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 207.881 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.86 seconds. CPU system time: 0.32 seconds. Elapsed time: 3.02 seconds; current allocated memory: 209.070 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:28:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:38:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:29:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.62 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.97 seconds; current allocated memory: 211.368 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 211.369 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 222.317 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 239.761 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 277.082 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (src/video_mixer.cpp:25:27) in function 'VideoMixer'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 289.479 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'VideoMixerUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 289.694 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 289.921 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.029 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 290.169 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 290.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_h' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_w' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'VideoMixerUnit' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixerUnit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 291.846 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'VideoMixerUnit_mul_32ns_32ns_64_5_1_Multiplier_0'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.72 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.75 seconds; current allocated memory: 300.047 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for VideoMixerUnit.
+INFO: [VLOG 209-307] Generating Verilog RTL for VideoMixerUnit.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 253.16 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.06 seconds. CPU system time: 0.57 seconds. Elapsed time: 7.68 seconds; current allocated memory: 300.361 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverne
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverne 
+INFO: [HLS 200-1510] Running: set_directive_top -name VideoMixerUnit VideoMixerUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.882 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.84 seconds. CPU system time: 0.27 seconds. Elapsed time: 2.68 seconds; current allocated memory: 193.055 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:28:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:38:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int, int)' (src/video_mixer.cpp:29:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.61 seconds. CPU system time: 0.14 seconds. Elapsed time: 2.74 seconds; current allocated memory: 195.353 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.355 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 206.305 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 223.747 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 261.080 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (src/video_mixer.cpp:25:27) in function 'VideoMixer'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 273.487 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'VideoMixerUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_25_1_VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 273.691 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 273.922 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 274.027 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 274.183 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_7_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 274.702 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_h' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_w' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'VideoMixerUnit' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixerUnit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 275.871 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'VideoMixerUnit_mul_32ns_32ns_64_7_1_Multiplier_0'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.78 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.78 seconds; current allocated memory: 284.105 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for VideoMixerUnit.
+INFO: [VLOG 209-307] Generating Verilog RTL for VideoMixerUnit.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 284.09 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.03 seconds. CPU system time: 0.45 seconds. Elapsed time: 7.05 seconds; current allocated memory: 284.404 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=DVR-002
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=Deverne
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library DVR-002 -rtl vhdl -vendor Deverne 
+INFO: [HLS 200-1510] Running: set_directive_top -name VideoMixerUnit VideoMixerUnit 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.884 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/video_mixer.cpp' ... 
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:6:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: src/video_mixer.cpp:7:23
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.98 seconds. CPU system time: 0.25 seconds. Elapsed time: 3.14 seconds; current allocated memory: 193.073 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, ap_uint<12>, ap_uint<12>)' (src/video_mixer.cpp:46:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, ap_uint<12>, ap_uint<12>)' (src/video_mixer.cpp:29:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>&)' into 'VideoMixer(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, ap_uint<12>, ap_uint<12>)' (src/video_mixer.cpp:28:18)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.76 seconds. CPU system time: 0.22 seconds. Elapsed time: 3.12 seconds; current allocated memory: 195.371 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 195.372 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 203.282 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 214.038 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/video_mixer.cpp:26:37) in function 'VideoMixer'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'VideoMixer' (src/video_mixer.cpp:25:66)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 246.399 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_25_1' (src/video_mixer.cpp:25:36) in function 'VideoMixer' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 254.321 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'VideoMixerUnit' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 254.622 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 254.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 255.100 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 255.240 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 255.890 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'VideoMixerUnit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/overlay_stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/video_stream_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_h' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'VideoMixerUnit/image_w' to 'ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'VideoMixerUnit' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'VideoMixerUnit'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 257.633 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.78 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.8 seconds; current allocated memory: 265.425 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for VideoMixerUnit.
+INFO: [VLOG 209-307] Generating Verilog RTL for VideoMixerUnit.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 275.63 MHz
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

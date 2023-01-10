@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 16 15:28:35 2021
+# Process ID: 8046
+# Current directory: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/vivado.log
+# Journal file: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+# open_wave_database VideoMixerUnit.wdb
+open_wave_config /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 16 15:46:33 2021...

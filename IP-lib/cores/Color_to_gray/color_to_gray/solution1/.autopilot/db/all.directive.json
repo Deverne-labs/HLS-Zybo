@@ -1,0 +1,29 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "ColorToGrayUnit",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "ColorToGrayUnit"
+              }]
+          }
+        },
+        {
+          "functionName": "ColorToGrayUnit",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "ColorToGrayUnit"
+              }]
+          }
+        }
+      ]
+    }]}

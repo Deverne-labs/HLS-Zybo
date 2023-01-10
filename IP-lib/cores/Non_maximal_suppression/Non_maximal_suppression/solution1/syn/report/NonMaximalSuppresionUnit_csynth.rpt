@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'NonMaximalSuppresionUnit'
+================================================================
+* Date:           Thu Sep 23 14:11:28 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Non_maximal_suppression
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.614 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                 |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |             Instance            |        Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_NonMaximalSuppresion_fu_109  |NonMaximalSuppresion  |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        6|    1|     934|   1226|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     34|    -|
+|Register         |        -|    -|       5|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        6|    1|     939|   1262|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|   ~0|      ~0|      2|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------+----------------------+---------+----+-----+------+-----+
+    |             Instance            |        Module        | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +---------------------------------+----------------------+---------+----+-----+------+-----+
+    |grp_NonMaximalSuppresion_fu_109  |NonMaximalSuppresion  |        6|   1|  934|  1226|    0|
+    +---------------------------------+----------------------+---------+----+-----+------+-----+
+    |Total                            |                      |        6|   1|  934|  1226|    0|
+    +---------------------------------+----------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------------------+----------+----+---+----+------------+------------+
+    |                   Variable Name                   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_NonMaximalSuppresion_fu_109_stream_out_TREADY  |       and|   0|  0|   2|           1|           1|
+    +---------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                              |          |   0|  0|   2|           1|           1|
+    +---------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                      |  25|          5|    1|          5|
+    |stream_in_TREADY_int_regslice  |   9|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          |  34|          7|    2|          7|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+---+----+-----+-----------+
+    |                     Name                     | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                     |  4|   0|    4|          0|
+    |grp_NonMaximalSuppresion_fu_109_ap_start_reg  |  1|   0|    1|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+    |Total                                         |  5|   0|    5|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+--------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++---------------------+-----+-----+------------+--------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  NonMaximalSuppresionUnit|  return value|
+|ap_rst_n             |   in|    1|  ap_ctrl_hs|  NonMaximalSuppresionUnit|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  NonMaximalSuppresionUnit|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  NonMaximalSuppresionUnit|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  NonMaximalSuppresionUnit|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  NonMaximalSuppresionUnit|  return value|
+|stream_in_TDATA      |   in|   16|        axis|        stream_in_V_data_V|       pointer|
+|stream_in_TVALID     |   in|    1|        axis|        stream_in_V_last_V|       pointer|
+|stream_in_TREADY     |  out|    1|        axis|        stream_in_V_last_V|       pointer|
+|stream_in_TLAST      |   in|    1|        axis|        stream_in_V_last_V|       pointer|
+|stream_in_TKEEP      |   in|    2|        axis|        stream_in_V_keep_V|       pointer|
+|stream_in_TSTRB      |   in|    2|        axis|        stream_in_V_strb_V|       pointer|
+|stream_in_TUSER      |   in|    1|        axis|        stream_in_V_user_V|       pointer|
+|stream_out_TDATA     |  out|    8|        axis|       stream_out_V_data_V|       pointer|
+|stream_out_TVALID    |  out|    1|        axis|       stream_out_V_last_V|       pointer|
+|stream_out_TREADY    |   in|    1|        axis|       stream_out_V_last_V|       pointer|
+|stream_out_TLAST     |  out|    1|        axis|       stream_out_V_last_V|       pointer|
+|stream_out_TKEEP     |  out|    1|        axis|       stream_out_V_keep_V|       pointer|
+|stream_out_TSTRB     |  out|    1|        axis|       stream_out_V_strb_V|       pointer|
+|stream_out_TUSER     |  out|    1|        axis|       stream_out_V_user_V|       pointer|
+|image_w              |   in|   32|   ap_stable|                   image_w|        scalar|
+|image_h              |   in|   32|   ap_stable|                   image_h|        scalar|
+|alpha                |   in|   16|   ap_stable|                     alpha|        scalar|
+|beta                 |   in|   16|   ap_stable|                      beta|        scalar|
+|max_response         |  out|   16|      ap_vld|              max_response|       pointer|
+|max_response_ap_vld  |  out|    1|      ap_vld|              max_response|       pointer|
++---------------------+-----+-----+------------+--------------------------+--------------+
+

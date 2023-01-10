@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_M2S_entry3'
+================================================================
+* Date:           Fri Aug 13 11:22:20 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Data_Mover_MM2S
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.634 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     36|    -|
+|Register         |        -|    -|       2|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       2|     38|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |MM_video_in_2_out_blk_n  |   9|          2|    1|          2|
+    |ap_done                  |   9|          2|    1|          2|
+    |i_out_blk_n              |   9|          2|    1|          2|
+    |image_w_out_blk_n        |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  2|   0|    2|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-----------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++--------------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_M2S.entry3|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_M2S.entry3|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_M2S.entry3|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_M2S.entry3|  return value|
+|ap_continue               |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_M2S.entry3|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_M2S.entry3|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_M2S.entry3|  return value|
+|MM_video_in_2             |   in|   32|     ap_none|                MM_video_in_2|        scalar|
+|image_w                   |   in|   32|     ap_none|                      image_w|        scalar|
+|i                         |   in|   31|     ap_none|                            i|        scalar|
+|MM_video_in_2_out_din     |  out|   32|     ap_fifo|            MM_video_in_2_out|       pointer|
+|MM_video_in_2_out_full_n  |   in|    1|     ap_fifo|            MM_video_in_2_out|       pointer|
+|MM_video_in_2_out_write   |  out|    1|     ap_fifo|            MM_video_in_2_out|       pointer|
+|image_w_out_din           |  out|   32|     ap_fifo|                  image_w_out|       pointer|
+|image_w_out_full_n        |   in|    1|     ap_fifo|                  image_w_out|       pointer|
+|image_w_out_write         |  out|    1|     ap_fifo|                  image_w_out|       pointer|
+|i_out_din                 |  out|   31|     ap_fifo|                        i_out|       pointer|
+|i_out_full_n              |   in|    1|     ap_fifo|                        i_out|       pointer|
+|i_out_write               |  out|    1|     ap_fifo|                        i_out|       pointer|
++--------------------------+-----+-----+------------+-----------------------------+--------------+
+

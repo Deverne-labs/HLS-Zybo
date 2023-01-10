@@ -1,0 +1,180 @@
+
+
+================================================================
+== Vitis HLS Report for 'ColorToGray'
+================================================================
+* Date:           Thu Aug 12 17:03:54 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        color_to_gray
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_64_1_VITIS_LOOP_65_2  |        ?|        ?|         5|          1|          1|     ?|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    1|       -|      -|    -|
+|Expression       |        -|    -|       0|    126|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    0|     165|     50|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     70|    -|
+|Register         |        -|    -|     285|     96|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    1|     450|    342|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+----+-----+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP|  FF | LUT| URAM|
+    +-------------------------+----------------------+---------+----+-----+----+-----+
+    |mul_32ns_32ns_64_2_1_U1  |mul_32ns_32ns_64_2_1  |        0|   0|  165|  50|    0|
+    +-------------------------+----------------------+---------+----+-----+----+-----+
+    |Total                    |                      |        0|   0|  165|  50|    0|
+    +-------------------------+----------------------+---------+----+-----+----+-----+
+
+    * DSP: 
+    +----------------------------------+-------------------------------+----------------+
+    |             Instance             |             Module            |   Expression   |
+    +----------------------------------+-------------------------------+----------------+
+    |am_addmul_9ns_8ns_12ns_21_4_1_U2  |am_addmul_9ns_8ns_12ns_21_4_1  |  (i0 + i1) * i2|
+    +----------------------------------+-------------------------------+----------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln64_fu_146_p2                |         +|   0|  0|  71|          64|           1|
+    |ret_2_fu_201_p2                   |         +|   0|  0|  14|           9|           9|
+    |ap_block_state3_pp0_stage0_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state7_io                |       and|   0|  0|   2|           1|           1|
+    |icmp_ln64_fu_152_p2               |      icmp|   0|  0|  29|          64|          64|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001         |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |       xor|   0|  0|   2|           2|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 126|         144|          81|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |  25|          5|    1|          5|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter4  |   9|          2|    1|          2|
+    |indvar_flatten_reg_121   |   9|          2|   64|        128|
+    |stream_in_TDATA_blk_n    |   9|          2|    1|          2|
+    |stream_out_TDATA_blk_n   |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  70|         15|   69|        141|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   4|   0|    4|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4  |   1|   0|    1|          0|
+    |icmp_ln64_reg_252        |   1|   0|    1|          0|
+    |indvar_flatten_reg_121   |  64|   0|   64|          0|
+    |pixel_data_b_V_reg_266   |   8|   0|    8|          0|
+    |ret_2_reg_271            |   9|   0|    9|          0|
+    |tmp_i_i_last_reg_261     |   1|   0|    1|          0|
+    |tmp_i_i_user_reg_256     |   1|   0|    1|          0|
+    |icmp_ln64_reg_252        |  64|  32|    1|          0|
+    |tmp_i_i_last_reg_261     |  64|  32|    1|          0|
+    |tmp_i_i_user_reg_256     |  64|  32|    1|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 285|  96|   96|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+---------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++-------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|          ColorToGray|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|          ColorToGray|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|          ColorToGray|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|          ColorToGray|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|          ColorToGray|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|          ColorToGray|  return value|
+|stream_in_TDATA    |   in|   24|        axis|   stream_in_V_data_V|       pointer|
+|stream_in_TVALID   |   in|    1|        axis|   stream_in_V_data_V|       pointer|
+|stream_in_TREADY   |  out|    1|        axis|   stream_in_V_last_V|       pointer|
+|stream_in_TLAST    |   in|    1|        axis|   stream_in_V_last_V|       pointer|
+|stream_in_TKEEP    |   in|    3|        axis|   stream_in_V_keep_V|       pointer|
+|stream_in_TSTRB    |   in|    3|        axis|   stream_in_V_strb_V|       pointer|
+|stream_in_TUSER    |   in|    1|        axis|   stream_in_V_user_V|       pointer|
+|stream_out_TDATA   |  out|    8|        axis|  stream_out_V_data_V|       pointer|
+|stream_out_TREADY  |   in|    1|        axis|  stream_out_V_data_V|       pointer|
+|stream_out_TVALID  |  out|    1|        axis|  stream_out_V_last_V|       pointer|
+|stream_out_TLAST   |  out|    1|        axis|  stream_out_V_last_V|       pointer|
+|stream_out_TKEEP   |  out|    1|        axis|  stream_out_V_keep_V|       pointer|
+|stream_out_TSTRB   |  out|    1|        axis|  stream_out_V_strb_V|       pointer|
+|stream_out_TUSER   |  out|    1|        axis|  stream_out_V_user_V|       pointer|
+|image_w            |   in|   32|   ap_stable|              image_w|        scalar|
+|image_h            |   in|   32|   ap_stable|              image_h|        scalar|
++-------------------+-----+-----+------------+---------------------+--------------+
+

@@ -1,0 +1,233 @@
+
+
+================================================================
+== Vitis HLS Report for 'DMAReadMM'
+================================================================
+* Date:           Fri Aug 13 11:22:20 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        Data_Mover_MM2S
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_54_1  |        ?|        ?|         3|          1|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    227|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    164|    -|
+|Register         |        -|    -|     302|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     302|    391|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln54_fu_260_p2                 |         +|   0|  0|  36|          29|           1|
+    |empty_34_fu_235_p2                 |         +|   0|  0|  39|          32|          32|
+    |sub_ln53_1_fu_204_p2               |         -|   0|  0|  38|           1|          31|
+    |sub_ln53_fu_155_p2                 |         -|   0|  0|  39|           1|          32|
+    |ap_block_pp0_stage0_11001          |       and|   0|  0|   2|           1|           1|
+    |ap_block_state11_pp0_stage0_iter1  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln54_1_fu_266_p2              |      icmp|   0|  0|  17|          29|          29|
+    |icmp_ln54_fu_195_p2                |      icmp|   0|  0|  17|          30|           1|
+    |ap_block_state1                    |        or|   0|  0|   2|           1|           1|
+    |burst_size_fu_213_p3               |    select|   0|  0|  31|           1|          31|
+    |ap_enable_pp0                      |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1            |       xor|   0|  0|   2|           2|           1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |Total                              |          |   0|  0| 227|         129|         163|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |MM_video_in_2_blk_n      |   9|          2|    1|          2|
+    |MM_video_in_blk_n_AR     |   9|          2|    1|          2|
+    |MM_video_in_blk_n_R      |   9|          2|    1|          2|
+    |ap_NS_fsm                |  65|         12|    1|         12|
+    |ap_done                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |bf_idx_reg_136           |   9|          2|   29|         58|
+    |i_blk_n                  |   9|          2|    1|          2|
+    |i_out_blk_n              |   9|          2|    1|          2|
+    |image_w_blk_n            |   9|          2|    1|          2|
+    |image_w_out_blk_n        |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 164|         34|   40|         90|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |MM_video_in_2_read_reg_279         |  32|   0|   32|          0|
+    |MM_video_in_addr_read_reg_343      |  32|   0|   32|          0|
+    |ap_CS_fsm                          |  11|   0|   11|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |bf_idx_reg_136                     |  29|   0|   29|          0|
+    |empty_33_reg_313                   |  29|   0|   29|          0|
+    |empty_reg_299                      |  21|   0|   21|          0|
+    |icmp_ln54_1_reg_334                |   1|   0|    1|          0|
+    |icmp_ln54_1_reg_334_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln54_reg_304                  |   1|   0|    1|          0|
+    |sext_ln53_reg_308                  |  32|   0|   32|          0|
+    |tmp_reg_284                        |   1|   0|    1|          0|
+    |trunc_ln1_i_reg_318                |  30|   0|   30|          0|
+    |trunc_ln53_1_i_reg_289             |  30|   0|   30|          0|
+    |trunc_ln53_2_i_reg_294             |  30|   0|   30|          0|
+    |trunc_ln57_reg_338                 |   9|   0|    9|          0|
+    |trunc_ln57_reg_338_pp0_iter1_reg   |   9|   0|    9|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 302|   0|  302|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+----------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                         |   in|    1|  ap_ctrl_hs|             DMAReadMM|  return value|
+|ap_rst                         |   in|    1|  ap_ctrl_hs|             DMAReadMM|  return value|
+|ap_start                       |   in|    1|  ap_ctrl_hs|             DMAReadMM|  return value|
+|ap_done                        |  out|    1|  ap_ctrl_hs|             DMAReadMM|  return value|
+|ap_continue                    |   in|    1|  ap_ctrl_hs|             DMAReadMM|  return value|
+|ap_idle                        |  out|    1|  ap_ctrl_hs|             DMAReadMM|  return value|
+|ap_ready                       |  out|    1|  ap_ctrl_hs|             DMAReadMM|  return value|
+|m_axi_MM_video_in_AWVALID      |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWREADY      |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWADDR       |  out|   32|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWID         |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWLEN        |  out|   32|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWSIZE       |  out|    3|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWBURST      |  out|    2|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWLOCK       |  out|    2|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWCACHE      |  out|    4|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWPROT       |  out|    3|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWQOS        |  out|    4|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWREGION     |  out|    4|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_AWUSER       |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_WVALID       |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_WREADY       |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_WDATA        |  out|   32|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_WSTRB        |  out|    4|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_WLAST        |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_WID          |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_WUSER        |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARVALID      |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARREADY      |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARADDR       |  out|   32|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARID         |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARLEN        |  out|   32|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARSIZE       |  out|    3|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARBURST      |  out|    2|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARLOCK       |  out|    2|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARCACHE      |  out|    4|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARPROT       |  out|    3|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARQOS        |  out|    4|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARREGION     |  out|    4|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_ARUSER       |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_RVALID       |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_RREADY       |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_RDATA        |   in|   32|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_RLAST        |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_RID          |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_RUSER        |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_RRESP        |   in|    2|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_BVALID       |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_BREADY       |  out|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_BRESP        |   in|    2|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_BID          |   in|    1|       m_axi|           MM_video_in|       pointer|
+|m_axi_MM_video_in_BUSER        |   in|    1|       m_axi|           MM_video_in|       pointer|
+|MM_video_in_2_dout             |   in|   32|     ap_fifo|         MM_video_in_2|       pointer|
+|MM_video_in_2_empty_n          |   in|    1|     ap_fifo|         MM_video_in_2|       pointer|
+|MM_video_in_2_read             |  out|    1|     ap_fifo|         MM_video_in_2|       pointer|
+|image_w_dout                   |   in|   32|     ap_fifo|               image_w|       pointer|
+|image_w_empty_n                |   in|    1|     ap_fifo|               image_w|       pointer|
+|image_w_read                   |  out|    1|     ap_fifo|               image_w|       pointer|
+|i_dout                         |   in|   31|     ap_fifo|                     i|       pointer|
+|i_empty_n                      |   in|    1|     ap_fifo|                     i|       pointer|
+|i_read                         |  out|    1|     ap_fifo|                     i|       pointer|
+|axi_elt_dma_buffer_V_address0  |  out|    9|   ap_memory|  axi_elt_dma_buffer_V|         array|
+|axi_elt_dma_buffer_V_ce0       |  out|    1|   ap_memory|  axi_elt_dma_buffer_V|         array|
+|axi_elt_dma_buffer_V_we0       |  out|    1|   ap_memory|  axi_elt_dma_buffer_V|         array|
+|axi_elt_dma_buffer_V_d0        |  out|   32|   ap_memory|  axi_elt_dma_buffer_V|         array|
+|image_w_out_din                |  out|   32|     ap_fifo|           image_w_out|       pointer|
+|image_w_out_full_n             |   in|    1|     ap_fifo|           image_w_out|       pointer|
+|image_w_out_write              |  out|    1|     ap_fifo|           image_w_out|       pointer|
+|i_out_din                      |  out|   31|     ap_fifo|                 i_out|       pointer|
+|i_out_full_n                   |   in|    1|     ap_fifo|                 i_out|       pointer|
+|i_out_write                    |  out|    1|     ap_fifo|                 i_out|       pointer|
++-------------------------------+-----+-----+------------+----------------------+--------------+
+

@@ -1,0 +1,48 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="DataMoverUnit_s2mm_32bits" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="STR_video_in" src_type="stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 1, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="56" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="STR_video_in" hw_bitwidth="8" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="r" src_name="MM_video_out" src_type="*" src_isptr="1" src_bitwidth="32" src_size_or_depth="5120">
+        <hw hw_usage="data" hw_interface="MAXI" hw_name="MM_video_out" hw_bitwidth="32" hw_size_or_depth="0">
+          <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="direct" latency="0" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="64" max_widen_bitwidth="0"/>
+          <constraint constraint_type="bitwidth" orig_bitwidth="32" final_bitwidth="32"/>
+        </hw>
+        <hw hw_usage="address" hw_interface="Register" hw_name="MM_video_out_offset" hw_bitwidth="32" hw_size_or_depth="0">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="r" src_name="image_w" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="image_w" hw_bitwidth="32" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="3" access_type="r" src_name="image_h" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="image_h" hw_bitwidth="32" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="4" access_type="r" src_name="invert_X" src_type="ap_uint&lt;1&gt;" src_isptr="0" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="invert_X" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="5" access_type="r" src_name="invert_Y" src_type="ap_uint&lt;1&gt;" src_isptr="0" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="invert_Y" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="6" access_type="w" src_name="s2mm_line_buffer_size" src_type="ap_uint&lt;16&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="s2mm_line_buffer_size" hw_bitwidth="16" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0"/>
+    </return>
+  </kernel>
+</root>

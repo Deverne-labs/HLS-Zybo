@@ -1,0 +1,142 @@
+The maximum depth reached by any of the 3 hls::stream() instances in the design is 327680
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_VideoMixerUnit_top glbl -prj VideoMixerUnit.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s VideoMixerUnit -debug wave 
+Multi-threading is on. Using 4 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit_mul_mul_17ns_19ns_35_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mul_mul_17ns_19ns_35_4_1_DSP48_1'
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mul_mul_17ns_19ns_35_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/AESL_axi_s_overlay_stream_in.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_overlay_stream_in'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/AESL_axi_s_video_stream_out.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_video_stream_out'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit_mac_muladd_8ns_8ns_16ns_17_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mac_muladd_8ns_8ns_16ns_17_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/AESL_axi_s_video_stream_in.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_video_stream_in'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit_regslice_both.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_regslice_both'
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_regslice_both_w1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_VideoMixerUnit_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit_mul_32ns_32ns_64_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mul_32ns_32ns_64_1_1_Multiplier_0'
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mul_32ns_32ns_64_1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit_VideoMixer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_VideoMixer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit_mul_8ns_8ns_16_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mul_8ns_8ns_16_1_1_Multiplier_1'
+INFO: [VRFC 10-3107] analyzing entity 'VideoMixerUnit_mul_8ns_8ns_16_1_1'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling module work.glbl
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_mul_32ns_32ns_64_1_1_Multiplier_0 [videomixerunit_mul_32ns_32ns_64_...]
+Compiling architecture arch of entity xil_defaultlib.VideoMixerUnit_mul_32ns_32ns_64_1_1 [\VideoMixerUnit_mul_32ns_32ns_64...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_mul_8ns_8ns_16_1_1_Multiplier_1 [videomixerunit_mul_8ns_8ns_16_1_...]
+Compiling architecture arch of entity xil_defaultlib.VideoMixerUnit_mul_8ns_8ns_16_1_1 [\VideoMixerUnit_mul_8ns_8ns_16_1...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0 [videomixerunit_mac_muladd_8ns_8n...]
+Compiling architecture arch of entity xil_defaultlib.VideoMixerUnit_mac_muladd_8ns_8ns_16ns_17_4_1 [\VideoMixerUnit_mac_muladd_8ns_8...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_mul_mul_17ns_19ns_35_4_1_DSP48_1 [videomixerunit_mul_mul_17ns_19ns...]
+Compiling architecture arch of entity xil_defaultlib.VideoMixerUnit_mul_mul_17ns_19ns_35_4_1 [\VideoMixerUnit_mul_mul_17ns_19n...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_VideoMixer [videomixerunit_videomixer_defaul...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_regslice_both [\VideoMixerUnit_regslice_both(da...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_regslice_both [\VideoMixerUnit_regslice_both(da...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_regslice_both [\VideoMixerUnit_regslice_both(da...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit_regslice_both [\VideoMixerUnit_regslice_both(da...]
+Compiling architecture behav of entity xil_defaultlib.VideoMixerUnit [videomixerunit_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_video_stream_in [aesl_axi_s_video_stream_in_defau...]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_overlay_stream_in [aesl_axi_s_overlay_stream_in_def...]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_video_stream_out [aesl_axi_s_video_stream_out_defa...]
+Compiling architecture behav of entity xil_defaultlib.apatb_videomixerunit_top
+Built simulation snapshot VideoMixerUnit
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/xsim.dir/VideoMixerUnit/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 16 15:27:29 2021...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/VideoMixerUnit/xsim_script.tcl
+# xsim {VideoMixerUnit} -autoloadwcfg -tclbatch {VideoMixerUnit.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source VideoMixerUnit.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set video_stream_out_group [add_wave_group video_stream_out(axis) -into $coutputgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_out_TLAST -into $video_stream_out_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_out_TUSER -into $video_stream_out_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_out_TSTRB -into $video_stream_out_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_out_TKEEP -into $video_stream_out_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_out_TREADY -into $video_stream_out_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_out_TVALID -into $video_stream_out_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_out_TDATA -into $video_stream_out_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set image_w_group [add_wave_group image_w(wire) -into $cinputgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/image_w -into $image_w_group -radix hex
+## set image_h_group [add_wave_group image_h(wire) -into $cinputgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/image_h -into $image_h_group -radix hex
+## set overlay_stream_in_group [add_wave_group overlay_stream_in(axis) -into $cinputgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/overlay_stream_in_TLAST -into $overlay_stream_in_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/overlay_stream_in_TUSER -into $overlay_stream_in_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/overlay_stream_in_TSTRB -into $overlay_stream_in_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/overlay_stream_in_TKEEP -into $overlay_stream_in_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/overlay_stream_in_TREADY -into $overlay_stream_in_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/overlay_stream_in_TVALID -into $overlay_stream_in_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/overlay_stream_in_TDATA -into $overlay_stream_in_group -radix hex
+## set video_stream_in_group [add_wave_group video_stream_in(axis) -into $cinputgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_in_TLAST -into $video_stream_in_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_in_TUSER -into $video_stream_in_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_in_TSTRB -into $video_stream_in_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_in_TKEEP -into $video_stream_in_group -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_in_TREADY -into $video_stream_in_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_in_TVALID -into $video_stream_in_group -color #ffff00 -radix hex
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/video_stream_in_TDATA -into $video_stream_in_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/ap_start -into $blocksiggroup
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/ap_done -into $blocksiggroup
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/ap_idle -into $blocksiggroup
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_VideoMixerUnit_top/AESL_inst_VideoMixerUnit/ap_clk -into $clockgroup
+## save_wave_config VideoMixerUnit.wcfg
+## run all
+Note: simulation done!
+Time: 3277085 ns  Iteration: 1  Process: /apatb_VideoMixerUnit_top/generate_sim_done_proc  File: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 3277085 ns  Iteration: 1  Process: /apatb_VideoMixerUnit_top/generate_sim_done_proc  File: /home/lbo/Projects/Photospace/PH920/FPGA/Mercury_XU5EV/hardware/IPs/cores/video_mixer/video_mixer/solution1/sim/vhdl/VideoMixerUnit.autotb.vhd
+$finish called at time : 3277085 ns
+run: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:20 . Memory (MB): peak = 2354.766 ; gain = 0.000 ; free physical = 3261 ; free virtual = 10005
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Apr 16 15:27:58 2021...
+The maximum depth reached by any of the 3 hls::stream() instances in the design is 327680

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="generics_n_options.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s/src/generics_n_options.h"/>
+    <originFiles name="data_mover_mm2s_utils.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s/src/data_mover_mm2s_utils.h"/>
+    <originFiles name="data_mover_mm2s.h" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s/src/data_mover_mm2s.h"/>
+    <originFiles name="data_mover_mm2s.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s/src/data_mover_mm2s.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s/src/tb.cpp"/>
+    <originFiles name="Pattern_in.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s/src/Pattern_in.txt"/>
+    <originFiles name="Overlay.txt" path="/home/lbo/Projects/esiee/hardware/IPs/cores/data_mover_mm2s/src/Overlay.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
