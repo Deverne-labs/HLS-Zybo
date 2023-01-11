@@ -1,0 +1,41 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'lbo' on host 'lbo-portable' (Linux_x86_64 version 5.4.0-125-generic) on Wed Jan 11 22:16:24 CET 2023
+INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/lbo/Projects/DVR-003-001/HLS-Zybo/Zero-lab/lab1'
+Sourcing Tcl script '/home/lbo/Projects/DVR-003-001/HLS-Zybo/Zero-lab/lab1/pattern_generator/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project pattern_generator 
+INFO: [HLS 200-10] Opening project '/home/lbo/Projects/DVR-003-001/HLS-Zybo/Zero-lab/lab1/pattern_generator'.
+INFO: [HLS 200-1510] Running: set_top PatternGeneratorUnit 
+INFO: [HLS 200-1510] Running: add_files src/generics_n_options.h 
+INFO: [HLS 200-10] Adding design file 'src/generics_n_options.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/pattern_generator.cpp 
+INFO: [HLS 200-10] Adding design file 'src/pattern_generator.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/pattern_generator.h 
+INFO: [HLS 200-10] Adding design file 'src/pattern_generator.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/pattern_generator_utils.h 
+INFO: [HLS 200-10] Adding design file 'src/pattern_generator_utils.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'src/tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/lbo/Projects/DVR-003-001/HLS-Zybo/Zero-lab/lab1/pattern_generator/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/tb.cpp in debug mode
+   Compiling ../../../../src/pattern_generator.cpp in debug mode
+   Generating csim.exe
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 0
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.03 seconds. CPU system time: 0.63 seconds. Elapsed time: 4.7 seconds; current allocated memory: 93.474 MB.
