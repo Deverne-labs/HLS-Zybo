@@ -11,8 +11,9 @@ At the moment, example designs are based on zybo-Z7 board with zynq 7020 FPGA on
 In this example, a real time corner detection is implemented in the Zybo-Z2. The system acquire video from HDMI RX connector, process it using hardware accelerator deisgned with Vitis HLS, and transmit result on HDMI TX connector.
 
 To allow the user to tune the sensitivity of corner detection, a serial menu is provided. Firmware design is also included in this repository. 
-load BOOT.bin file in a FAT32 SD card, plug in into the zybo, connect HDMI RX to a source and HDMI TX to a siplay to start evaluation !
+load BOOT.bin file in a FAT32 SD card, plug in into the zybo, connect HDMI RX to a source and HDMI TX to a display to start evaluation !
 
+Detected corners will be highlighter with cyan on the top right area of the output video. 
 
 <p align="center"><img src="./doc/harris_compare.png"></p>
 
