@@ -7,7 +7,7 @@ At the moment, example designs are based on zybo-Z7 board with zynq 7020 FPGA on
 
 ## Harris corner detection example 
 
-<p align="left"><img src="./doc/harris_ISP_synoptic.png"></p>
+<p align="left"><img src="./doc/experiment.png"></p>
 In this example, a real time corner detection is implemented in the Zybo-Z2. The system acquire video from HDMI RX connector, process it using hardware accelerator deisgned with Vitis HLS, and transmit result on HDMI TX connector.
 
 To allow the user to tune the sensitivity of corner detection, a serial menu is provided. Firmware design is also included in this repository. 
@@ -45,6 +45,6 @@ Feel free to contact this e-mail adress for any questions : laurent.boutigny@dev
 
 
 ## HLS zero lab
-
+<p align="left"><img src="./doc/academic.png"></p>
 Refer to our wiki to get started with HLS design flow, strating with creating most common image processing IP
 
