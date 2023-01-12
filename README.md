@@ -5,8 +5,16 @@ This repository is a collection of video processing FPGA IPs designed using Viti
 
 At the moment, example designs are based on zybo-Z7 board with zynq 7020 FPGA only. 
 
+## Harris corner detection example 
 
-## IP Library content
+<p align="left"><img src="./doc/harris_ISP_synoptic.png"></p>
+In this example, a real time corner detection is implemented in the Zybo-Z2. The system acquire video from HDMI RX connector, process it using hardware accelerator deisgned with Vitis HLS, and transmit result on HDMI TX connector.
+
+To allow the user to tune the sensitivity of corner detection, a serial menu is provided. Firmware design is also included in this repository. 
+
+System synoptic is provided below
+
+<p align="center"><img src="./doc/harris_ISP_synoptic.png"></p>
 
 ### Video processing IPs
 - RGB to Grayscale
@@ -18,19 +26,6 @@ At the moment, example designs are based on zybo-Z7 board with zynq 7020 FPGA on
 - DMA reader (memory map to stream)
 - DMA writer (stream to memory map)
 - Video overlay
-
-
-
-## Harris corner detection example
-
-In this example, a real time corner detection is implemented in the Zybo-Z2. The system acquire video from HDMI RX connector, process it using hardware accelerator deisgned with Vitis HLS, and transmit result on HDMI TX connector.
-
-To allow the user to tune the sensitivity of corner detection, a serial menu is provided. Firmware design is also included in this repository. 
-
-System synoptic is provided below
-
-<p align="center"><img src="./doc/harris_ISP_synoptic.png"></p>
-
 
 ### Requirements
 - Zybo Z2-20 development board https://digilent.com/reference/programmable-logic/zybo-z7/start
@@ -45,3 +40,11 @@ System synoptic is provided below
 
 
 Feel free to contact this e-mail adress for any questions : laurent.boutigny@deverne-france.com Deverne can provide standard commercial support as well as consulting services
+
+
+
+
+## HLS zero lab
+
+Refer to our wiki to get started with HLS design flow, strating with creating most common image processing IP
+
